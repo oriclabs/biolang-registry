@@ -12,7 +12,7 @@
       "version": "0.1.0",
       "status": "stable",
       "verified": true,
-      "manifest": "https://raw.githubusercontent.com/oriclabs/biolang-statistics/479a4e413ff0c8c27e05adbc21c4df5593cb9b88/lessons/bdsr-essential/lesson.json",
+      "manifest": "https://raw.githubusercontent.com/oriclabs/biolang-statistics/ff7e52b1ea08570b1859a4dcdef77776d7ca2ed7/lessons/bdsr-essential/lesson.json",
       "manifestSha256": "3e8e12e51a2fddef94a8eae878788d12ad96756e87e63e34f32bbcbc7c34073f",
       "publishedAt": "2026-08-27",
       "compatibility": {
