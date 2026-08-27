@@ -1,0 +1,37 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://registry.lang.bio/schemas/registry-entry-v1.schema.json",
+  "title": "BioLang registry entry v1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema", "kind", "id", "name", "title", "summary", "publisher", "version", "status", "verified", "manifest", "manifestSha256", "publishedAt", "compatibility", "tags", "sourceRepository", "licence", "validation"],
+  "properties": {
+    "schema": {"const": 1},
+    "kind": {"enum": ["lesson", "package", "workflow", "tool"]},
+    "id": {"type": "string", "pattern": "^[a-z0-9._-]+/[a-z0-9._-]+$"},
+    "name": {"type": "string", "pattern": "^[a-z0-9][a-z0-9._-]*$"},
+    "title": {"type": "string", "minLength": 1},
+    "summary": {"type": "string", "minLength": 1},
+    "publisher": {"type": "string", "pattern": "^[a-z0-9][a-z0-9._-]*$"},
+    "version": {"type": "string", "pattern": "^\\d+\\.\\d+\\.\\d+(?:-[0-9A-Za-z.-]+)?$"},
+    "status": {"enum": ["preview", "stable", "deprecated", "withdrawn"]},
+    "verified": {"type": "boolean"},
+    "manifest": {"type": "string", "format": "uri", "pattern": "^https://"},
+    "manifestSha256": {"type": "string", "pattern": "^[a-f0-9]{64}$"},
+    "publishedAt": {"type": "string", "format": "date"},
+    "compatibility": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["biolang", "studio", "runtimes"],
+      "properties": {
+        "biolang": {"type": "string"},
+        "studio": {"type": "string"},
+        "runtimes": {"type": "array", "items": {"enum": ["browser", "desktop", "somer"]}, "uniqueItems": true, "minItems": 1}
+      }
+    },
+    "tags": {"type": "array", "items": {"type": "string"}, "uniqueItems": true},
+    "sourceRepository": {"type": "string", "format": "uri", "pattern": "^https://"},
+    "licence": {"type": "string", "minLength": 1},
+    "validation": {"enum": ["content-owned", "registry-verified", "not-provided"]}
+  }
+}

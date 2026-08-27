@@ -1,0 +1,12 @@
+{
+  "name": "@oriclabs/biolang-registry",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "license": "MIT",
+  "scripts": {
+    "build": "node scripts/build-index.mjs",
+    "test": "node scripts/build-index.mjs --check",
+    "test:local": "node scripts/verify-local-content.mjs"
+  }
+}

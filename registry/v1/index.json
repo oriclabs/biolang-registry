@@ -1,0 +1,39 @@
+{
+  "schema": 1,
+  "entries": [
+    {
+      "schema": 1,
+      "kind": "lesson",
+      "id": "oriclabs/bdsr-essential-statistics",
+      "name": "bdsr-essential-statistics",
+      "title": "Essential statistics with NHANES",
+      "summary": "A practical BioLang companion using the BDSR NHANES teaching extract.",
+      "publisher": "oriclabs",
+      "version": "0.1.0",
+      "status": "stable",
+      "verified": true,
+      "manifest": "https://raw.githubusercontent.com/oriclabs/biolang-statistics/9702accd09b91eb31fd2ffc32c4f30b61d074a5e/lessons/bdsr-essential/lesson.json",
+      "manifestSha256": "12db3177567486be74c5e4176f68d111b4e9335b38cf95bbbc713f7fbea2a77d",
+      "publishedAt": "2026-08-27",
+      "compatibility": {
+        "biolang": ">=1.5.0",
+        "studio": ">=0.1.0",
+        "runtimes": [
+          "browser",
+          "desktop",
+          "somer"
+        ]
+      },
+      "tags": [
+        "statistics",
+        "NHANES",
+        "EDA",
+        "inference",
+        "regression"
+      ],
+      "sourceRepository": "https://github.com/oriclabs/biolang-statistics",
+      "licence": "MIT",
+      "validation": "content-owned"
+    }
+  ]
+}

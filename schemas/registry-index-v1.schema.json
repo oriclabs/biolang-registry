@@ -1,0 +1,12 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://registry.lang.bio/schemas/registry-index-v1.schema.json",
+  "title": "BioLang registry index v1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema", "entries"],
+  "properties": {
+    "schema": {"const": 1},
+    "entries": {"type": "array", "items": {"$ref": "registry-entry-v1.schema.json"}}
+  }
+}
