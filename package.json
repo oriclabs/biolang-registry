@@ -6,7 +6,7 @@
   "license": "MIT",
   "scripts": {
     "build": "node scripts/build-index.mjs",
-    "test": "node scripts/build-index.mjs --check",
+    "test": "node scripts/build-index.mjs --check && node scripts/check-catalog-ui.mjs",
     "test:local": "node scripts/verify-local-content.mjs"
   }
 }
