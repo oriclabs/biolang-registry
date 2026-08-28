@@ -1,0 +1,19 @@
+{
+  "schema": 1,
+  "kind": "provider",
+  "id": "oriclabs/direct-https",
+  "version": "1.0.0",
+  "title": "Verified HTTPS files",
+  "summary": "Direct HTTPS files whose sizes and SHA-256 digests are pinned by a dataset manifest.",
+  "description": "The built-in direct adapter streams an explicitly declared HTTPS file, rejects unsafe paths, enforces the declared size, verifies SHA-256, and only then moves it into the local cache.",
+  "categories": ["general", "file-download"],
+  "homepage": "https://lang.bio",
+  "apiDocumentation": "https://github.com/oriclabs/biolang-registry/blob/main/README.md",
+  "authentication": "none",
+  "capabilities": ["download", "range", "metadata"],
+  "resolution": {
+    "adapter": "direct-https",
+    "registryCodeAllowed": false,
+    "note": "URLs and integrity metadata come from the dataset manifest; the registry cannot supply executable downloader code."
+  }
+}

@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "category": {
+    "id": "epidemiology",
+    "title": "Epidemiology",
+    "count": 1,
+    "kinds": [
+      "dataset"
+    ]
+  },
+  "entries": [
+    {
+      "schema": 1,
+      "kind": "dataset",
+      "id": "oriclabs/nhanes-bdsr-teaching",
+      "name": "nhanes-bdsr-teaching",
+      "title": "NHANES BDSR teaching extract",
+      "summary": "A compact NHANES table and dictionary for learning exploratory and inferential statistics.",
+      "publisher": "oriclabs",
+      "version": "1.0.0",
+      "status": "preview",
+      "verified": false,
+      "manifest": "https://raw.githubusercontent.com/oriclabs/biolang-statistics/main/datasets/nhanes-bdsr-teaching/dataset.json",
+      "manifestSha256": "e7b760905ba41f3fea9aa7ee9352c5be068392e160f1fb6d2403f40abc3be8cd",
+      "publishedAt": "2026-08-28",
+      "compatibility": {
+        "biolang": ">=1.5.0",
+        "studio": ">=0.1.0",
+        "runtimes": [
+          "browser",
+          "desktop",
+          "somer",
+          "cli"
+        ]
+      },
+      "categories": [
+        "statistics",
+        "epidemiology",
+        "teaching"
+      ],
+      "tags": [
+        "NHANES",
+        "survey",
+        "EDA",
+        "regression",
+        "CSV"
+      ],
+      "sourceRepository": "https://github.com/oriclabs/biolang-statistics",
+      "licence": "Source terms apply",
+      "validation": "content-owned",
+      "dataset": {
+        "provider": "oriclabs/direct-https",
+        "access": "public",
+        "formats": [
+          "csv"
+        ],
+        "modalities": [
+          "tabular"
+        ],
+        "organisms": [
+          "Homo sapiens"
+        ],
+        "fileCount": 2,
+        "totalBytes": 735046
+      }
+    }
+  ]
+}

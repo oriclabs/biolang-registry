@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "category": {
+    "id": "file-download",
+    "title": "File Download",
+    "count": 1,
+    "kinds": [
+      "provider"
+    ]
+  },
+  "entries": [
+    {
+      "schema": 1,
+      "kind": "provider",
+      "id": "oriclabs/direct-https",
+      "name": "direct-https",
+      "title": "Verified HTTPS files",
+      "summary": "Built-in streaming downloads for manifest-pinned HTTPS files.",
+      "publisher": "oriclabs",
+      "version": "1.0.0",
+      "status": "preview",
+      "verified": false,
+      "manifest": "https://raw.githubusercontent.com/oriclabs/biolang-registry/main/manifests/providers/direct-https.json",
+      "manifestSha256": "16bd66c011cce508f1e43eff3135588c019570edabf0ca33756f0faa704e74ec",
+      "publishedAt": "2026-08-28",
+      "compatibility": {
+        "biolang": ">=1.5.0",
+        "studio": ">=0.1.0",
+        "runtimes": [
+          "browser",
+          "desktop",
+          "somer",
+          "cli"
+        ]
+      },
+      "categories": [
+        "general",
+        "file-download"
+      ],
+      "tags": [
+        "HTTPS",
+        "SHA-256",
+        "streaming",
+        "cache"
+      ],
+      "sourceRepository": "https://github.com/oriclabs/biolang-registry",
+      "licence": "MIT",
+      "validation": "registry-verified",
+      "provider": {
+        "adapter": "direct-https",
+        "authentication": "none",
+        "capabilities": [
+          "download",
+          "range",
+          "metadata"
+        ],
+        "apiDocumentation": "https://github.com/oriclabs/biolang-registry/blob/main/README.md"
+      }
+    }
+  ]
+}

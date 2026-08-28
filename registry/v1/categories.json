@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "categories": [
+    {
+      "id": "epidemiology",
+      "title": "Epidemiology",
+      "count": 1,
+      "kinds": [
+        "dataset"
+      ]
+    },
+    {
+      "id": "file-download",
+      "title": "File Download",
+      "count": 1,
+      "kinds": [
+        "provider"
+      ]
+    },
+    {
+      "id": "general",
+      "title": "General",
+      "count": 1,
+      "kinds": [
+        "provider"
+      ]
+    },
+    {
+      "id": "statistics",
+      "title": "Statistics",
+      "count": 2,
+      "kinds": [
+        "dataset",
+        "lesson"
+      ]
+    },
+    {
+      "id": "teaching",
+      "title": "Teaching",
+      "count": 2,
+      "kinds": [
+        "dataset",
+        "lesson"
+      ]
+    }
+  ]
+}

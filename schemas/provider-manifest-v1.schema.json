@@ -1,0 +1,32 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://registry.lang.bio/schemas/provider-manifest-v1.schema.json",
+  "title": "BioLang data provider manifest v1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema", "kind", "id", "version", "title", "summary", "description", "categories", "homepage", "apiDocumentation", "authentication", "capabilities", "resolution"],
+  "properties": {
+    "schema": {"const": 1},
+    "kind": {"const": "provider"},
+    "id": {"type": "string", "pattern": "^[a-z0-9][a-z0-9._-]*/[a-z0-9][a-z0-9._-]*$"},
+    "version": {"type": "string", "pattern": "^\\d+\\.\\d+\\.\\d+(?:-[0-9A-Za-z.-]+)?$"},
+    "title": {"type": "string", "minLength": 1},
+    "summary": {"type": "string", "minLength": 1},
+    "description": {"type": "string", "minLength": 1},
+    "categories": {"type": "array", "items": {"type": "string", "pattern": "^[a-z0-9][a-z0-9-]*$"}, "minItems": 1, "uniqueItems": true},
+    "homepage": {"type": "string", "format": "uri", "pattern": "^https://"},
+    "apiDocumentation": {"type": "string", "format": "uri", "pattern": "^https://"},
+    "authentication": {"enum": ["none", "api-key", "oauth", "controlled"]},
+    "capabilities": {"type": "array", "items": {"enum": ["search", "resolve", "download", "range", "metadata"]}, "minItems": 1, "uniqueItems": true},
+    "resolution": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["adapter", "registryCodeAllowed"],
+      "properties": {
+        "adapter": {"type": "string", "pattern": "^[a-z0-9][a-z0-9._-]*$"},
+        "registryCodeAllowed": {"const": false},
+        "note": {"type": "string"}
+      }
+    }
+  }
+}

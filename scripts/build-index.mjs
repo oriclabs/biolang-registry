@@ -4,10 +4,12 @@ import { fileURLToPath } from "node:url";
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const entriesRoot = path.join(root, "entries");
-const output = path.join(root, "registry", "v1", "index.json");
-const allowedKinds = new Set(["lesson", "package", "workflow", "tool"]);
+const apiRoot = path.join(root, "registry", "v1");
+const allowedKinds = new Set(["lesson", "package", "workflow", "tool", "dataset", "provider"]);
 const allowedStatuses = new Set(["preview", "stable", "deprecated", "withdrawn"]);
-const allowedRuntimes = new Set(["browser", "desktop", "somer"]);
+const allowedRuntimes = new Set(["browser", "desktop", "somer", "cli"]);
+const allowedAccess = new Set(["public", "registration", "controlled"]);
+const allowedAuthentication = new Set(["none", "api-key", "oauth", "controlled"]);
 const movingReference = /\/(?:main|master|latest)\//i;
 
 function filesBelow(directory) {
@@ -18,32 +20,109 @@ function filesBelow(directory) {
 }
 
 function fail(file, message) { throw new Error(`${path.relative(root, file)}: ${message}`); }
+function uniqueStrings(values) { return Array.isArray(values) && values.every(value => typeof value === "string") && new Set(values).size === values.length; }
+function validId(value) { return /^[a-z0-9][a-z0-9._-]*\/[a-z0-9][a-z0-9._-]*$/.test(value); }
+function compareVersionsDescending(left, right) {
+  const parse = value => {
+    const [base, suffix = ""] = value.split(/-(.*)/s, 2);
+    return { numbers: base.split(".").map(Number), suffix };
+  };
+  const a = parse(left);
+  const b = parse(right);
+  for (let index = 0; index < 3; index += 1) {
+    if (a.numbers[index] !== b.numbers[index]) return b.numbers[index] - a.numbers[index];
+  }
+  if (!a.suffix && b.suffix) return -1;
+  if (a.suffix && !b.suffix) return 1;
+  return b.suffix.localeCompare(a.suffix);
+}
 
 function validate(entry, file) {
   if (entry.schema !== 1 || !allowedKinds.has(entry.kind)) fail(file, "invalid schema or kind");
-  if (!/^[a-z0-9._-]+\/[a-z0-9._-]+$/.test(entry.id) || entry.id !== `${entry.publisher}/${entry.name}`) fail(file, "id must equal publisher/name");
-  if (!/^\d+\.\d+\.\d+(?:-[0-9A-Za-z.-]+)?$/.test(entry.version)) fail(file, "version must be semantic");
+  if (!validId(entry.id) || entry.id !== `${entry.publisher}/${entry.name}`) fail(file, "id must equal publisher/name");
+  if (!/^\d+\.\d+\.\d+(?:-[0-9A-Za-z.-]+)?$/.test(entry.version) ||
+      entry.version.split("-", 1)[0].split(".").some(part => !Number.isSafeInteger(Number(part)))) fail(file, "version must be semantic and use safe numeric components");
   if (!allowedStatuses.has(entry.status) || typeof entry.verified !== "boolean") fail(file, "invalid status/trust fields");
   if (!/^https:\/\//.test(entry.manifest) || !/^[a-f0-9]{64}$/.test(entry.manifestSha256)) fail(file, "manifest requires HTTPS and lowercase SHA-256");
   if (entry.verified && movingReference.test(entry.manifest)) fail(file, "verified entries cannot use a moving manifest reference");
   if (!entry.compatibility || !Array.isArray(entry.compatibility.runtimes) || !entry.compatibility.runtimes.length || entry.compatibility.runtimes.some(value => !allowedRuntimes.has(value))) fail(file, "invalid runtime compatibility");
-  if (!Array.isArray(entry.tags) || new Set(entry.tags).size !== entry.tags.length) fail(file, "tags must be a unique array");
+  if (!uniqueStrings(entry.categories) || !entry.categories.length || entry.categories.some(value => !/^[a-z0-9][a-z0-9-]*$/.test(value))) fail(file, "categories must be unique slugs");
+  if (!uniqueStrings(entry.tags)) fail(file, "tags must be a unique string array");
   if (!/^https:\/\//.test(entry.sourceRepository)) fail(file, "sourceRepository must use HTTPS");
   for (const key of ["title", "summary", "publisher", "name", "publishedAt", "licence", "validation"]) if (!entry[key]) fail(file, `missing ${key}`);
+  if (entry.kind === "dataset") {
+    const data = entry.dataset;
+    if (!data || !validId(data.provider ?? "") || !allowedAccess.has(data.access) ||
+        !uniqueStrings(data.formats) || !data.formats.length || !uniqueStrings(data.modalities) || !uniqueStrings(data.organisms) ||
+        !Number.isInteger(data.fileCount) || data.fileCount < 1 || !Number.isSafeInteger(data.totalBytes) || data.totalBytes < 1) fail(file, "invalid dataset discovery fields");
+  }
+  if (entry.kind === "provider") {
+    const provider = entry.provider;
+    if (!provider?.adapter || !allowedAuthentication.has(provider.authentication) || !uniqueStrings(provider.capabilities) || !provider.capabilities.length || !/^https:\/\//.test(provider.apiDocumentation ?? "")) fail(file, "invalid provider discovery fields");
+  }
 }
+
+function render(value) { return `${JSON.stringify(value, null, 2)}\n`; }
+function title(slug) { return slug.split("-").map(word => word.slice(0, 1).toUpperCase() + word.slice(1)).join(" "); }
 
 const entries = filesBelow(entriesRoot).map(file => { const entry = JSON.parse(readFileSync(file, "utf8")); validate(entry, file); return entry; });
-entries.sort((a, b) => `${a.kind}/${a.id}/${a.version}`.localeCompare(`${b.kind}/${b.id}/${b.version}`));
+entries.sort((a, b) => a.kind.localeCompare(b.kind) || a.id.localeCompare(b.id) || compareVersionsDescending(a.version, b.version));
 const identities = entries.map(entry => `${entry.id}@${entry.version}`);
 if (new Set(identities).size !== identities.length) throw new Error("duplicate registry id + version");
-const rendered = `${JSON.stringify({ schema: 1, entries }, null, 2)}\n`;
-
-if (process.argv.includes("--check")) {
-  const current = readFileSync(output, "utf8");
-  if (current !== rendered) throw new Error("registry/v1/index.json is stale; run npm run build");
-  console.log(`${entries.length} registry entry checked; generated index is current.`);
-} else {
-  mkdirSync(path.dirname(output), { recursive: true });
-  writeFileSync(output, rendered);
-  console.log(`${entries.length} registry entry written to ${path.relative(root, output)}.`);
+const providerIds = new Set(entries.filter(entry => entry.kind === "provider").map(entry => entry.id));
+for (const entry of entries.filter(entry => entry.kind === "dataset")) {
+  if (!providerIds.has(entry.dataset.provider)) throw new Error(`${entry.id}: provider '${entry.dataset.provider}' is not registered`);
 }
+
+const categories = [...new Set(entries.flatMap(entry => entry.categories))].sort().map(id => {
+  const matches = entries.filter(entry => entry.categories.includes(id));
+  return { id, title: title(id), count: matches.length, kinds: [...new Set(matches.map(entry => entry.kind))].sort() };
+});
+const searchDocuments = entries.map(entry => ({
+  id: entry.id,
+  version: entry.version,
+  kind: entry.kind,
+  title: entry.title,
+  summary: entry.summary,
+  categories: entry.categories,
+  tags: entry.tags,
+  text: [entry.id, entry.title, entry.summary, entry.publisher, ...entry.categories, ...entry.tags,
+    ...(entry.dataset?.formats ?? []), ...(entry.dataset?.modalities ?? []), ...(entry.dataset?.organisms ?? []),
+    ...(entry.provider?.capabilities ?? [])].join(" ").toLowerCase()
+}));
+
+const outputs = new Map([
+  [path.join(apiRoot, "index.json"), { schema: 1, entries }],
+  [path.join(apiRoot, "search-index.json"), { schema: 1, documents: searchDocuments }],
+  [path.join(apiRoot, "categories.json"), { schema: 1, categories }],
+  [path.join(apiRoot, "datasets.json"), { schema: 1, entries: entries.filter(entry => entry.kind === "dataset") }],
+  [path.join(apiRoot, "providers.json"), { schema: 1, entries: entries.filter(entry => entry.kind === "provider") }],
+  [path.join(apiRoot, "api.json"), {
+    schema: 1,
+    endpoints: {
+      index: "index.json",
+      search: "search-index.json",
+      categories: "categories.json",
+      datasets: "datasets.json",
+      providers: "providers.json",
+      entry: "entries/{kind}/{publisher}/{name}/{version}.json",
+      category: "categories/{category}.json"
+    }
+  }]
+]);
+for (const entry of entries) outputs.set(path.join(apiRoot, "entries", entry.kind, entry.publisher, entry.name, `${entry.version}.json`), entry);
+for (const category of categories) outputs.set(path.join(apiRoot, "categories", `${category.id}.json`), { schema: 1, category, entries: entries.filter(entry => entry.categories.includes(category.id)) });
+
+const check = process.argv.includes("--check");
+for (const [file, value] of outputs) {
+  const expected = render(value);
+  if (check) {
+    let current;
+    try { current = readFileSync(file, "utf8"); } catch { throw new Error(`${path.relative(root, file)} is missing; run npm run build`); }
+    if (current !== expected) throw new Error(`${path.relative(root, file)} is stale; run npm run build`);
+  } else {
+    mkdirSync(path.dirname(file), { recursive: true });
+    writeFileSync(file, expected);
+  }
+}
+console.log(`${entries.length} entries, ${categories.length} categories, and ${outputs.size} API documents ${check ? "checked" : "written"}.`);

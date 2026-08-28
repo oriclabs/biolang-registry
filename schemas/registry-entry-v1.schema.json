@@ -4,11 +4,11 @@
   "title": "BioLang registry entry v1",
   "type": "object",
   "additionalProperties": false,
-  "required": ["schema", "kind", "id", "name", "title", "summary", "publisher", "version", "status", "verified", "manifest", "manifestSha256", "publishedAt", "compatibility", "tags", "sourceRepository", "licence", "validation"],
+  "required": ["schema", "kind", "id", "name", "title", "summary", "publisher", "version", "status", "verified", "manifest", "manifestSha256", "publishedAt", "compatibility", "categories", "tags", "sourceRepository", "licence", "validation"],
   "properties": {
     "schema": {"const": 1},
-    "kind": {"enum": ["lesson", "package", "workflow", "tool"]},
-    "id": {"type": "string", "pattern": "^[a-z0-9._-]+/[a-z0-9._-]+$"},
+    "kind": {"enum": ["lesson", "package", "workflow", "tool", "dataset", "provider"]},
+    "id": {"type": "string", "pattern": "^[a-z0-9][a-z0-9._-]*/[a-z0-9][a-z0-9._-]*$"},
     "name": {"type": "string", "pattern": "^[a-z0-9][a-z0-9._-]*$"},
     "title": {"type": "string", "minLength": 1},
     "summary": {"type": "string", "minLength": 1},
@@ -26,12 +26,42 @@
       "properties": {
         "biolang": {"type": "string"},
         "studio": {"type": "string"},
-        "runtimes": {"type": "array", "items": {"enum": ["browser", "desktop", "somer"]}, "uniqueItems": true, "minItems": 1}
+        "runtimes": {"type": "array", "items": {"enum": ["browser", "desktop", "somer", "cli"]}, "uniqueItems": true, "minItems": 1}
       }
     },
+    "categories": {"type": "array", "items": {"type": "string", "pattern": "^[a-z0-9][a-z0-9-]*$"}, "uniqueItems": true, "minItems": 1},
     "tags": {"type": "array", "items": {"type": "string"}, "uniqueItems": true},
     "sourceRepository": {"type": "string", "format": "uri", "pattern": "^https://"},
     "licence": {"type": "string", "minLength": 1},
-    "validation": {"enum": ["content-owned", "registry-verified", "not-provided"]}
-  }
+    "validation": {"enum": ["content-owned", "registry-verified", "not-provided"]},
+    "dataset": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["provider", "access", "formats", "modalities", "organisms", "fileCount", "totalBytes"],
+      "properties": {
+        "provider": {"type": "string", "pattern": "^[a-z0-9][a-z0-9._-]*/[a-z0-9][a-z0-9._-]*$"},
+        "access": {"enum": ["public", "registration", "controlled"]},
+        "formats": {"type": "array", "items": {"type": "string"}, "uniqueItems": true, "minItems": 1},
+        "modalities": {"type": "array", "items": {"type": "string"}, "uniqueItems": true},
+        "organisms": {"type": "array", "items": {"type": "string"}, "uniqueItems": true},
+        "fileCount": {"type": "integer", "minimum": 1},
+        "totalBytes": {"type": "integer", "minimum": 1}
+      }
+    },
+    "provider": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["adapter", "authentication", "capabilities", "apiDocumentation"],
+      "properties": {
+        "adapter": {"type": "string"},
+        "authentication": {"enum": ["none", "api-key", "oauth", "controlled"]},
+        "capabilities": {"type": "array", "items": {"enum": ["search", "resolve", "download", "range", "metadata"]}, "uniqueItems": true, "minItems": 1},
+        "apiDocumentation": {"type": "string", "format": "uri", "pattern": "^https://"}
+      }
+    }
+  },
+  "allOf": [
+    {"if": {"properties": {"kind": {"const": "dataset"}}}, "then": {"required": ["dataset"]}},
+    {"if": {"properties": {"kind": {"const": "provider"}}}, "then": {"required": ["provider"]}}
+  ]
 }

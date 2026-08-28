@@ -15,10 +15,23 @@
   "compatibility": {
     "biolang": ">=1.5.0",
     "studio": ">=0.1.0",
-    "runtimes": ["browser", "desktop", "somer"]
+    "runtimes": [
+      "browser",
+      "desktop",
+      "somer"
+    ]
   },
-  "categories": ["statistics", "teaching"],
-  "tags": ["statistics", "NHANES", "EDA", "inference", "regression"],
+  "categories": [
+    "statistics",
+    "teaching"
+  ],
+  "tags": [
+    "statistics",
+    "NHANES",
+    "EDA",
+    "inference",
+    "regression"
+  ],
   "sourceRepository": "https://github.com/oriclabs/biolang-statistics",
   "licence": "MIT",
   "validation": "content-owned"

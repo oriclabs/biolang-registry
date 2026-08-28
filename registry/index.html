@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Versioned discovery API for BioLang datasets, providers, lessons, packages, workflows, and tools.">
+  <title>BioLang Registry</title>
+  <style>
+    :root { color-scheme: light dark; font-family: system-ui, sans-serif; }
+    body { max-width: 46rem; margin: 0 auto; padding: 4rem 1.5rem; line-height: 1.6; }
+    h1 { line-height: 1.15; }
+    code { padding: .15rem .35rem; border-radius: .3rem; background: color-mix(in srgb, CanvasText 9%, Canvas); }
+    li { margin-block: .5rem; }
+    a { color: LinkText; }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>BioLang Registry</h1>
+    <p>
+      A static, versioned discovery index for BioLang datasets, providers,
+      lessons, packages, workflows, and tools. Downloads remain explicit and
+      checksum-verified by the client.
+    </p>
+    <h2>Version 1 API</h2>
+    <ul>
+      <li><a href="v1/index.json">Complete index</a></li>
+      <li><a href="v1/search-index.json">Search index</a></li>
+      <li><a href="v1/datasets.json">Datasets</a></li>
+      <li><a href="v1/providers.json">Providers</a></li>
+      <li><a href="v1/categories.json">Categories</a></li>
+      <li><a href="v1/api.json">Endpoint map</a></li>
+    </ul>
+    <p>
+      Client endpoint: <code>https://registry.lang.bio/v1/index.json</code>
+    </p>
+    <p>
+      Source and contribution history:
+      <a href="https://github.com/oriclabs/biolang-registry">oriclabs/biolang-registry</a>
+    </p>
+  </main>
+</body>
+</html>

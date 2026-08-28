@@ -1,0 +1,66 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://registry.lang.bio/schemas/dataset-manifest-v1.schema.json",
+  "title": "BioLang dataset manifest v1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema", "kind", "id", "version", "title", "summary", "description", "categories", "tags", "modalities", "organisms", "provider", "access", "source", "files"],
+  "properties": {
+    "schema": {"const": 1},
+    "kind": {"const": "dataset"},
+    "id": {"type": "string", "pattern": "^[a-z0-9][a-z0-9._-]*/[a-z0-9][a-z0-9._-]*$"},
+    "version": {"type": "string", "pattern": "^\\d+\\.\\d+\\.\\d+(?:-[0-9A-Za-z.-]+)?$"},
+    "title": {"type": "string", "minLength": 1},
+    "summary": {"type": "string", "minLength": 1},
+    "description": {"type": "string", "minLength": 1},
+    "categories": {"type": "array", "items": {"type": "string", "pattern": "^[a-z0-9][a-z0-9-]*$"}, "minItems": 1, "uniqueItems": true},
+    "tags": {"type": "array", "items": {"type": "string"}, "uniqueItems": true},
+    "modalities": {"type": "array", "items": {"type": "string"}, "uniqueItems": true},
+    "organisms": {"type": "array", "items": {"type": "string"}, "uniqueItems": true},
+    "provider": {"type": "string", "pattern": "^[a-z0-9][a-z0-9._-]*/[a-z0-9][a-z0-9._-]*$"},
+    "access": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["kind", "requiresAcceptance"],
+      "properties": {
+        "kind": {"enum": ["public", "registration", "controlled"]},
+        "requiresAcceptance": {"type": "boolean"},
+        "termsUrl": {"type": "string", "format": "uri", "pattern": "^https://"}
+      }
+    },
+    "source": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["landingPage", "citation", "licence", "rights"],
+      "properties": {
+        "accession": {"type": "string"},
+        "landingPage": {"type": "string", "format": "uri", "pattern": "^https://"},
+        "citation": {"type": "string", "minLength": 1},
+        "licence": {"type": "string", "minLength": 1},
+        "rights": {"type": "string", "minLength": 1}
+      }
+    },
+    "files": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["id", "title", "path", "url", "bytes", "sha256", "mediaType", "format", "role", "reader"],
+        "properties": {
+          "id": {"type": "string", "pattern": "^[a-z0-9][a-z0-9._-]*$"},
+          "title": {"type": "string", "minLength": 1},
+          "path": {"type": "string", "minLength": 1},
+          "url": {"type": "string", "format": "uri", "pattern": "^https://"},
+          "bytes": {"type": "integer", "minimum": 1},
+          "sha256": {"type": "string", "pattern": "^[a-f0-9]{64}$"},
+          "mediaType": {"type": "string", "minLength": 1},
+          "format": {"type": "string", "pattern": "^[a-z0-9][a-z0-9._+-]*$"},
+          "compression": {"enum": ["none", "gzip", "bgzip", "zip", "tar", "tar-gzip"]},
+          "role": {"enum": ["primary", "metadata", "index", "annotation", "reference", "supplement"]},
+          "reader": {"type": "string", "pattern": "^[a-z_][a-z0-9_]*$"}
+        }
+      }
+    }
+  }
+}

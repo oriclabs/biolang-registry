@@ -1,0 +1,12 @@
+{
+  "schema": 1,
+  "endpoints": {
+    "index": "index.json",
+    "search": "search-index.json",
+    "categories": "categories.json",
+    "datasets": "datasets.json",
+    "providers": "providers.json",
+    "entry": "entries/{kind}/{publisher}/{name}/{version}.json",
+    "category": "categories/{category}.json"
+  }
+}

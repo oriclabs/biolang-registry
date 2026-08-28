@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "documents": [
+    {
+      "id": "oriclabs/nhanes-bdsr-teaching",
+      "version": "1.0.0",
+      "kind": "dataset",
+      "title": "NHANES BDSR teaching extract",
+      "summary": "A compact NHANES table and dictionary for learning exploratory and inferential statistics.",
+      "categories": [
+        "statistics",
+        "epidemiology",
+        "teaching"
+      ],
+      "tags": [
+        "NHANES",
+        "survey",
+        "EDA",
+        "regression",
+        "CSV"
+      ],
+      "text": "oriclabs/nhanes-bdsr-teaching nhanes bdsr teaching extract a compact nhanes table and dictionary for learning exploratory and inferential statistics. oriclabs statistics epidemiology teaching nhanes survey eda regression csv csv tabular homo sapiens"
+    },
+    {
+      "id": "oriclabs/bdsr-essential-statistics",
+      "version": "0.1.0",
+      "kind": "lesson",
+      "title": "Essential statistics with NHANES",
+      "summary": "An independent BioLang companion to Stephen D. Turner's BDSR essential-statistics chapter.",
+      "categories": [
+        "statistics",
+        "teaching"
+      ],
+      "tags": [
+        "statistics",
+        "NHANES",
+        "EDA",
+        "inference",
+        "regression"
+      ],
+      "text": "oriclabs/bdsr-essential-statistics essential statistics with nhanes an independent biolang companion to stephen d. turner's bdsr essential-statistics chapter. oriclabs statistics teaching statistics nhanes eda inference regression"
+    },
+    {
+      "id": "oriclabs/direct-https",
+      "version": "1.0.0",
+      "kind": "provider",
+      "title": "Verified HTTPS files",
+      "summary": "Built-in streaming downloads for manifest-pinned HTTPS files.",
+      "categories": [
+        "general",
+        "file-download"
+      ],
+      "tags": [
+        "HTTPS",
+        "SHA-256",
+        "streaming",
+        "cache"
+      ],
+      "text": "oriclabs/direct-https verified https files built-in streaming downloads for manifest-pinned https files. oriclabs general file-download https sha-256 streaming cache download range metadata"
+    }
+  ]
+}
