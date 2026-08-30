@@ -13,7 +13,7 @@
       "status": "preview",
       "verified": false,
       "manifest": "https://raw.githubusercontent.com/oriclabs/biolang-statistics/main/datasets/nhanes-bdsr-teaching/dataset.json",
-      "manifestSha256": "e7b760905ba41f3fea9aa7ee9352c5be068392e160f1fb6d2403f40abc3be8cd",
+      "manifestSha256": "2f82a4321c64f3ee566ef3866c5cb75e6d9a91b15b3ac2f695453cb95e044d82",
       "publishedAt": "2026-08-28",
       "compatibility": {
         "biolang": ">=1.5.0",

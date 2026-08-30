@@ -16,8 +16,15 @@ for (const entry of index.entries) {
   if (actual !== entry.manifestSha256) throw new Error(`${entry.id}: manifest checksum mismatch (${actual})`);
   const manifest = JSON.parse(bytes.toString("utf8"));
   if (entry.kind === "lesson") {
-    const lesson = path.resolve(path.dirname(manifestPath), manifest.entry);
-    if (!existsSync(lesson)) throw new Error(`${entry.id}: lesson entrypoint missing`);
+    if (JSON.stringify(entry.discoverability) !== JSON.stringify(manifest.discoverability)) {
+      throw new Error(`${entry.id}: registry discoverability differs from its lesson manifest`);
+    }
+    const lessons = manifest.schema === 2 ? manifest.lessons : [{ entry: manifest.entry }];
+    if (!Array.isArray(lessons) || lessons.length < (manifest.schema === 2 ? 2 : 1)) throw new Error(`${entry.id}: lesson entries missing`);
+    for (const lessonEntry of lessons) {
+      const lesson = path.resolve(path.dirname(manifestPath), lessonEntry.entry);
+      if (!existsSync(lesson)) throw new Error(`${entry.id}: lesson entrypoint missing (${lessonEntry.entry})`);
+    }
     if (manifest.validation && !existsSync(path.resolve(path.dirname(manifestPath), manifest.validation))) throw new Error(`${entry.id}: declared validation file missing`);
   } else if (manifest.kind !== entry.kind || manifest.id !== entry.id || manifest.version !== entry.version) {
     throw new Error(`${entry.id}: manifest identity does not match its registry entry`);

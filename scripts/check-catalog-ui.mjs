@@ -6,7 +6,10 @@ const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const html = readFileSync(path.join(root, "registry", "index.html"), "utf8");
 const required = [
   'id="search"', 'id="tabs"', 'id="cards"', 'id="detail"',
-  "v1/index.json", "oriclabs.com/biolang-studio", "data-entry", "data-kind",
+  "v1/index.json", "studio.lang.bio", "searchParams.set('lesson',key(entry))", "data-entry", "data-kind",
+  'target="biolang-studio"', "different lessons open as notebook tabs", "entry.series?.title",
+  "entry.discoverability", "Problems this helps solve", "entry.discoverability.methods", "entry.discoverability.plots",
+  "Checksum pinned", "Publisher verified", "kind-${entry.kind}",
 ];
 for (const marker of required) {
   if (!html.includes(marker)) throw new Error(`registry catalogue is missing ${marker}`);

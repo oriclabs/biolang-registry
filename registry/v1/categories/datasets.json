@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "category": {
+    "id": "datasets",
+    "title": "Datasets",
+    "count": 1,
+    "kinds": [
+      "package"
+    ]
+  },
+  "entries": [
+    {
+      "schema": 1,
+      "kind": "package",
+      "id": "oriclabs/statdata",
+      "name": "statdata",
+      "title": "Statistics teaching datasets",
+      "summary": "Versioned real-world datasets used by Statistics, Plainly, with source and transformation provenance.",
+      "publisher": "oriclabs",
+      "version": "0.1.0",
+      "status": "stable",
+      "verified": true,
+      "manifest": "https://raw.githubusercontent.com/oriclabs/biolang-statistics/f4f660f/packages/statdata/registry-manifest.json",
+      "manifestSha256": "080348e1a47700adae2864e5a88bcacdc3ecfca7f55ed73602a2b36a4fabd8e3",
+      "publishedAt": "2026-08-28",
+      "compatibility": {
+        "biolang": ">=1.5.0",
+        "studio": ">=0.1.0",
+        "runtimes": [
+          "desktop",
+          "somer",
+          "cli"
+        ]
+      },
+      "categories": [
+        "statistics",
+        "teaching",
+        "datasets"
+      ],
+      "tags": [
+        "real data",
+        "provenance",
+        "epidemiology",
+        "survival",
+        "regression"
+      ],
+      "sourceRepository": "https://github.com/oriclabs/biolang-statistics",
+      "licence": "MIT code; source-specific data terms",
+      "validation": "295 quantities cross-checked with R; generated examples and figures checked for drift"
+    }
+  ]
+}

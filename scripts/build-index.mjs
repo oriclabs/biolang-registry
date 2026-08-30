@@ -21,6 +21,16 @@ function filesBelow(directory) {
 
 function fail(file, message) { throw new Error(`${path.relative(root, file)}: ${message}`); }
 function uniqueStrings(values) { return Array.isArray(values) && values.every(value => typeof value === "string") && new Set(values).size === values.length; }
+const discoveryFields = ["problems", "methods", "plots", "terms", "aliases", "functions"];
+const requiredDiscoveryFields = new Set(["problems", "methods", "terms", "aliases"]);
+function validDiscoverability(value) {
+  return value && typeof value === "object" && !Array.isArray(value) &&
+    discoveryFields.every(field => uniqueStrings(value[field]) && (!requiredDiscoveryFields.has(field) || value[field].length > 0) &&
+      value[field].every(term => term.trim() === term && term.length > 1));
+}
+function discoveryTerms(entry) {
+  return discoveryFields.flatMap(field => entry.discoverability?.[field] ?? []);
+}
 function validId(value) { return /^[a-z0-9][a-z0-9._-]*\/[a-z0-9][a-z0-9._-]*$/.test(value); }
 function compareVersionsDescending(left, right) {
   const parse = value => {
@@ -48,8 +58,14 @@ function validate(entry, file) {
   if (!entry.compatibility || !Array.isArray(entry.compatibility.runtimes) || !entry.compatibility.runtimes.length || entry.compatibility.runtimes.some(value => !allowedRuntimes.has(value))) fail(file, "invalid runtime compatibility");
   if (!uniqueStrings(entry.categories) || !entry.categories.length || entry.categories.some(value => !/^[a-z0-9][a-z0-9-]*$/.test(value))) fail(file, "categories must be unique slugs");
   if (!uniqueStrings(entry.tags)) fail(file, "tags must be a unique string array");
+  if (entry.kind === "lesson" && !validDiscoverability(entry.discoverability)) {
+    fail(file, "lesson discoverability must provide problems, methods, plots, terms, aliases, and functions arrays; only plots and functions may be empty");
+  }
   if (!/^https:\/\//.test(entry.sourceRepository)) fail(file, "sourceRepository must use HTTPS");
   for (const key of ["title", "summary", "publisher", "name", "publishedAt", "licence", "validation"]) if (!entry[key]) fail(file, `missing ${key}`);
+  if (entry.series && (entry.kind !== "lesson" || !/^[a-z0-9][a-z0-9._-]*$/.test(entry.series.id ?? "") ||
+      !entry.series.title || !/^https:\/\//.test(entry.series.url ?? "") || !Number.isInteger(entry.series.order) ||
+      entry.series.order < 0 || !entry.series.chapter)) fail(file, "invalid lesson series fields");
   if (entry.kind === "dataset") {
     const data = entry.dataset;
     if (!data || !validId(data.provider ?? "") || !allowedAccess.has(data.access) ||
@@ -86,9 +102,13 @@ const searchDocuments = entries.map(entry => ({
   summary: entry.summary,
   categories: entry.categories,
   tags: entry.tags,
+  discoverability: entry.discoverability,
   text: [entry.id, entry.title, entry.summary, entry.publisher, ...entry.categories, ...entry.tags,
+    ...discoveryTerms(entry),
+    entry.dataset?.provider ?? "",
     ...(entry.dataset?.formats ?? []), ...(entry.dataset?.modalities ?? []), ...(entry.dataset?.organisms ?? []),
-    ...(entry.provider?.capabilities ?? [])].join(" ").toLowerCase()
+    entry.provider?.adapter ?? "", entry.provider?.authentication ?? "", ...(entry.provider?.capabilities ?? []),
+    entry.series?.id ?? "", entry.series?.title ?? "", entry.series?.chapter ?? ""].join(" ").toLowerCase()
 }));
 
 const outputs = new Map([

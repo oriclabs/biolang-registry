@@ -31,9 +31,34 @@
     },
     "categories": {"type": "array", "items": {"type": "string", "pattern": "^[a-z0-9][a-z0-9-]*$"}, "uniqueItems": true, "minItems": 1},
     "tags": {"type": "array", "items": {"type": "string"}, "uniqueItems": true},
+    "discoverability": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["problems", "methods", "plots", "terms", "aliases", "functions"],
+      "properties": {
+        "problems": {"$ref": "#/$defs/requiredSearchTerms"},
+        "methods": {"$ref": "#/$defs/requiredSearchTerms"},
+        "plots": {"$ref": "#/$defs/searchTerms"},
+        "terms": {"$ref": "#/$defs/requiredSearchTerms"},
+        "aliases": {"$ref": "#/$defs/requiredSearchTerms"},
+        "functions": {"$ref": "#/$defs/searchTerms"}
+      }
+    },
     "sourceRepository": {"type": "string", "format": "uri", "pattern": "^https://"},
     "licence": {"type": "string", "minLength": 1},
-    "validation": {"enum": ["content-owned", "registry-verified", "not-provided"]},
+    "validation": {"type": "string", "minLength": 1},
+    "series": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "title", "url", "order", "chapter"],
+      "properties": {
+        "id": {"type": "string", "pattern": "^[a-z0-9][a-z0-9._-]*$"},
+        "title": {"type": "string", "minLength": 1},
+        "url": {"type": "string", "format": "uri", "pattern": "^https://"},
+        "order": {"type": "integer", "minimum": 0},
+        "chapter": {"type": "string", "minLength": 1}
+      }
+    },
     "dataset": {
       "type": "object",
       "additionalProperties": false,
@@ -61,7 +86,19 @@
     }
   },
   "allOf": [
+    {"if": {"properties": {"kind": {"const": "lesson"}}}, "then": {"required": ["discoverability"]}},
     {"if": {"properties": {"kind": {"const": "dataset"}}}, "then": {"required": ["dataset"]}},
-    {"if": {"properties": {"kind": {"const": "provider"}}}, "then": {"required": ["provider"]}}
-  ]
+    {"if": {"properties": {"kind": {"const": "provider"}}}, "then": {"required": ["provider"]}},
+    {"if": {"required": ["series"]}, "then": {"properties": {"kind": {"const": "lesson"}}}}
+  ],
+  "$defs": {
+    "searchTerms": {
+      "type": "array",
+      "items": {"type": "string", "minLength": 2, "pattern": "^\\S(?:.*\\S)?$"},
+      "uniqueItems": true
+    },
+    "requiredSearchTerms": {
+      "allOf": [{"$ref": "#/$defs/searchTerms"}, {"minItems": 1}]
+    }
+  }
 }

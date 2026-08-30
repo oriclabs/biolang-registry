@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "kind": "lesson",
+  "id": "oriclabs/bdsr-survival-analysis",
+  "name": "bdsr-survival-analysis",
+  "title": "Survival analysis with lung, colon, and TCGA data",
+  "summary": "A validated BioLang lesson covering all 13 BDSR survival exercises and their figures, including Kaplan-Meier, Cox, TCGA expression, and pan-kidney analysis.",
+  "publisher": "oriclabs",
+  "version": "0.1.0",
+  "status": "stable",
+  "verified": false,
+  "manifest": "https://raw.githubusercontent.com/oriclabs/biolang-lessons/main/lessons/biostatistics/bdsr-survival/lesson.json",
+  "manifestSha256": "18a98ccda8d8fef9cc69936204b1bff2362f388d2599583f153eb7336ace548a",
+  "publishedAt": "2026-08-30",
+  "compatibility": {
+    "biolang": ">=1.5.0",
+    "studio": ">=0.1.0",
+    "runtimes": ["browser", "desktop", "somer"]
+  },
+  "categories": ["statistics", "teaching"],
+  "tags": ["survival", "Kaplan-Meier", "log-rank", "Cox regression", "TCGA", "kidney", "clinical", "exercises"],
+  "discoverability": {
+    "problems": ["analyse time until death or recurrence", "handle censored follow-up data", "estimate survival over time", "compare survival between patient groups", "estimate an adjusted hazard ratio", "assess treatment and prognostic factors", "relate gene expression to patient survival"],
+    "methods": ["Kaplan-Meier estimator", "life table", "log-rank test", "Cox proportional hazards regression", "multivariable Cox model", "risk set estimation", "survival stratification"],
+    "plots": ["survival curve", "Kaplan-Meier plot", "risk table", "censoring marks", "hazard ratio forest plot", "histogram", "box plot", "violin plot", "faceted gene expression plot"],
+    "terms": ["right censoring", "event time", "follow-up time", "median survival", "hazard", "hazard ratio", "proportional hazards", "confidence interval", "number at risk", "recurrence-free survival", "overall survival", "clinical covariate", "TCGA", "RTCGA", "pan-kidney cohort"],
+    "aliases": ["time-to-event analysis", "KM curve", "survival probability", "log rank test", "Cox model", "Cox PH", "relative hazard", "censored observations", "patient outcome analysis"],
+    "functions": ["kaplan_meier", "log_rank_test", "stats_cox_diagnostics", "forest_plot", "histogram", "stats_group_plot", "violin_plot", "plot_grid", "cross_tab", "inner_join", "read_csv"]
+  },
+  "sourceRepository": "https://github.com/oriclabs/biolang-lessons",
+  "licence": "MIT",
+  "validation": "R 4.5.2 survival 3.8-3 and RTCGA content-owned oracle",
+  "series": {
+    "id": "biological-data-science-with-r",
+    "title": "Biological Data Science with R",
+    "url": "https://bdsr.stephenturner.us/",
+    "order": 9,
+    "chapter": "Chapter 9 · Survival analysis"
+  }
+}

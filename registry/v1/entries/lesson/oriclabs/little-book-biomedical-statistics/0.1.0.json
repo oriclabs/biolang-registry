@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "kind": "lesson",
+  "id": "oriclabs/little-book-biomedical-statistics",
+  "name": "little-book-biomedical-statistics",
+  "title": "Biomedical statistics in BioLang",
+  "summary": "Eight connected BioLang lessons on epidemiological measures, study design, trials, and evidence synthesis.",
+  "publisher": "oriclabs",
+  "version": "0.1.0",
+  "status": "preview",
+  "verified": false,
+  "manifest": "https://raw.githubusercontent.com/oriclabs/biolang-lessons/main/lessons/biostatistics/little-book-biomedical/lesson.json",
+  "manifestSha256": "fd8a15d1e8924a211ba90f35e8d189ee1e370f53c1fec52c290aec32865658c2",
+  "publishedAt": "2026-08-28",
+  "compatibility": {
+    "biolang": ">=1.5.0",
+    "studio": ">=0.1.0",
+    "runtimes": [
+      "browser",
+      "desktop",
+      "somer"
+    ]
+  },
+  "categories": [
+    "statistics",
+    "epidemiology",
+    "teaching"
+  ],
+  "tags": [
+    "biomedical statistics",
+    "risk",
+    "odds ratio",
+    "clinical trials",
+    "meta-analysis",
+    "CC BY"
+  ],
+  "sourceRepository": "https://github.com/oriclabs/biolang-lessons",
+  "licence": "CC BY 3.0",
+  "validation": "Eight notebooks execute in BioLang and the source example metrics are pinned in collection tests."
+}

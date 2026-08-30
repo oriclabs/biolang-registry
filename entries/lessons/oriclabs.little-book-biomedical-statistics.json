@@ -1,0 +1,33 @@
+{
+  "schema": 1,
+  "kind": "lesson",
+  "id": "oriclabs/little-book-biomedical-statistics",
+  "name": "little-book-biomedical-statistics",
+  "title": "Biomedical statistics in BioLang",
+  "summary": "One guided medical-statistics course with eight selectable sections on epidemiological measures, study design, trials, and evidence synthesis.",
+  "publisher": "oriclabs",
+  "version": "0.2.0",
+  "status": "preview",
+  "verified": false,
+  "manifest": "https://raw.githubusercontent.com/oriclabs/biolang-lessons/main/lessons/biostatistics/little-book-biomedical/lesson.json",
+  "manifestSha256": "d7855219e5183bb9ba38d40cae290f85b7eb986ffd0b9816feca317f7214dabd",
+  "publishedAt": "2026-08-30",
+  "compatibility": {
+    "biolang": ">=1.5.0",
+    "studio": ">=0.1.0",
+    "runtimes": ["browser", "desktop", "somer"]
+  },
+  "categories": ["statistics", "epidemiology", "teaching"],
+  "tags": ["biomedical statistics", "risk", "odds ratio", "clinical trials", "meta-analysis", "CC BY"],
+  "discoverability": {
+    "problems": ["choose a biomedical study design", "estimate risk and odds ratios", "test categorical association", "adjust for confounding", "analyse matched case-control data", "test a dose-response trend", "plan sample size and power", "combine results across studies", "choose an epidemiological study design", "identify the unit of analysis", "distinguish exposure sampling from outcome sampling", "compare disease occurrence between exposed and unexposed groups", "estimate effect size from a 2x2 table", "test association between categorical variables", "analyse a sparse contingency table", "adjust a categorical association for a confounder", "check whether effects differ across strata", "analyse matched case-control pairs", "test change in paired binary outcomes", "test whether risk changes with increasing dose", "model an ordered exposure trend", "calculate randomized trial sample size", "estimate power for two proportions", "allow for loss to follow-up", "combine effect estimates across studies", "visualize study uncertainty", "assess between-study heterogeneity"],
+    "methods": ["cohort study", "case-control study", "risk ratio", "odds ratio", "chi-square test", "Fisher exact test", "Mantel-Haenszel odds ratio", "Breslow-Day test", "McNemar test", "linear trend regression", "power calculation", "fixed-effect meta-analysis", "matched study", "randomized controlled trial", "meta-analysis", "Wald confidence interval", "Pearson chi-square test", "expected cell count assessment", "Tarone adjustment", "stratified analysis", "matched odds ratio", "continuity correction", "dose-response analysis", "log-odds transformation", "two-proportion sample size", "normal approximation", "inverse-variance weighting", "Cochran Q test"],
+    "plots": ["dose-response plot", "scatter plot", "fitted trend line", "forest plot"],
+    "terms": ["study design", "exposure", "outcome", "risk", "odds", "confidence interval", "confounding", "effect modification", "matched pairs", "dose response", "statistical power", "type I error", "type II error", "heterogeneity", "sampling frame", "temporality", "selection bias", "relative risk", "sample odds ratio", "conditional odds ratio", "observed count", "expected count", "degrees of freedom", "p-value", "effect size", "sparse table", "homogeneity", "common odds ratio", "stratum", "interaction", "matched pair", "discordant pair", "concordant pair", "paired binary data", "conditional analysis", "dose", "response", "monotonic trend", "log odds", "ordered exposure", "slope", "alpha", "attrition", "allocation ratio", "pooled effect", "study weight", "standard error", "odds ratio"],
+    "aliases": ["RR", "OR", "two by two table", "chi squared test", "MH estimate", "paired proportions", "trend test", "RCT planning", "evidence synthesis", "RCT", "observational study", "prospective study", "retrospective study", "risk ratio", "cross-product ratio", "test of independence", "exact test", "categorical association", "adjusted odds ratio", "heterogeneity test", "subgroup analysis", "paired proportions test", "matched 2x2 table", "McNemar chi-square", "exposure-response", "dose effect", "linear trend", "trial size", "power analysis", "required participants", "dropout adjustment", "pooled odds ratio", "inverse variance model", "meta analytic model"],
+    "functions": ["fisher_exact", "chi_square_contingency", "breslow_day_test", "stats_relationship_plot", "lm", "forest_plot", "meta_analysis", "qnorm", "pnorm", "table", "sqrt", "exp", "log", "ceil", "abs", "map"]
+  },
+  "sourceRepository": "https://github.com/oriclabs/biolang-lessons",
+  "licence": "CC BY 3.0",
+  "validation": "Eight selectable sections execute in BioLang and the source example metrics are pinned in collection tests."
+}

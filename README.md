@@ -21,13 +21,22 @@ After publication, clients use:
 https://registry.lang.bio/v1/index.json
 ```
 
-The complete endpoint map is `registry/v1/api.json`. Every document is static JSON, so it can be served from GitHub Pages or a CDN at `registry.lang.bio` without a registry application server. Studio may also accept custom registry URLs and direct manifests. Discovering an entry never installs it, and installing a lesson never downloads its datasets until the user explicitly prepares them.
+The complete endpoint map is `registry/v1/api.json`. Every document is static JSON, so it can be served from GitHub Pages or a CDN at `registry.lang.bio` without a registry application server. Studio may also accept custom registry URLs and direct manifests. Lesson catalogue actions link to the exact `publisher/name@version`; Studio reviews and verifies that manifest before offering an explicit **Install, prepare & run all** action. Merely opening the link never installs content, downloads data, or executes code.
+
+Opening `https://registry.lang.bio/` in a browser shows the searchable human-facing catalogue. Clients and other user interfaces consume the stable `/v1/` JSON endpoints. Catalogue links reuse one named Studio browser tab; selecting other lessons returns to that Studio workspace, where each lesson opens as its own notebook tab. Studio focuses an already-open notebook for the same verified lesson revision and keeps changed revisions separate so edited work is not overwritten.
+
+The public catalogue and Studio deliberately remain two views of one contract. The website is the detailed, shareable discovery surface; Studio adds device-local states and actions such as Available, Installed, Open, Update available, Locally modified and Prepared. Content-kind colours, checksum wording, trust labels, version identity and search text are kept aligned by tests. No account service or dynamic registry backend is required.
 
 The raw GitHub document remains an emergency fallback:
 
 ```text
 https://raw.githubusercontent.com/oriclabs/biolang-registry/main/registry/v1/index.json
 ```
+
+OriClabs teaching manifests and notebooks live in the separate
+[`biolang-lessons`](https://github.com/oriclabs/biolang-lessons) repository.
+One registry entry represents either one notebook or an ordered multi-notebook
+collection; subject discovery comes from its categories and tags.
 
 ## Hosting
 
@@ -75,9 +84,18 @@ Browser clients should keep small files in Cache Storage or OPFS, confirm large 
 
 Verified entries must point to an immutable tag or commit, not `main`, `master`, or `latest`. Preview entries may use a moving branch while content is being prepared, but clients must label them accordingly.
 
+Lesson entries additionally require structured `discoverability` metadata:
+learner problem phrases, statistical or biological methods, plot types,
+important terms, common aliases, and BioLang function names. Registry search,
+Studio, and the CLI all flatten those fields into the same search vocabulary.
+The build rejects future lesson entries with a missing group or empty core
+problem/method/term/alias vocabulary. Plot and function arrays may be empty for
+lessons that genuinely contain neither.
+
 ## What belongs here
 
 - identity, kind, version, publisher, summary, categories and tags;
+- structured lesson discoverability without copying full notebook prose;
 - manifest URL and checksum;
 - BioLang/Studio compatibility and supported runtimes;
 - trust status and publication date.

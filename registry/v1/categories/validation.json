@@ -1,0 +1,53 @@
+{
+  "schema": 1,
+  "category": {
+    "id": "validation",
+    "title": "Validation",
+    "count": 1,
+    "kinds": [
+      "workflow"
+    ]
+  },
+  "entries": [
+    {
+      "schema": 1,
+      "kind": "workflow",
+      "id": "oriclabs/hbc-scrnaseq-validation",
+      "name": "hbc-scrnaseq-validation",
+      "title": "HBC single-cell RNA-seq validation",
+      "summary": "A reproducible BioLang analysis of 29,629 public HBC PBMC cells with an isolated Seurat 5.5.1 black-box comparison.",
+      "publisher": "oriclabs",
+      "version": "1.0.0",
+      "status": "stable",
+      "verified": true,
+      "manifest": "https://raw.githubusercontent.com/oriclabs/biolang-workflows/e87cdef/workflows/single-cell/hbc-course-validation.json",
+      "manifestSha256": "f7de1d64493d1f39964758d4b7cceacbab65fd2e6532d73d079734b2d5b109e7",
+      "publishedAt": "2026-08-28",
+      "compatibility": {
+        "biolang": ">=1.5.0",
+        "studio": ">=0.1.0",
+        "runtimes": [
+          "desktop",
+          "somer",
+          "cli"
+        ]
+      },
+      "categories": [
+        "single-cell",
+        "transcriptomics",
+        "validation"
+      ],
+      "tags": [
+        "HBC",
+        "PBMC",
+        "SCTransform",
+        "Seurat",
+        "integration",
+        "benchmark"
+      ],
+      "sourceRepository": "https://github.com/oriclabs/biolang-workflows",
+      "licence": "MIT",
+      "validation": "29,629-cell release revalidation against a hash-pinned Seurat 5.5.1 oracle"
+    }
+  ]
+}

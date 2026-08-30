@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "kind": "lesson",
+  "id": "oriclabs/bdsr-predictive-influenza",
+  "name": "bdsr-predictive-influenza",
+  "title": "Predicting and forecasting influenza",
+  "summary": "A complete BioLang companion to BDSR chapter 10 using H7N9 and CDC data: EDA, feature engineering, four bootstrap-tuned classifiers, unknown-outcome prediction, and five-year additive forecasts.",
+  "publisher": "oriclabs",
+  "version": "0.1.0",
+  "status": "stable",
+  "verified": false,
+  "manifest": "https://raw.githubusercontent.com/oriclabs/biolang-lessons/main/lessons/biostatistics/bdsr-predictive/lesson.json",
+  "manifestSha256": "55b6c351030eb78d02787e8cec1972d1833826734e0d6f3d57a6f0b335237e73",
+  "publishedAt": "2026-08-30",
+  "compatibility": {
+    "biolang": ">=1.5.0",
+    "studio": ">=0.1.0",
+    "runtimes": ["browser", "desktop", "somer"]
+  },
+  "categories": ["statistics", "epidemiology", "teaching"],
+  "tags": ["predictive modeling", "random forest", "gradient boosting", "elastic net", "kNN", "forecasting", "influenza", "H7N9", "CDC"],
+  "discoverability": {
+    "problems": ["predict a binary clinical outcome", "compare classification algorithms", "rank important predictors", "predict outcomes for new patients", "handle missing predictor values", "engineer features from dates and categories", "forecast seasonal influenza counts", "quantify out-of-sample classification performance"],
+    "methods": ["random forest", "gradient boosting", "elastic net logistic regression", "k-nearest neighbours", "bootstrap resampling", "class probability prediction", "variable importance", "model comparison", "additive time-series forecasting", "Fourier seasonality", "piecewise linear trend"],
+    "plots": ["grouped density plot", "faceted bar chart", "grouped box plot", "event timeline", "bootstrap distribution histogram", "variable importance plot", "resampling box plot", "forecast plot", "forecast uncertainty ribbon", "seasonal components plot"],
+    "terms": ["classification", "feature engineering", "imputation", "training data", "unknown outcome", "reproducible random seed", "accuracy", "kappa", "out-of-bag prediction", "hyperparameter tuning", "time series", "seasonality", "forecast horizon", "prediction interval", "influenza", "H7N9", "CDC ILINet"],
+    "aliases": ["predictive modelling", "predictive modeling", "RF", "GBM", "glmnet", "kNN", "nearest neighbour classifier", "feature importance", "caret model comparison", "Prophet-style forecast", "ILI forecast"],
+    "functions": ["stats_missingness", "grouped_density_plot", "grouped_bar_plot", "grouped_boxplot_plot", "pivot_longer", "event_timeline_plot", "histogram", "predictive_train", "predictive_importance_plot", "predictive_compare", "predictive_resample_plot", "predictive_predict", "seasonal_forecast", "seasonal_forecast_plot", "seasonal_components_plot", "set_seed"]
+  },
+  "sourceRepository": "https://github.com/oriclabs/biolang-lessons",
+  "licence": "MIT",
+  "validation": "R 4.5.2 with current caret 7.0-1, randomForest 4.7-1.2, gbm 2.3.1, glmnet 5.0, kknn 1.4.1, and Prophet 1.1.7 on checksum-pinned data",
+  "series": {
+    "id": "biological-data-science-with-r",
+    "title": "Biological Data Science with R",
+    "url": "https://bdsr.stephenturner.us/",
+    "order": 10,
+    "chapter": "Chapter 10 · Predictive analytics"
+  }
+}

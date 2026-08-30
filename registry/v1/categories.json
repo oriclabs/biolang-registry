@@ -2,11 +2,20 @@
   "schema": 1,
   "categories": [
     {
-      "id": "epidemiology",
-      "title": "Epidemiology",
+      "id": "datasets",
+      "title": "Datasets",
       "count": 1,
       "kinds": [
-        "dataset"
+        "package"
+      ]
+    },
+    {
+      "id": "epidemiology",
+      "title": "Epidemiology",
+      "count": 3,
+      "kinds": [
+        "dataset",
+        "lesson"
       ]
     },
     {
@@ -26,21 +35,47 @@
       ]
     },
     {
+      "id": "single-cell",
+      "title": "Single Cell",
+      "count": 1,
+      "kinds": [
+        "workflow"
+      ]
+    },
+    {
       "id": "statistics",
       "title": "Statistics",
-      "count": 2,
+      "count": 6,
       "kinds": [
         "dataset",
-        "lesson"
+        "lesson",
+        "package"
       ]
     },
     {
       "id": "teaching",
       "title": "Teaching",
-      "count": 2,
+      "count": 6,
       "kinds": [
         "dataset",
-        "lesson"
+        "lesson",
+        "package"
+      ]
+    },
+    {
+      "id": "transcriptomics",
+      "title": "Transcriptomics",
+      "count": 1,
+      "kinds": [
+        "workflow"
+      ]
+    },
+    {
+      "id": "validation",
+      "title": "Validation",
+      "count": 1,
+      "kinds": [
+        "workflow"
       ]
     }
   ]
