@@ -3,7 +3,7 @@
   "category": {
     "id": "teaching",
     "title": "Teaching",
-    "count": 20,
+    "count": 22,
     "kinds": [
       "dataset",
       "lesson",
@@ -64,6 +64,96 @@
         ],
         "fileCount": 2,
         "totalBytes": 735046
+      }
+    },
+    {
+      "schema": 1,
+      "kind": "lesson",
+      "id": "oriclabs/bdsr-lung-survival",
+      "name": "bdsr-lung-survival",
+      "title": "Biological Data Science with R: Lung-Cancer Survival",
+      "summary": "A strict port of the BDSR lung-cancer worked example using the exact survival::lung observations, matching Kaplan-Meier results, and three byte-for-byte canonical plots.",
+      "publisher": "oriclabs",
+      "version": "1.0.0",
+      "status": "stable",
+      "verified": false,
+      "manifest": "https://raw.githubusercontent.com/oriclabs/biolang-lessons/main/lessons/biostatistics/bdsr-lung-survival/lesson.json",
+      "manifestSha256": "c6b50fd888532fe813d9c49baaf39bc0a7c36d9ffd682afb74c2cc7d36f500ac",
+      "publishedAt": "2026-09-03",
+      "compatibility": {
+        "biolang": ">=1.5.0",
+        "studio": ">=0.1.0",
+        "runtimes": [
+          "browser",
+          "desktop",
+          "somer"
+        ]
+      },
+      "categories": [
+        "biostatistics",
+        "clinical-research",
+        "data-analysis",
+        "visualization",
+        "teaching"
+      ],
+      "tags": [
+        "survival",
+        "Kaplan-Meier",
+        "lung cancer",
+        "CC BY-NC"
+      ],
+      "discoverability": {
+        "problems": [
+          "estimate survival with censored lung-cancer follow-up",
+          "compare survival between male and female patients"
+        ],
+        "methods": [
+          "Kaplan-Meier estimator",
+          "life table",
+          "log-rank test",
+          "right-censoring transformation"
+        ],
+        "plots": [
+          "Kaplan-Meier plot",
+          "survival curve",
+          "confidence interval",
+          "risk table",
+          "censoring marks"
+        ],
+        "terms": [
+          "lung cancer",
+          "survival probability",
+          "censoring",
+          "median survival",
+          "number at risk",
+          "sex-stratified survival",
+          "survfit",
+          "survminer"
+        ],
+        "aliases": [
+          "BDSR survival",
+          "lung survival",
+          "KM curve",
+          "time-to-event analysis"
+        ],
+        "functions": [
+          "read_csv",
+          "kaplan_meier",
+          "log_rank_test",
+          "filter",
+          "map",
+          "table"
+        ]
+      },
+      "sourceRepository": "https://github.com/oriclabs/biolang-lessons",
+      "licence": "CC BY-NC 4.0; data LGPL (>= 2)",
+      "validation": "Exact 228-row source data; source medians and log-rank result; three byte-for-byte canonical PNGs",
+      "series": {
+        "id": "biological-data-science-with-r",
+        "title": "Biological Data Science with R",
+        "url": "https://bdsr.stephenturner.us/",
+        "order": 11,
+        "chapter": "Survival Analysis - lung-cancer worked example"
       }
     },
     {
@@ -633,6 +723,121 @@
         "url": "https://datacarpentry.github.io/R-ecology-lesson/",
         "order": 4,
         "chapter": "Working with Data - group_by, summarize, and arrange"
+      }
+    },
+    {
+      "schema": 1,
+      "kind": "lesson",
+      "id": "oriclabs/dataviz-protocols",
+      "name": "dataviz-protocols",
+      "title": "DataViz Protocols for Wet-Lab Scientists",
+      "summary": "Three connected strict-fidelity protocols using exact experimental tables and byte-for-byte canonical figures: protein spectra, a differential-expression volcano plot, and co-expression correlations.",
+      "publisher": "oriclabs",
+      "version": "1.0.0",
+      "status": "stable",
+      "verified": false,
+      "manifest": "https://raw.githubusercontent.com/oriclabs/biolang-lessons/main/lessons/visualization/dataviz-protocols/lesson.json",
+      "manifestSha256": "c59bd413fcbfcebd8734892e5cbd4eb32827385d2b770d322e194cf12620e2e5",
+      "publishedAt": "2026-09-03",
+      "compatibility": {
+        "biolang": ">=1.5.0",
+        "studio": ">=0.1.0",
+        "runtimes": [
+          "browser",
+          "desktop",
+          "somer"
+        ]
+      },
+      "categories": [
+        "visualization",
+        "bioinformatics",
+        "data-analysis",
+        "teaching"
+      ],
+      "tags": [
+        "visualization",
+        "wet lab",
+        "differential expression",
+        "fluorescent proteins",
+        "CC BY-NC-SA"
+      ],
+      "discoverability": {
+        "problems": [
+          "compare fluorescent-protein excitation and emission spectra",
+          "inspect normalized spectral measurements",
+          "identify significant differential-expression hits",
+          "rank genes for volcano-plot annotation",
+          "compare fluorescent-protein co-expression systems",
+          "calculate panel-wise complete-pair correlations"
+        ],
+        "methods": [
+          "spectral data inspection",
+          "long-format visualization preparation",
+          "dual-threshold classification",
+          "Manhattan-distance hit ranking",
+          "complete-pair filtering",
+          "Pearson correlation",
+          "squared correlation by experimental panel"
+        ],
+        "plots": [
+          "filled spectral line plot",
+          "volcano plot",
+          "faceted scatter plot with through-origin fits"
+        ],
+        "terms": [
+          "FPbase",
+          "fluorescent protein",
+          "excitation spectrum",
+          "emission spectrum",
+          "wavelength",
+          "normalized intensity",
+          "differential expression",
+          "log2 fold change",
+          "minus log10 p-value",
+          "increased gene",
+          "decreased gene",
+          "top hit",
+          "CFP",
+          "YFP",
+          "dual promoter",
+          "IRES",
+          "2A peptide",
+          "co-expression",
+          "R-squared"
+        ],
+        "aliases": [
+          "DataViz Protocol 1",
+          "fluorescent protein spectra",
+          "FP spectra",
+          "DataViz Protocol 14",
+          "differential gene volcano",
+          "omics hit plot",
+          "DataViz Protocol 16",
+          "fluorescent protein correlation",
+          "coexpression scatterplots"
+        ],
+        "functions": [
+          "read_csv",
+          "filter",
+          "col",
+          "min",
+          "max",
+          "mutate",
+          "arrange",
+          "abs",
+          "cor",
+          "table"
+        ]
+      },
+      "sourceRepository": "https://github.com/oriclabs/biolang-lessons",
+      "licence": "CC BY-NC-SA 4.0",
+      "validation": "Three exact source CSVs, exact thresholds and panel correlations, three byte-for-byte canonical PNGs, and Previous/Next navigation",
+      "series": {
+        "id": "dataviz-protocols",
+        "title": "DataViz protocols",
+        "url": "https://joachimgoedhart.github.io/DataViz-protocols/",
+        "order": 1,
+        "chapter": "Selected Protocols 1, 14, and 16"
       }
     },
     {
