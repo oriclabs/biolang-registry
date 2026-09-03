@@ -4,7 +4,7 @@
     {
       "id": "bioinformatics",
       "title": "Bioinformatics",
-      "count": 7,
+      "count": 8,
       "kinds": [
         "lesson"
       ]
@@ -12,7 +12,15 @@
     {
       "id": "biostatistics",
       "title": "Biostatistics",
-      "count": 7,
+      "count": 8,
+      "kinds": [
+        "lesson"
+      ]
+    },
+    {
+      "id": "cell-biology",
+      "title": "Cell Biology",
+      "count": 1,
       "kinds": [
         "lesson"
       ]
@@ -20,7 +28,7 @@
     {
       "id": "clinical-research",
       "title": "Clinical Research",
-      "count": 3,
+      "count": 4,
       "kinds": [
         "lesson"
       ]
@@ -28,7 +36,15 @@
     {
       "id": "data-analysis",
       "title": "Data Analysis",
-      "count": 7,
+      "count": 12,
+      "kinds": [
+        "lesson"
+      ]
+    },
+    {
+      "id": "data-quality",
+      "title": "Data Quality",
+      "count": 1,
       "kinds": [
         "lesson"
       ]
@@ -44,7 +60,7 @@
     {
       "id": "ecology",
       "title": "Ecology",
-      "count": 4,
+      "count": 5,
       "kinds": [
         "lesson"
       ]
@@ -52,7 +68,7 @@
     {
       "id": "epidemiology",
       "title": "Epidemiology",
-      "count": 5,
+      "count": 6,
       "kinds": [
         "dataset",
         "lesson"
@@ -64,6 +80,22 @@
       "count": 1,
       "kinds": [
         "provider"
+      ]
+    },
+    {
+      "id": "fisheries",
+      "title": "Fisheries",
+      "count": 1,
+      "kinds": [
+        "lesson"
+      ]
+    },
+    {
+      "id": "forecasting",
+      "title": "Forecasting",
+      "count": 1,
+      "kinds": [
+        "lesson"
       ]
     },
     {
@@ -83,9 +115,33 @@
       ]
     },
     {
+      "id": "machine-learning",
+      "title": "Machine Learning",
+      "count": 2,
+      "kinds": [
+        "lesson"
+      ]
+    },
+    {
+      "id": "microbiology",
+      "title": "Microbiology",
+      "count": 1,
+      "kinds": [
+        "lesson"
+      ]
+    },
+    {
       "id": "phylogenetics",
       "title": "Phylogenetics",
       "count": 2,
+      "kinds": [
+        "lesson"
+      ]
+    },
+    {
+      "id": "reproducibility",
+      "title": "Reproducibility",
+      "count": 1,
       "kinds": [
         "lesson"
       ]
@@ -109,7 +165,7 @@
     {
       "id": "statistics",
       "title": "Statistics",
-      "count": 7,
+      "count": 9,
       "kinds": [
         "dataset",
         "lesson",
@@ -119,7 +175,7 @@
     {
       "id": "teaching",
       "title": "Teaching",
-      "count": 22,
+      "count": 27,
       "kinds": [
         "dataset",
         "lesson",

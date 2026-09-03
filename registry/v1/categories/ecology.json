@@ -3,7 +3,7 @@
   "category": {
     "id": "ecology",
     "title": "Ecology",
-    "count": 4,
+    "count": 5,
     "kinds": [
       "lesson"
     ]
@@ -167,6 +167,90 @@
         "url": "https://datacarpentry.github.io/R-ecology-lesson/",
         "order": 4,
         "chapter": "Working with Data - group_by, summarize, and arrange"
+      }
+    },
+    {
+      "schema": 1,
+      "kind": "lesson",
+      "id": "oriclabs/fish-forecast-anchovy",
+      "name": "fish-forecast-anchovy",
+      "title": "Fisheries Catch Forecasting: Anchovy Trend",
+      "summary": "An exact real-data port of the opening Hellenic anchovy regression and forecast, including both byte-for-byte canonical source plots.",
+      "publisher": "oriclabs",
+      "version": "1.0.0",
+      "status": "stable",
+      "verified": false,
+      "manifest": "https://raw.githubusercontent.com/oriclabs/biolang-lessons/main/lessons/ecology/fish-forecast-anchovy/lesson.json",
+      "manifestSha256": "a35ccfd3e2f21a4391a66b290a59dce9965c2783760cb8dbd0de3eb63768b5ec",
+      "publishedAt": "2026-09-03",
+      "compatibility": {
+        "biolang": ">=1.5.0",
+        "studio": ">=0.1.0",
+        "runtimes": [
+          "browser",
+          "desktop",
+          "somer"
+        ]
+      },
+      "categories": [
+        "ecology",
+        "fisheries",
+        "forecasting",
+        "data-analysis",
+        "teaching"
+      ],
+      "tags": [
+        "ecology",
+        "fisheries",
+        "forecasting",
+        "regression",
+        "public domain"
+      ],
+      "discoverability": {
+        "problems": [
+          "forecast annual anchovy landings",
+          "fit a trend to fisheries catch data"
+        ],
+        "methods": [
+          "time-varying regression",
+          "log-linear regression",
+          "one-step forecast"
+        ],
+        "plots": [
+          "fish landings time series",
+          "forecast plot"
+        ],
+        "terms": [
+          "anchovy",
+          "Hellenic waters",
+          "fisheries",
+          "annual catch",
+          "metric tons",
+          "forecast"
+        ],
+        "aliases": [
+          "Fish Forecast Bookdown",
+          "anchovy forecast",
+          "Hellenic landings"
+        ],
+        "functions": [
+          "read_csv",
+          "filter",
+          "map",
+          "log",
+          "lm",
+          "exp"
+        ]
+      },
+      "sourceRepository": "https://github.com/oriclabs/biolang-lessons",
+      "licence": "Public domain / Unlicense",
+      "validation": "Exact 44-row source table, source regression and forecast, and two byte-for-byte canonical PNGs",
+      "series": {
+        "id": "fisheries-catch-forecasting",
+        "title": "Fisheries Catch Forecasting",
+        "url": "https://fish-forecast.github.io/Fish-Forecast-Bookdown/",
+        "order": 1,
+        "chapter": "Chapters 1–2 - anchovy time-varying regression"
       }
     },
     {

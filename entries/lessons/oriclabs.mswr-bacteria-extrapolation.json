@@ -1,0 +1,30 @@
+{
+  "schema": 1,
+  "kind": "lesson",
+  "id": "oriclabs/mswr-bacteria-extrapolation",
+  "name": "mswr-bacteria-extrapolation",
+  "title": "Modern Statistics with R: Bacterial Growth Extrapolation",
+  "summary": "The exact 241 bacterial optical-density measurements and the same observations 45–90 linear-model window used to demonstrate unsafe extrapolation.",
+  "publisher": "oriclabs",
+  "version": "1.0.0",
+  "status": "stable",
+  "verified": false,
+  "manifest": "https://raw.githubusercontent.com/oriclabs/biolang-lessons/main/lessons/microbiology/mswr-bacteria-extrapolation/lesson.json",
+  "manifestSha256": "4fc86567dde2ba054c90c62e898b0369445e659749305d0037c0f3d6f54539a6",
+  "publishedAt": "2026-09-03",
+  "compatibility": {"biolang": ">=1.5.0", "studio": ">=0.1.0", "runtimes": ["browser", "desktop", "somer"]},
+  "categories": ["microbiology", "statistics", "machine-learning", "data-analysis", "teaching"],
+  "tags": ["microbiology", "bacterial growth", "regression", "extrapolation", "CC BY-NC-SA"],
+  "discoverability": {
+    "problems": ["show why a bacterial-growth model should not be extrapolated", "fit exponential-phase optical-density data"],
+    "methods": ["linear regression", "training-range selection", "extrapolation diagnostic"],
+    "plots": [],
+    "terms": ["bacteria", "optical density", "growth curve", "exponential phase", "training range", "extrapolation"],
+    "aliases": ["MSwR bacteria", "bacterial OD", "growth extrapolation"],
+    "functions": ["read_csv", "split", "int", "range", "map", "lm", "table"]
+  },
+  "sourceRepository": "https://github.com/oriclabs/biolang-lessons",
+  "licence": "CC BY-NC-SA 4.0",
+  "validation": "Exact 241-row source CSV, exact observations 45–90 model window and fitted geometry; selected source section has no rendered canonical figure",
+  "series": {"id": "modern-statistics-with-r", "title": "Modern Statistics with R", "url": "https://www.modernstatisticswithr.com/", "order": 8, "chapter": "Predictive modelling - extrapolation"}
+}

@@ -3,12 +3,96 @@
   "category": {
     "id": "bioinformatics",
     "title": "Bioinformatics",
-    "count": 7,
+    "count": 8,
     "kinds": [
       "lesson"
     ]
   },
   "entries": [
+    {
+      "schema": 1,
+      "kind": "lesson",
+      "id": "oriclabs/aml4td-cell-tabularization",
+      "name": "aml4td-cell-tabularization",
+      "title": "AML4TD: From Cell Images to a Table",
+      "summary": "The exact four-cell biological feature table and both byte-for-byte canonical microscopy and segmentation images.",
+      "publisher": "oriclabs",
+      "version": "1.0.0",
+      "status": "stable",
+      "verified": false,
+      "manifest": "https://raw.githubusercontent.com/oriclabs/biolang-lessons/main/lessons/machine-learning/aml4td-cell-tabularization/lesson.json",
+      "manifestSha256": "62bd20b3c33bb84ed0401466d046a7673b5a8ce18a0a26ba8934ee2be55fd753",
+      "publishedAt": "2026-09-03",
+      "compatibility": {
+        "biolang": ">=1.5.0",
+        "studio": ">=0.1.0",
+        "runtimes": [
+          "browser",
+          "desktop",
+          "somer"
+        ]
+      },
+      "categories": [
+        "machine-learning",
+        "cell-biology",
+        "bioinformatics",
+        "data-analysis",
+        "teaching"
+      ],
+      "tags": [
+        "machine learning",
+        "tabular data",
+        "microscopy",
+        "cell biology",
+        "CC BY-NC-SA"
+      ],
+      "discoverability": {
+        "problems": [
+          "represent segmented biological images as tabular predictors",
+          "inspect cell morphology features"
+        ],
+        "methods": [
+          "image segmentation",
+          "feature extraction",
+          "tabular representation"
+        ],
+        "plots": [
+          "fluorescence microscopy image",
+          "segmented cell image"
+        ],
+        "terms": [
+          "cell",
+          "nucleus",
+          "eccentricity",
+          "area",
+          "intensity",
+          "cytoskeleton",
+          "DNA"
+        ],
+        "aliases": [
+          "AML4TD cells",
+          "cell image tabularization",
+          "biological image features"
+        ],
+        "functions": [
+          "read_csv",
+          "col",
+          "filter",
+          "mean",
+          "table"
+        ]
+      },
+      "sourceRepository": "https://github.com/oriclabs/biolang-lessons",
+      "licence": "CC BY-NC-SA 4.0",
+      "validation": "Mechanical serialization of the exact four-row table and two byte-for-byte canonical source images",
+      "series": {
+        "id": "applied-machine-learning-for-tabular-data",
+        "title": "Applied Machine Learning for Tabular Data",
+        "url": "https://aml4td.org/",
+        "order": 1,
+        "chapter": "Introduction - biological images to tabular predictors"
+      }
+    },
     {
       "schema": 1,
       "kind": "lesson",

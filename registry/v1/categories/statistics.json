@@ -3,7 +3,7 @@
   "category": {
     "id": "statistics",
     "title": "Statistics",
-    "count": 7,
+    "count": 9,
     "kinds": [
       "dataset",
       "lesson",
@@ -361,6 +361,88 @@
     {
       "schema": 1,
       "kind": "lesson",
+      "id": "oriclabs/mswr-bacteria-extrapolation",
+      "name": "mswr-bacteria-extrapolation",
+      "title": "Modern Statistics with R: Bacterial Growth Extrapolation",
+      "summary": "The exact 241 bacterial optical-density measurements and the same observations 45–90 linear-model window used to demonstrate unsafe extrapolation.",
+      "publisher": "oriclabs",
+      "version": "1.0.0",
+      "status": "stable",
+      "verified": false,
+      "manifest": "https://raw.githubusercontent.com/oriclabs/biolang-lessons/main/lessons/microbiology/mswr-bacteria-extrapolation/lesson.json",
+      "manifestSha256": "4fc86567dde2ba054c90c62e898b0369445e659749305d0037c0f3d6f54539a6",
+      "publishedAt": "2026-09-03",
+      "compatibility": {
+        "biolang": ">=1.5.0",
+        "studio": ">=0.1.0",
+        "runtimes": [
+          "browser",
+          "desktop",
+          "somer"
+        ]
+      },
+      "categories": [
+        "microbiology",
+        "statistics",
+        "machine-learning",
+        "data-analysis",
+        "teaching"
+      ],
+      "tags": [
+        "microbiology",
+        "bacterial growth",
+        "regression",
+        "extrapolation",
+        "CC BY-NC-SA"
+      ],
+      "discoverability": {
+        "problems": [
+          "show why a bacterial-growth model should not be extrapolated",
+          "fit exponential-phase optical-density data"
+        ],
+        "methods": [
+          "linear regression",
+          "training-range selection",
+          "extrapolation diagnostic"
+        ],
+        "plots": [],
+        "terms": [
+          "bacteria",
+          "optical density",
+          "growth curve",
+          "exponential phase",
+          "training range",
+          "extrapolation"
+        ],
+        "aliases": [
+          "MSwR bacteria",
+          "bacterial OD",
+          "growth extrapolation"
+        ],
+        "functions": [
+          "read_csv",
+          "split",
+          "int",
+          "range",
+          "map",
+          "lm",
+          "table"
+        ]
+      },
+      "sourceRepository": "https://github.com/oriclabs/biolang-lessons",
+      "licence": "CC BY-NC-SA 4.0",
+      "validation": "Exact 241-row source CSV, exact observations 45–90 model window and fitted geometry; selected source section has no rendered canonical figure",
+      "series": {
+        "id": "modern-statistics-with-r",
+        "title": "Modern Statistics with R",
+        "url": "https://www.modernstatisticswithr.com/",
+        "order": 8,
+        "chapter": "Predictive modelling - extrapolation"
+      }
+    },
+    {
+      "schema": 1,
+      "kind": "lesson",
       "id": "oriclabs/rmrwr-sample-size",
       "name": "rmrwr-sample-size",
       "title": "Reproducible Medical Research with R: Sample Size",
@@ -592,6 +674,89 @@
         "url": "https://stats4nr.com/",
         "order": 14,
         "chapter": "Chapter 14 - Exercise 14.1 red-pine ordinary least squares"
+      }
+    },
+    {
+      "schema": 1,
+      "kind": "lesson",
+      "id": "oriclabs/validate-cars-rules",
+      "name": "validate-cars-rules",
+      "title": "Data Validation Cookbook: Cars Rules",
+      "summary": "The exact R cars data, four original validation rules, published counts and violating rows, and byte-for-byte canonical result plot.",
+      "publisher": "oriclabs",
+      "version": "1.0.0",
+      "status": "stable",
+      "verified": false,
+      "manifest": "https://raw.githubusercontent.com/oriclabs/biolang-lessons/main/lessons/data-quality/validate-cars-rules/lesson.json",
+      "manifestSha256": "04bd9d6d71d2178b39a64bc3147235ee9fa89010ab60d1df1fb15229e00ab6ff",
+      "publishedAt": "2026-09-03",
+      "compatibility": {
+        "biolang": ">=1.5.0",
+        "studio": ">=0.1.0",
+        "runtimes": [
+          "browser",
+          "desktop",
+          "somer"
+        ]
+      },
+      "categories": [
+        "data-quality",
+        "statistics",
+        "data-analysis",
+        "reproducibility",
+        "teaching"
+      ],
+      "tags": [
+        "data quality",
+        "validation",
+        "correlation",
+        "cars",
+        "CC BY-NC"
+      ],
+      "discoverability": {
+        "problems": [
+          "validate record-level data constraints",
+          "find rows violating data-quality rules"
+        ],
+        "methods": [
+          "data validation",
+          "record-wise rule",
+          "aggregate rule",
+          "correlation check"
+        ],
+        "plots": [
+          "validation result summary"
+        ],
+        "terms": [
+          "cars",
+          "speed",
+          "stopping distance",
+          "passes",
+          "fails",
+          "validation rule"
+        ],
+        "aliases": [
+          "validate cookbook",
+          "cars validation",
+          "data quality rules"
+        ],
+        "functions": [
+          "read_csv",
+          "filter",
+          "cor",
+          "table",
+          "nrow"
+        ]
+      },
+      "sourceRepository": "https://github.com/oriclabs/biolang-lessons",
+      "licence": "CC BY-NC 4.0",
+      "validation": "Exact 50-row cars data, four published rule results, violating rows, and byte-for-byte canonical PNG",
+      "series": {
+        "id": "data-validation-cookbook",
+        "title": "The Data Validation Cookbook",
+        "url": "https://data-cleaning.github.io/validate/",
+        "order": 1,
+        "chapter": "Introduction - a quick example"
       }
     },
     {

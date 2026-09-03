@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "kind": "lesson",
+  "id": "oriclabs/beyondmlr-birdkeeping",
+  "name": "beyondmlr-birdkeeping",
+  "title": "Beyond MLR: Birdkeeping and Lung Cancer",
+  "summary": "The exact 147-person case-control data, unadjusted birdkeeping odds ratio, and source years-smoking-adjusted logistic model.",
+  "publisher": "oriclabs",
+  "version": "1.0.0",
+  "status": "stable",
+  "verified": false,
+  "manifest": "https://raw.githubusercontent.com/oriclabs/biolang-lessons/main/lessons/epidemiology/beyondmlr-birdkeeping/lesson.json",
+  "manifestSha256": "8ec9884108653ae17704c2fae3ec26b7f06e3543a86e02e890a6a4d310f6d11e",
+  "publishedAt": "2026-09-03",
+  "compatibility": {
+    "biolang": ">=1.5.0",
+    "studio": ">=0.1.0",
+    "runtimes": [
+      "browser",
+      "desktop",
+      "somer"
+    ]
+  },
+  "categories": [
+    "epidemiology",
+    "biostatistics",
+    "clinical-research",
+    "data-analysis",
+    "teaching"
+  ],
+  "tags": [
+    "epidemiology",
+    "logistic regression",
+    "case-control",
+    "lung cancer",
+    "CC BY-NC-SA"
+  ],
+  "discoverability": {
+    "problems": [
+      "estimate lung-cancer odds associated with birdkeeping",
+      "adjust an exposure odds ratio for smoking duration"
+    ],
+    "methods": [
+      "case-control study",
+      "two-way table",
+      "odds ratio",
+      "logistic regression"
+    ],
+    "plots": [],
+    "terms": [
+      "birdkeeping",
+      "lung cancer",
+      "smoking history",
+      "confounding",
+      "retrospective observational study"
+    ],
+    "aliases": [
+      "BeyondMLR birdkeeping",
+      "pet birds lung cancer",
+      "birdkeeping case-control"
+    ],
+    "functions": [
+      "read_csv",
+      "filter",
+      "glm",
+      "exp",
+      "table"
+    ]
+  },
+  "sourceRepository": "https://github.com/oriclabs/biolang-lessons",
+  "licence": "CC BY-NC-SA 4.0",
+  "validation": "Exact source CSV, exact 2x2 counts and odds ratio, and source model 4 coefficients; source exercise has no canonical answer figure",
+  "series": {
+    "id": "beyond-multiple-linear-regression",
+    "title": "Beyond Multiple Linear Regression",
+    "url": "https://bookdown.org/roback/bookdown-BeyondMLR/",
+    "order": 6,
+    "chapter": "Chapter 6 - birdkeeping and lung cancer"
+  }
+}

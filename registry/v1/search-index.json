@@ -22,6 +22,64 @@
       "text": "oriclabs/nhanes-bdsr-teaching nhanes bdsr teaching extract a compact nhanes table and dictionary for learning exploratory and inferential statistics. oriclabs statistics epidemiology teaching nhanes survey eda regression csv oriclabs/direct-https csv tabular homo sapiens     "
     },
     {
+      "id": "oriclabs/aml4td-cell-tabularization",
+      "version": "1.0.0",
+      "kind": "lesson",
+      "title": "AML4TD: From Cell Images to a Table",
+      "summary": "The exact four-cell biological feature table and both byte-for-byte canonical microscopy and segmentation images.",
+      "categories": [
+        "machine-learning",
+        "cell-biology",
+        "bioinformatics",
+        "data-analysis",
+        "teaching"
+      ],
+      "tags": [
+        "machine learning",
+        "tabular data",
+        "microscopy",
+        "cell biology",
+        "CC BY-NC-SA"
+      ],
+      "discoverability": {
+        "problems": [
+          "represent segmented biological images as tabular predictors",
+          "inspect cell morphology features"
+        ],
+        "methods": [
+          "image segmentation",
+          "feature extraction",
+          "tabular representation"
+        ],
+        "plots": [
+          "fluorescence microscopy image",
+          "segmented cell image"
+        ],
+        "terms": [
+          "cell",
+          "nucleus",
+          "eccentricity",
+          "area",
+          "intensity",
+          "cytoskeleton",
+          "DNA"
+        ],
+        "aliases": [
+          "AML4TD cells",
+          "cell image tabularization",
+          "biological image features"
+        ],
+        "functions": [
+          "read_csv",
+          "col",
+          "filter",
+          "mean",
+          "table"
+        ]
+      },
+      "text": "oriclabs/aml4td-cell-tabularization aml4td: from cell images to a table the exact four-cell biological feature table and both byte-for-byte canonical microscopy and segmentation images. oriclabs machine-learning cell-biology bioinformatics data-analysis teaching machine learning tabular data microscopy cell biology cc by-nc-sa represent segmented biological images as tabular predictors inspect cell morphology features image segmentation feature extraction tabular representation fluorescence microscopy image segmented cell image cell nucleus eccentricity area intensity cytoskeleton dna aml4td cells cell image tabularization biological image features read_csv col filter mean table    applied-machine-learning-for-tabular-data applied machine learning for tabular data introduction - biological images to tabular predictors"
+    },
+    {
       "id": "oriclabs/bdsr-lung-survival",
       "version": "1.0.0",
       "kind": "lesson",
@@ -258,6 +316,60 @@
         ]
       },
       "text": "oriclabs/bdsr-nhanes-regression biological data science with r: nhanes linear regression exact adult height-weight model with both byte-for-byte published regression figures. oriclabs biostatistics epidemiology teaching visualization biostatistics nhanes linear regression cc by-nc model adult weight from height recognize unsafe model extrapolation ordinary least squares complete-case analysis range-aware interpretation height-weight regression with confidence band regression extrapolation plot nhanes linear regression slope intercept r squared extrapolation bdsr linear model nhanes height weight adult weight regression read_csv filter drop_null lm    biological-data-science-with-r biological data science with r essential statistics - simple linear regression"
+    },
+    {
+      "id": "oriclabs/beyondmlr-birdkeeping",
+      "version": "1.0.0",
+      "kind": "lesson",
+      "title": "Beyond MLR: Birdkeeping and Lung Cancer",
+      "summary": "The exact 147-person case-control data, unadjusted birdkeeping odds ratio, and source years-smoking-adjusted logistic model.",
+      "categories": [
+        "epidemiology",
+        "biostatistics",
+        "clinical-research",
+        "data-analysis",
+        "teaching"
+      ],
+      "tags": [
+        "epidemiology",
+        "logistic regression",
+        "case-control",
+        "lung cancer",
+        "CC BY-NC-SA"
+      ],
+      "discoverability": {
+        "problems": [
+          "estimate lung-cancer odds associated with birdkeeping",
+          "adjust an exposure odds ratio for smoking duration"
+        ],
+        "methods": [
+          "case-control study",
+          "two-way table",
+          "odds ratio",
+          "logistic regression"
+        ],
+        "plots": [],
+        "terms": [
+          "birdkeeping",
+          "lung cancer",
+          "smoking history",
+          "confounding",
+          "retrospective observational study"
+        ],
+        "aliases": [
+          "BeyondMLR birdkeeping",
+          "pet birds lung cancer",
+          "birdkeeping case-control"
+        ],
+        "functions": [
+          "read_csv",
+          "filter",
+          "glm",
+          "exp",
+          "table"
+        ]
+      },
+      "text": "oriclabs/beyondmlr-birdkeeping beyond mlr: birdkeeping and lung cancer the exact 147-person case-control data, unadjusted birdkeeping odds ratio, and source years-smoking-adjusted logistic model. oriclabs epidemiology biostatistics clinical-research data-analysis teaching epidemiology logistic regression case-control lung cancer cc by-nc-sa estimate lung-cancer odds associated with birdkeeping adjust an exposure odds ratio for smoking duration case-control study two-way table odds ratio logistic regression birdkeeping lung cancer smoking history confounding retrospective observational study beyondmlr birdkeeping pet birds lung cancer birdkeeping case-control read_csv filter glm exp table    beyond-multiple-linear-regression beyond multiple linear regression chapter 6 - birdkeeping and lung cancer"
     },
     {
       "id": "oriclabs/computational-genomics-intervals",
@@ -560,6 +672,64 @@
         ]
       },
       "text": "oriclabs/dataviz-protocols dataviz protocols for wet-lab scientists three connected strict-fidelity protocols using exact experimental tables and byte-for-byte canonical figures: protein spectra, a differential-expression volcano plot, and co-expression correlations. oriclabs visualization bioinformatics data-analysis teaching visualization wet lab differential expression fluorescent proteins cc by-nc-sa compare fluorescent-protein excitation and emission spectra inspect normalized spectral measurements identify significant differential-expression hits rank genes for volcano-plot annotation compare fluorescent-protein co-expression systems calculate panel-wise complete-pair correlations spectral data inspection long-format visualization preparation dual-threshold classification manhattan-distance hit ranking complete-pair filtering pearson correlation squared correlation by experimental panel filled spectral line plot volcano plot faceted scatter plot with through-origin fits fpbase fluorescent protein excitation spectrum emission spectrum wavelength normalized intensity differential expression log2 fold change minus log10 p-value increased gene decreased gene top hit cfp yfp dual promoter ires 2a peptide co-expression r-squared dataviz protocol 1 fluorescent protein spectra fp spectra dataviz protocol 14 differential gene volcano omics hit plot dataviz protocol 16 fluorescent protein correlation coexpression scatterplots read_csv filter col min max mutate arrange abs cor table    dataviz-protocols dataviz protocols selected protocols 1, 14, and 16"
+    },
+    {
+      "id": "oriclabs/fish-forecast-anchovy",
+      "version": "1.0.0",
+      "kind": "lesson",
+      "title": "Fisheries Catch Forecasting: Anchovy Trend",
+      "summary": "An exact real-data port of the opening Hellenic anchovy regression and forecast, including both byte-for-byte canonical source plots.",
+      "categories": [
+        "ecology",
+        "fisheries",
+        "forecasting",
+        "data-analysis",
+        "teaching"
+      ],
+      "tags": [
+        "ecology",
+        "fisheries",
+        "forecasting",
+        "regression",
+        "public domain"
+      ],
+      "discoverability": {
+        "problems": [
+          "forecast annual anchovy landings",
+          "fit a trend to fisheries catch data"
+        ],
+        "methods": [
+          "time-varying regression",
+          "log-linear regression",
+          "one-step forecast"
+        ],
+        "plots": [
+          "fish landings time series",
+          "forecast plot"
+        ],
+        "terms": [
+          "anchovy",
+          "Hellenic waters",
+          "fisheries",
+          "annual catch",
+          "metric tons",
+          "forecast"
+        ],
+        "aliases": [
+          "Fish Forecast Bookdown",
+          "anchovy forecast",
+          "Hellenic landings"
+        ],
+        "functions": [
+          "read_csv",
+          "filter",
+          "map",
+          "log",
+          "lm",
+          "exp"
+        ]
+      },
+      "text": "oriclabs/fish-forecast-anchovy fisheries catch forecasting: anchovy trend an exact real-data port of the opening hellenic anchovy regression and forecast, including both byte-for-byte canonical source plots. oriclabs ecology fisheries forecasting data-analysis teaching ecology fisheries forecasting regression public domain forecast annual anchovy landings fit a trend to fisheries catch data time-varying regression log-linear regression one-step forecast fish landings time series forecast plot anchovy hellenic waters fisheries annual catch metric tons forecast fish forecast bookdown anchovy forecast hellenic landings read_csv filter map log lm exp    fisheries-catch-forecasting fisheries catch forecasting chapters 1–2 - anchovy time-varying regression"
     },
     {
       "id": "oriclabs/little-book-biomedical-statistics",
@@ -1031,6 +1201,62 @@
       "text": "oriclabs/msmb-discrete-models modern statistics for modern biology: discrete models an exact port of the opening poisson and binomial calculations with byte-for-byte copies of the published chapter figures. oriclabs statistics biostatistics teaching statistics probability poisson binomial cc by-nc-sa model mutation counts calculate an exact event-count probability compare outcomes in repeated binary trials poisson probability mass binomial probability mass discrete generative modeling poisson probability bar plot binomial probability bar plot poisson distribution binomial distribution probability mass function mutation count bernoulli trial msmb chapter 1 discrete probability models generative models dpois dbinom range map table    modern-statistics-for-modern-biology modern statistics for modern biology chapter 1 - opening poisson and binomial examples"
     },
     {
+      "id": "oriclabs/mswr-bacteria-extrapolation",
+      "version": "1.0.0",
+      "kind": "lesson",
+      "title": "Modern Statistics with R: Bacterial Growth Extrapolation",
+      "summary": "The exact 241 bacterial optical-density measurements and the same observations 45–90 linear-model window used to demonstrate unsafe extrapolation.",
+      "categories": [
+        "microbiology",
+        "statistics",
+        "machine-learning",
+        "data-analysis",
+        "teaching"
+      ],
+      "tags": [
+        "microbiology",
+        "bacterial growth",
+        "regression",
+        "extrapolation",
+        "CC BY-NC-SA"
+      ],
+      "discoverability": {
+        "problems": [
+          "show why a bacterial-growth model should not be extrapolated",
+          "fit exponential-phase optical-density data"
+        ],
+        "methods": [
+          "linear regression",
+          "training-range selection",
+          "extrapolation diagnostic"
+        ],
+        "plots": [],
+        "terms": [
+          "bacteria",
+          "optical density",
+          "growth curve",
+          "exponential phase",
+          "training range",
+          "extrapolation"
+        ],
+        "aliases": [
+          "MSwR bacteria",
+          "bacterial OD",
+          "growth extrapolation"
+        ],
+        "functions": [
+          "read_csv",
+          "split",
+          "int",
+          "range",
+          "map",
+          "lm",
+          "table"
+        ]
+      },
+      "text": "oriclabs/mswr-bacteria-extrapolation modern statistics with r: bacterial growth extrapolation the exact 241 bacterial optical-density measurements and the same observations 45–90 linear-model window used to demonstrate unsafe extrapolation. oriclabs microbiology statistics machine-learning data-analysis teaching microbiology bacterial growth regression extrapolation cc by-nc-sa show why a bacterial-growth model should not be extrapolated fit exponential-phase optical-density data linear regression training-range selection extrapolation diagnostic bacteria optical density growth curve exponential phase training range extrapolation mswr bacteria bacterial od growth extrapolation read_csv split int range map lm table    modern-statistics-with-r modern statistics with r predictive modelling - extrapolation"
+    },
+    {
       "id": "oriclabs/rmrwr-blood-storage-columns",
       "version": "1.0.0",
       "kind": "lesson",
@@ -1350,6 +1576,63 @@
         ]
       },
       "text": "oriclabs/treedata-snp-traits phylogenetic tree data integration: snp and trait panels a one-to-one port of chapter 7 figure 7.2 using the exact official tree, metadata, allele, trait, derived snp, and published figure assets. oriclabs phylogenetics visualization teaching phylogenetics snp data integration cc by-nc-sa align snps with a phylogenetic tree attach sample metadata to tree tips compare traits in phylogenetic order tip-label keyed integration reference-allele comparison gap exclusion tree-aligned data panels phylogenetic tree with snp and trait panels phylogenetic tree snp trait tip metadata facet plot newick tree data integration treedata book figure 7.2 ggtree facet plot tree snp trait example read_text nw_parse tree_leaves read_csv filter unique    treedata-book data integration, manipulation and visualization of phylogenetic trees chapter 7 - figure 7.2"
+    },
+    {
+      "id": "oriclabs/validate-cars-rules",
+      "version": "1.0.0",
+      "kind": "lesson",
+      "title": "Data Validation Cookbook: Cars Rules",
+      "summary": "The exact R cars data, four original validation rules, published counts and violating rows, and byte-for-byte canonical result plot.",
+      "categories": [
+        "data-quality",
+        "statistics",
+        "data-analysis",
+        "reproducibility",
+        "teaching"
+      ],
+      "tags": [
+        "data quality",
+        "validation",
+        "correlation",
+        "cars",
+        "CC BY-NC"
+      ],
+      "discoverability": {
+        "problems": [
+          "validate record-level data constraints",
+          "find rows violating data-quality rules"
+        ],
+        "methods": [
+          "data validation",
+          "record-wise rule",
+          "aggregate rule",
+          "correlation check"
+        ],
+        "plots": [
+          "validation result summary"
+        ],
+        "terms": [
+          "cars",
+          "speed",
+          "stopping distance",
+          "passes",
+          "fails",
+          "validation rule"
+        ],
+        "aliases": [
+          "validate cookbook",
+          "cars validation",
+          "data quality rules"
+        ],
+        "functions": [
+          "read_csv",
+          "filter",
+          "cor",
+          "table",
+          "nrow"
+        ]
+      },
+      "text": "oriclabs/validate-cars-rules data validation cookbook: cars rules the exact r cars data, four original validation rules, published counts and violating rows, and byte-for-byte canonical result plot. oriclabs data-quality statistics data-analysis reproducibility teaching data quality validation correlation cars cc by-nc validate record-level data constraints find rows violating data-quality rules data validation record-wise rule aggregate rule correlation check validation result summary cars speed stopping distance passes fails validation rule validate cookbook cars validation data quality rules read_csv filter cor table nrow    data-validation-cookbook the data validation cookbook introduction - a quick example"
     },
     {
       "id": "oriclabs/statdata",

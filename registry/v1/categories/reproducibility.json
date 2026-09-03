@@ -1,0 +1,96 @@
+{
+  "schema": 1,
+  "category": {
+    "id": "reproducibility",
+    "title": "Reproducibility",
+    "count": 1,
+    "kinds": [
+      "lesson"
+    ]
+  },
+  "entries": [
+    {
+      "schema": 1,
+      "kind": "lesson",
+      "id": "oriclabs/validate-cars-rules",
+      "name": "validate-cars-rules",
+      "title": "Data Validation Cookbook: Cars Rules",
+      "summary": "The exact R cars data, four original validation rules, published counts and violating rows, and byte-for-byte canonical result plot.",
+      "publisher": "oriclabs",
+      "version": "1.0.0",
+      "status": "stable",
+      "verified": false,
+      "manifest": "https://raw.githubusercontent.com/oriclabs/biolang-lessons/main/lessons/data-quality/validate-cars-rules/lesson.json",
+      "manifestSha256": "04bd9d6d71d2178b39a64bc3147235ee9fa89010ab60d1df1fb15229e00ab6ff",
+      "publishedAt": "2026-09-03",
+      "compatibility": {
+        "biolang": ">=1.5.0",
+        "studio": ">=0.1.0",
+        "runtimes": [
+          "browser",
+          "desktop",
+          "somer"
+        ]
+      },
+      "categories": [
+        "data-quality",
+        "statistics",
+        "data-analysis",
+        "reproducibility",
+        "teaching"
+      ],
+      "tags": [
+        "data quality",
+        "validation",
+        "correlation",
+        "cars",
+        "CC BY-NC"
+      ],
+      "discoverability": {
+        "problems": [
+          "validate record-level data constraints",
+          "find rows violating data-quality rules"
+        ],
+        "methods": [
+          "data validation",
+          "record-wise rule",
+          "aggregate rule",
+          "correlation check"
+        ],
+        "plots": [
+          "validation result summary"
+        ],
+        "terms": [
+          "cars",
+          "speed",
+          "stopping distance",
+          "passes",
+          "fails",
+          "validation rule"
+        ],
+        "aliases": [
+          "validate cookbook",
+          "cars validation",
+          "data quality rules"
+        ],
+        "functions": [
+          "read_csv",
+          "filter",
+          "cor",
+          "table",
+          "nrow"
+        ]
+      },
+      "sourceRepository": "https://github.com/oriclabs/biolang-lessons",
+      "licence": "CC BY-NC 4.0",
+      "validation": "Exact 50-row cars data, four published rule results, violating rows, and byte-for-byte canonical PNG",
+      "series": {
+        "id": "data-validation-cookbook",
+        "title": "The Data Validation Cookbook",
+        "url": "https://data-cleaning.github.io/validate/",
+        "order": 1,
+        "chapter": "Introduction - a quick example"
+      }
+    }
+  ]
+}
