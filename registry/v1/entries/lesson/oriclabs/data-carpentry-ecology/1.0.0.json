@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "kind": "lesson",
+  "id": "oriclabs/data-carpentry-ecology",
+  "name": "data-carpentry-ecology",
+  "title": "Data Analysis and Visualization in R for Ecologists: Grouped Summaries",
+  "summary": "A source-faithful port of the species-by-sex mean-weight workflow using the exact cleaned Portal Project teaching CSV.",
+  "publisher": "oriclabs",
+  "version": "1.0.0",
+  "status": "stable",
+  "verified": false,
+  "manifest": "https://raw.githubusercontent.com/oriclabs/biolang-lessons/main/lessons/ecology/data-carpentry-ecology/lesson.json",
+  "manifestSha256": "6963b9e434b9534aa5e227f164f1884db67fd6ebf35a34014c11f8c7cb1c4766",
+  "publishedAt": "2026-09-03",
+  "compatibility": {
+    "biolang": ">=1.5.0",
+    "studio": ">=0.1.0",
+    "runtimes": [
+      "browser",
+      "desktop",
+      "somer"
+    ]
+  },
+  "categories": [
+    "ecology",
+    "data-analysis",
+    "teaching"
+  ],
+  "tags": [
+    "ecology",
+    "data wrangling",
+    "grouped summaries",
+    "CC BY"
+  ],
+  "discoverability": {
+    "problems": [
+      "summarize ecological observations by species and sex",
+      "remove missing weights before aggregation",
+      "rank ecological groups by mean weight"
+    ],
+    "methods": [
+      "split-apply-combine",
+      "grouped mean",
+      "missing-value filtering"
+    ],
+    "plots": [],
+    "terms": [
+      "ecological survey",
+      "species",
+      "sex",
+      "mean weight",
+      "grouped summary",
+      "Portal Project"
+    ],
+    "aliases": [
+      "Data Carpentry ecology",
+      "R ecology lesson",
+      "species weight summary"
+    ],
+    "functions": [
+      "read_csv",
+      "drop_null",
+      "mutate",
+      "group_by",
+      "summarize",
+      "arrange"
+    ]
+  },
+  "sourceRepository": "https://github.com/oriclabs/biolang-lessons",
+  "licence": "CC BY 4.0",
+  "validation": "Exact 1,223,055-byte source CSV and SHA-256; row count, group count, ordering, counts, and means checked against R 4.6.1 with dplyr",
+  "series": {
+    "id": "data-analysis-visualization-r-ecologists",
+    "title": "Data Analysis and Visualization in R for Ecologists",
+    "url": "https://datacarpentry.github.io/R-ecology-lesson/",
+    "order": 4,
+    "chapter": "Working with Data - group_by, summarize, and arrange"
+  }
+}

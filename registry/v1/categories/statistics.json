@@ -3,7 +3,7 @@
   "category": {
     "id": "statistics",
     "title": "Statistics",
-    "count": 6,
+    "count": 7,
     "kinds": [
       "dataset",
       "lesson",
@@ -69,412 +69,16 @@
     {
       "schema": 1,
       "kind": "lesson",
-      "id": "oriclabs/bdsr-essential-statistics",
-      "name": "bdsr-essential-statistics",
-      "title": "Essential statistics with NHANES",
-      "summary": "An independent BioLang companion to Stephen D. Turner's BDSR essential-statistics chapter.",
-      "publisher": "oriclabs",
-      "version": "0.1.0",
-      "status": "stable",
-      "verified": false,
-      "manifest": "https://raw.githubusercontent.com/oriclabs/biolang-lessons/main/lessons/biostatistics/bdsr-essential/lesson.json",
-      "manifestSha256": "0a110dce3a44afab51b714bf860ac4884fb63ef01972e21e7652252be5a99418",
-      "publishedAt": "2026-08-27",
-      "compatibility": {
-        "biolang": ">=1.5.0",
-        "studio": ">=0.1.0",
-        "runtimes": [
-          "browser",
-          "desktop",
-          "somer"
-        ]
-      },
-      "categories": [
-        "statistics",
-        "teaching"
-      ],
-      "tags": [
-        "statistics",
-        "NHANES",
-        "EDA",
-        "inference",
-        "regression"
-      ],
-      "discoverability": {
-        "problems": [
-          "summarize a biomedical dataset",
-          "find missing values and unusual observations",
-          "compare two independent groups",
-          "compare more than two groups",
-          "measure relationships between continuous variables",
-          "test association between categorical variables",
-          "adjust an outcome for several predictors",
-          "estimate sample size and statistical power",
-          "diagnose a fitted statistical model"
-        ],
-        "methods": [
-          "descriptive statistics",
-          "exploratory data analysis",
-          "Welch t-test",
-          "Wilcoxon rank-sum test",
-          "analysis of variance",
-          "Tukey HSD",
-          "linear regression",
-          "multiple regression",
-          "chi-square test",
-          "Fisher exact test",
-          "logistic regression",
-          "power analysis"
-        ],
-        "plots": [
-          "histogram",
-          "scatter plot",
-          "regression plot",
-          "confidence band",
-          "box plot",
-          "mosaic plot",
-          "residual plot"
-        ],
-        "terms": [
-          "mean",
-          "median",
-          "quartile",
-          "variance",
-          "standard deviation",
-          "missing data",
-          "outlier",
-          "distribution",
-          "continuous variable",
-          "categorical variable",
-          "contingency table",
-          "p-value",
-          "effect size",
-          "confidence interval",
-          "batch effect",
-          "biological replicate",
-          "technical replicate",
-          "independent observations"
-        ],
-        "aliases": [
-          "EDA",
-          "t test",
-          "Student t test",
-          "Mann-Whitney U test",
-          "rank sum test",
-          "ANOVA",
-          "OLS",
-          "generalized linear model",
-          "GLM",
-          "chi squared test",
-          "sample size calculation"
-        ],
-        "functions": [
-          "read_csv",
-          "summary",
-          "mean",
-          "median",
-          "quantile",
-          "variance",
-          "stdev",
-          "histogram",
-          "stats_relationship_plot",
-          "ttest",
-          "wilcoxon",
-          "anova",
-          "tukey_hsd",
-          "lm",
-          "stats_group_plot",
-          "cross_tab",
-          "chi_square_contingency",
-          "fisher_exact",
-          "mosaic_plot",
-          "stats_glm_diagnostics",
-          "stats_multiple_linear_diagnostics",
-          "power_t_test",
-          "power_prop_test"
-        ]
-      },
-      "sourceRepository": "https://github.com/oriclabs/biolang-lessons",
-      "licence": "MIT",
-      "validation": "content-owned",
-      "series": {
-        "id": "biological-data-science-with-r",
-        "title": "Biological Data Science with R",
-        "url": "https://bdsr.stephenturner.us/",
-        "order": 8,
-        "chapter": "Chapter 8 · Essential statistics"
-      }
-    },
-    {
-      "schema": 1,
-      "kind": "lesson",
-      "id": "oriclabs/bdsr-predictive-influenza",
-      "name": "bdsr-predictive-influenza",
-      "title": "Predicting and forecasting influenza",
-      "summary": "A complete BioLang companion to BDSR chapter 10 using H7N9 and CDC data: EDA, feature engineering, four bootstrap-tuned classifiers, unknown-outcome prediction, and five-year additive forecasts.",
-      "publisher": "oriclabs",
-      "version": "0.1.0",
-      "status": "stable",
-      "verified": false,
-      "manifest": "https://raw.githubusercontent.com/oriclabs/biolang-lessons/main/lessons/biostatistics/bdsr-predictive/lesson.json",
-      "manifestSha256": "55b6c351030eb78d02787e8cec1972d1833826734e0d6f3d57a6f0b335237e73",
-      "publishedAt": "2026-08-30",
-      "compatibility": {
-        "biolang": ">=1.5.0",
-        "studio": ">=0.1.0",
-        "runtimes": [
-          "browser",
-          "desktop",
-          "somer"
-        ]
-      },
-      "categories": [
-        "statistics",
-        "epidemiology",
-        "teaching"
-      ],
-      "tags": [
-        "predictive modeling",
-        "random forest",
-        "gradient boosting",
-        "elastic net",
-        "kNN",
-        "forecasting",
-        "influenza",
-        "H7N9",
-        "CDC"
-      ],
-      "discoverability": {
-        "problems": [
-          "predict a binary clinical outcome",
-          "compare classification algorithms",
-          "rank important predictors",
-          "predict outcomes for new patients",
-          "handle missing predictor values",
-          "engineer features from dates and categories",
-          "forecast seasonal influenza counts",
-          "quantify out-of-sample classification performance"
-        ],
-        "methods": [
-          "random forest",
-          "gradient boosting",
-          "elastic net logistic regression",
-          "k-nearest neighbours",
-          "bootstrap resampling",
-          "class probability prediction",
-          "variable importance",
-          "model comparison",
-          "additive time-series forecasting",
-          "Fourier seasonality",
-          "piecewise linear trend"
-        ],
-        "plots": [
-          "grouped density plot",
-          "faceted bar chart",
-          "grouped box plot",
-          "event timeline",
-          "bootstrap distribution histogram",
-          "variable importance plot",
-          "resampling box plot",
-          "forecast plot",
-          "forecast uncertainty ribbon",
-          "seasonal components plot"
-        ],
-        "terms": [
-          "classification",
-          "feature engineering",
-          "imputation",
-          "training data",
-          "unknown outcome",
-          "reproducible random seed",
-          "accuracy",
-          "kappa",
-          "out-of-bag prediction",
-          "hyperparameter tuning",
-          "time series",
-          "seasonality",
-          "forecast horizon",
-          "prediction interval",
-          "influenza",
-          "H7N9",
-          "CDC ILINet"
-        ],
-        "aliases": [
-          "predictive modelling",
-          "predictive modeling",
-          "RF",
-          "GBM",
-          "glmnet",
-          "kNN",
-          "nearest neighbour classifier",
-          "feature importance",
-          "caret model comparison",
-          "Prophet-style forecast",
-          "ILI forecast"
-        ],
-        "functions": [
-          "stats_missingness",
-          "grouped_density_plot",
-          "grouped_bar_plot",
-          "grouped_boxplot_plot",
-          "pivot_longer",
-          "event_timeline_plot",
-          "histogram",
-          "predictive_train",
-          "predictive_importance_plot",
-          "predictive_compare",
-          "predictive_resample_plot",
-          "predictive_predict",
-          "seasonal_forecast",
-          "seasonal_forecast_plot",
-          "seasonal_components_plot",
-          "set_seed"
-        ]
-      },
-      "sourceRepository": "https://github.com/oriclabs/biolang-lessons",
-      "licence": "MIT",
-      "validation": "R 4.5.2 with current caret 7.0-1, randomForest 4.7-1.2, gbm 2.3.1, glmnet 5.0, kknn 1.4.1, and Prophet 1.1.7 on checksum-pinned data",
-      "series": {
-        "id": "biological-data-science-with-r",
-        "title": "Biological Data Science with R",
-        "url": "https://bdsr.stephenturner.us/",
-        "order": 10,
-        "chapter": "Chapter 10 · Predictive analytics"
-      }
-    },
-    {
-      "schema": 1,
-      "kind": "lesson",
-      "id": "oriclabs/bdsr-survival-analysis",
-      "name": "bdsr-survival-analysis",
-      "title": "Survival analysis with lung, colon, and TCGA data",
-      "summary": "A validated BioLang lesson covering all 13 BDSR survival exercises and their figures, including Kaplan-Meier, Cox, TCGA expression, and pan-kidney analysis.",
-      "publisher": "oriclabs",
-      "version": "0.1.0",
-      "status": "stable",
-      "verified": false,
-      "manifest": "https://raw.githubusercontent.com/oriclabs/biolang-lessons/main/lessons/biostatistics/bdsr-survival/lesson.json",
-      "manifestSha256": "18a98ccda8d8fef9cc69936204b1bff2362f388d2599583f153eb7336ace548a",
-      "publishedAt": "2026-08-30",
-      "compatibility": {
-        "biolang": ">=1.5.0",
-        "studio": ">=0.1.0",
-        "runtimes": [
-          "browser",
-          "desktop",
-          "somer"
-        ]
-      },
-      "categories": [
-        "statistics",
-        "teaching"
-      ],
-      "tags": [
-        "survival",
-        "Kaplan-Meier",
-        "log-rank",
-        "Cox regression",
-        "TCGA",
-        "kidney",
-        "clinical",
-        "exercises"
-      ],
-      "discoverability": {
-        "problems": [
-          "analyse time until death or recurrence",
-          "handle censored follow-up data",
-          "estimate survival over time",
-          "compare survival between patient groups",
-          "estimate an adjusted hazard ratio",
-          "assess treatment and prognostic factors",
-          "relate gene expression to patient survival"
-        ],
-        "methods": [
-          "Kaplan-Meier estimator",
-          "life table",
-          "log-rank test",
-          "Cox proportional hazards regression",
-          "multivariable Cox model",
-          "risk set estimation",
-          "survival stratification"
-        ],
-        "plots": [
-          "survival curve",
-          "Kaplan-Meier plot",
-          "risk table",
-          "censoring marks",
-          "hazard ratio forest plot",
-          "histogram",
-          "box plot",
-          "violin plot",
-          "faceted gene expression plot"
-        ],
-        "terms": [
-          "right censoring",
-          "event time",
-          "follow-up time",
-          "median survival",
-          "hazard",
-          "hazard ratio",
-          "proportional hazards",
-          "confidence interval",
-          "number at risk",
-          "recurrence-free survival",
-          "overall survival",
-          "clinical covariate",
-          "TCGA",
-          "RTCGA",
-          "pan-kidney cohort"
-        ],
-        "aliases": [
-          "time-to-event analysis",
-          "KM curve",
-          "survival probability",
-          "log rank test",
-          "Cox model",
-          "Cox PH",
-          "relative hazard",
-          "censored observations",
-          "patient outcome analysis"
-        ],
-        "functions": [
-          "kaplan_meier",
-          "log_rank_test",
-          "stats_cox_diagnostics",
-          "forest_plot",
-          "histogram",
-          "stats_group_plot",
-          "violin_plot",
-          "plot_grid",
-          "cross_tab",
-          "inner_join",
-          "read_csv"
-        ]
-      },
-      "sourceRepository": "https://github.com/oriclabs/biolang-lessons",
-      "licence": "MIT",
-      "validation": "R 4.5.2 survival 3.8-3 and RTCGA content-owned oracle",
-      "series": {
-        "id": "biological-data-science-with-r",
-        "title": "Biological Data Science with R",
-        "url": "https://bdsr.stephenturner.us/",
-        "order": 9,
-        "chapter": "Chapter 9 · Survival analysis"
-      }
-    },
-    {
-      "schema": 1,
-      "kind": "lesson",
       "id": "oriclabs/little-book-biomedical-statistics",
       "name": "little-book-biomedical-statistics",
       "title": "Biomedical statistics in BioLang",
-      "summary": "One guided medical-statistics course with eight selectable sections on epidemiological measures, study design, trials, and evidence synthesis.",
+      "summary": "One guided medical-statistics course with eight selectable sections and in-notebook Previous/Next navigation across epidemiological measures, study design, trials, and evidence synthesis.",
       "publisher": "oriclabs",
       "version": "0.2.0",
       "status": "preview",
       "verified": false,
       "manifest": "https://raw.githubusercontent.com/oriclabs/biolang-lessons/main/lessons/biostatistics/little-book-biomedical/lesson.json",
-      "manifestSha256": "d7855219e5183bb9ba38d40cae290f85b7eb986ffd0b9816feca317f7214dabd",
+      "manifestSha256": "e8418effaaedd86dec18b9de398a14ccd2149dd9df8b6ee2c5e01289796c341e",
       "publishedAt": "2026-08-30",
       "compatibility": {
         "biolang": ">=1.5.0",
@@ -671,7 +275,324 @@
       },
       "sourceRepository": "https://github.com/oriclabs/biolang-lessons",
       "licence": "CC BY 3.0",
-      "validation": "Eight selectable sections execute in BioLang and the source example metrics are pinned in collection tests."
+      "validation": "Eight selectable sections execute in BioLang; adjacent in-notebook Previous/Next links are structurally checked; source example metrics are pinned in collection tests."
+    },
+    {
+      "schema": 1,
+      "kind": "lesson",
+      "id": "oriclabs/msmb-discrete-models",
+      "name": "msmb-discrete-models",
+      "title": "Modern Statistics for Modern Biology: Discrete Models",
+      "summary": "An exact port of the opening Poisson and binomial calculations with byte-for-byte copies of the published chapter figures.",
+      "publisher": "oriclabs",
+      "version": "1.0.0",
+      "status": "stable",
+      "verified": false,
+      "manifest": "https://raw.githubusercontent.com/oriclabs/biolang-lessons/main/lessons/biostatistics/msmb-discrete-models/lesson.json",
+      "manifestSha256": "321407bc1d7de523007d475862b9b674f972b49e102082f2dcf8d310598c14ac",
+      "publishedAt": "2026-09-03",
+      "compatibility": {
+        "biolang": ">=1.5.0",
+        "studio": ">=0.1.0",
+        "runtimes": [
+          "browser",
+          "desktop",
+          "somer"
+        ]
+      },
+      "categories": [
+        "statistics",
+        "biostatistics",
+        "teaching"
+      ],
+      "tags": [
+        "statistics",
+        "probability",
+        "Poisson",
+        "binomial",
+        "CC BY-NC-SA"
+      ],
+      "discoverability": {
+        "problems": [
+          "model mutation counts",
+          "calculate an exact event-count probability",
+          "compare outcomes in repeated binary trials"
+        ],
+        "methods": [
+          "Poisson probability mass",
+          "binomial probability mass",
+          "discrete generative modeling"
+        ],
+        "plots": [
+          "Poisson probability bar plot",
+          "binomial probability bar plot"
+        ],
+        "terms": [
+          "Poisson distribution",
+          "binomial distribution",
+          "probability mass function",
+          "mutation count",
+          "Bernoulli trial"
+        ],
+        "aliases": [
+          "MSMB chapter 1",
+          "discrete probability models",
+          "generative models"
+        ],
+        "functions": [
+          "dpois",
+          "dbinom",
+          "range",
+          "map",
+          "table"
+        ]
+      },
+      "sourceRepository": "https://github.com/oriclabs/biolang-lessons",
+      "licence": "CC BY-NC-SA 4.0",
+      "validation": "Published R probabilities reproduced within 1e-11; both PNGs are byte-for-byte copies of the published chapter assets",
+      "series": {
+        "id": "modern-statistics-for-modern-biology",
+        "title": "Modern Statistics for Modern Biology",
+        "url": "https://www.huber.embl.de/msmb/",
+        "order": 1,
+        "chapter": "Chapter 1 - Opening Poisson and binomial examples"
+      }
+    },
+    {
+      "schema": 1,
+      "kind": "lesson",
+      "id": "oriclabs/rmrwr-sample-size",
+      "name": "rmrwr-sample-size",
+      "title": "Reproducible Medical Research with R: Sample Size",
+      "summary": "A source-mapped BioLang port of the opening two-arm A1c sample-size and constrained-power example.",
+      "publisher": "oriclabs",
+      "version": "1.0.0",
+      "status": "stable",
+      "verified": false,
+      "manifest": "https://raw.githubusercontent.com/oriclabs/biolang-lessons/main/lessons/biostatistics/rmrwr-sample-size/lesson.json",
+      "manifestSha256": "99391c70d48e22c89cec4f1057553a94818bf318b60fcff1ac6c89734fcaada1",
+      "publishedAt": "2026-09-03",
+      "compatibility": {
+        "biolang": ">=1.5.0",
+        "studio": ">=0.1.0",
+        "runtimes": [
+          "browser",
+          "desktop",
+          "somer"
+        ]
+      },
+      "categories": [
+        "statistics",
+        "clinical-research",
+        "teaching"
+      ],
+      "tags": [
+        "sample size",
+        "power",
+        "two-sample t test",
+        "clinical research",
+        "CC0"
+      ],
+      "discoverability": {
+        "problems": [
+          "plan a two-arm clinical study",
+          "inflate sample size for participant dropout",
+          "calculate achieved power with a fixed budget"
+        ],
+        "methods": [
+          "Cohen effect size",
+          "two-sample t-test power",
+          "attrition inflation"
+        ],
+        "plots": [],
+        "terms": [
+          "sample size",
+          "statistical power",
+          "Cohen d",
+          "alpha",
+          "dropout",
+          "participants per arm"
+        ],
+        "aliases": [
+          "clinical trial planning",
+          "pwr t test",
+          "A1c study example"
+        ],
+        "functions": [
+          "power_t_test",
+          "abs"
+        ]
+      },
+      "sourceRepository": "https://github.com/oriclabs/biolang-lessons",
+      "licence": "MIT",
+      "validation": "BioLang sample size and achieved power checked against the source pwr.t.test inputs; the published 45-per-arm/90-total attrition result is reproduced exactly and its arithmetic inconsistency is disclosed",
+      "series": {
+        "id": "reproducible-medical-research-with-r",
+        "title": "Reproducible Medical Research with R",
+        "url": "https://peter-higgins-rmrwr.share.connect.posit.cloud/",
+        "order": 69,
+        "chapter": "Sample Size Calculations - opening continuous endpoint example"
+      }
+    },
+    {
+      "schema": 1,
+      "kind": "lesson",
+      "id": "oriclabs/stats4nr-fishing-dispersion",
+      "name": "stats4nr-fishing-dispersion",
+      "title": "Statistics in Natural Resources: Fishing-Count Dispersion",
+      "summary": "A one-to-one port of the fishing-count distribution check using exact package data, published summary values, and the byte-for-byte source histogram.",
+      "publisher": "oriclabs",
+      "version": "1.0.0",
+      "status": "stable",
+      "verified": false,
+      "manifest": "https://raw.githubusercontent.com/oriclabs/biolang-lessons/main/lessons/ecology/stats4nr-fishing-dispersion/lesson.json",
+      "manifestSha256": "1ede647d0980e7991679fc349ff20e9eafb8e751f43bb6728a7666f23d3599c4",
+      "publishedAt": "2026-09-03",
+      "compatibility": {
+        "biolang": ">=1.5.0",
+        "studio": ">=0.1.0",
+        "runtimes": [
+          "browser",
+          "desktop",
+          "somer"
+        ]
+      },
+      "categories": [
+        "ecology",
+        "statistics",
+        "teaching"
+      ],
+      "tags": [
+        "ecology",
+        "count data",
+        "overdispersion",
+        "CC BY-NC-SA"
+      ],
+      "discoverability": {
+        "problems": [
+          "diagnose overdispersion in wildlife count data",
+          "measure excess zeros in fishing catches",
+          "inspect a count response before regression"
+        ],
+        "methods": [
+          "mean-variance comparison",
+          "zero-frequency analysis",
+          "count-data exploratory analysis"
+        ],
+        "plots": [
+          "fish-catch histogram"
+        ],
+        "terms": [
+          "count data",
+          "overdispersion",
+          "zero inflation",
+          "Poisson assumption",
+          "fishing success",
+          "variance-to-mean ratio"
+        ],
+        "aliases": [
+          "Stats4NR fishing case study",
+          "fishing count dispersion",
+          "natural resources count data"
+        ],
+        "functions": [
+          "read_csv",
+          "mean",
+          "variance",
+          "filter",
+          "nrow"
+        ]
+      },
+      "sourceRepository": "https://github.com/oriclabs/biolang-lessons",
+      "licence": "CC BY-NC-SA 4.0; package data CC0",
+      "validation": "Exact official 250-row fishing object and byte-for-byte source histogram; mean 3.296, sample variance 135.373879518072, and 56.8% zero catches reproduced",
+      "series": {
+        "id": "statistics-in-natural-resources",
+        "title": "Statistics in Natural Resources: Applications with R",
+        "url": "https://stats4nr.com/",
+        "order": 13,
+        "chapter": "Chapter 13 - Fishing count distribution and dispersion"
+      }
+    },
+    {
+      "schema": 1,
+      "kind": "lesson",
+      "id": "oriclabs/stats4nr-redpine-ols",
+      "name": "stats4nr-redpine-ols",
+      "title": "Statistics in Natural Resources: Red-Pine OLS",
+      "summary": "A bounded one-to-one Exercise 14.1 port using 450 real tree observations and exact correlation, OLS, and AIC results.",
+      "publisher": "oriclabs",
+      "version": "1.0.0",
+      "status": "stable",
+      "verified": false,
+      "manifest": "https://raw.githubusercontent.com/oriclabs/biolang-lessons/main/lessons/ecology/stats4nr-redpine-ols/lesson.json",
+      "manifestSha256": "81a8f0f02181a92ea7a37352647b2f6eea31b721131aa13e2b6dd4d442561112",
+      "publishedAt": "2026-09-03",
+      "compatibility": {
+        "biolang": ">=1.5.0",
+        "studio": ">=0.1.0",
+        "runtimes": [
+          "browser",
+          "desktop",
+          "somer"
+        ]
+      },
+      "categories": [
+        "ecology",
+        "statistics",
+        "data-analysis",
+        "teaching"
+      ],
+      "tags": [
+        "ecology",
+        "forestry",
+        "linear regression",
+        "CC BY-NC-SA"
+      ],
+      "discoverability": {
+        "problems": [
+          "predict tree height from diameter",
+          "fit ordinary least squares to forestry data",
+          "calculate Pearson correlation for tree measurements"
+        ],
+        "methods": [
+          "Pearson correlation",
+          "simple linear regression",
+          "Akaike information criterion"
+        ],
+        "plots": [],
+        "terms": [
+          "red pine",
+          "Cloquet Forestry Center",
+          "diameter at breast height",
+          "tree height",
+          "OLS",
+          "AIC"
+        ],
+        "aliases": [
+          "Stats4NR redpine",
+          "red pine height diameter",
+          "forestry OLS exercise"
+        ],
+        "functions": [
+          "read_csv",
+          "cor",
+          "lm",
+          "map",
+          "sum",
+          "log"
+        ]
+      },
+      "sourceRepository": "https://github.com/oriclabs/biolang-lessons",
+      "licence": "CC BY-NC-SA 4.0; package data CC0",
+      "validation": "Exact 450-row field dataset, Pearson correlation, OLS coefficients, R squared, and AIC; source table intercept typo disclosed",
+      "series": {
+        "id": "statistics-in-natural-resources",
+        "title": "Statistics in Natural Resources: Applications with R",
+        "url": "https://stats4nr.com/",
+        "order": 14,
+        "chapter": "Chapter 14 - Exercise 14.1 red-pine ordinary least squares"
+      }
     },
     {
       "schema": 1,

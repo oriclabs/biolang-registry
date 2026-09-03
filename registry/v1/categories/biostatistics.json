@@ -1,70 +1,14 @@
 {
   "schema": 1,
   "category": {
-    "id": "epidemiology",
-    "title": "Epidemiology",
-    "count": 5,
+    "id": "biostatistics",
+    "title": "Biostatistics",
+    "count": 6,
     "kinds": [
-      "dataset",
       "lesson"
     ]
   },
   "entries": [
-    {
-      "schema": 1,
-      "kind": "dataset",
-      "id": "oriclabs/nhanes-bdsr-teaching",
-      "name": "nhanes-bdsr-teaching",
-      "title": "NHANES BDSR teaching extract",
-      "summary": "A compact NHANES table and dictionary for learning exploratory and inferential statistics.",
-      "publisher": "oriclabs",
-      "version": "1.0.0",
-      "status": "preview",
-      "verified": false,
-      "manifest": "https://raw.githubusercontent.com/oriclabs/biolang-statistics/main/datasets/nhanes-bdsr-teaching/dataset.json",
-      "manifestSha256": "2f82a4321c64f3ee566ef3866c5cb75e6d9a91b15b3ac2f695453cb95e044d82",
-      "publishedAt": "2026-08-28",
-      "compatibility": {
-        "biolang": ">=1.5.0",
-        "studio": ">=0.1.0",
-        "runtimes": [
-          "browser",
-          "desktop",
-          "somer",
-          "cli"
-        ]
-      },
-      "categories": [
-        "statistics",
-        "epidemiology",
-        "teaching"
-      ],
-      "tags": [
-        "NHANES",
-        "survey",
-        "EDA",
-        "regression",
-        "CSV"
-      ],
-      "sourceRepository": "https://github.com/oriclabs/biolang-statistics",
-      "licence": "Source terms apply",
-      "validation": "content-owned",
-      "dataset": {
-        "provider": "oriclabs/direct-https",
-        "access": "public",
-        "formats": [
-          "csv"
-        ],
-        "modalities": [
-          "tabular"
-        ],
-        "organisms": [
-          "Homo sapiens"
-        ],
-        "fileCount": 2,
-        "totalBytes": 735046
-      }
-    },
     {
       "schema": 1,
       "kind": "lesson",
@@ -320,17 +264,95 @@
     {
       "schema": 1,
       "kind": "lesson",
-      "id": "oriclabs/little-book-biomedical-statistics",
-      "name": "little-book-biomedical-statistics",
-      "title": "Biomedical statistics in BioLang",
-      "summary": "One guided medical-statistics course with eight selectable sections and in-notebook Previous/Next navigation across epidemiological measures, study design, trials, and evidence synthesis.",
+      "id": "oriclabs/msmb-celegans-mitochondrial-composition",
+      "name": "msmb-celegans-mitochondrial-composition",
+      "title": "Modern Statistics for Modern Biology: C. elegans Mitochondrial Composition",
+      "summary": "A deterministic Exercise 1.8 port using the exact UCSC ce2 chromosome M sequence and published nucleotide results.",
       "publisher": "oriclabs",
-      "version": "0.2.0",
-      "status": "preview",
+      "version": "1.0.0",
+      "status": "stable",
       "verified": false,
-      "manifest": "https://raw.githubusercontent.com/oriclabs/biolang-lessons/main/lessons/biostatistics/little-book-biomedical/lesson.json",
-      "manifestSha256": "e8418effaaedd86dec18b9de398a14ccd2149dd9df8b6ee2c5e01289796c341e",
-      "publishedAt": "2026-08-30",
+      "manifest": "https://raw.githubusercontent.com/oriclabs/biolang-lessons/main/lessons/biostatistics/msmb-celegans-mitochondrial-composition/lesson.json",
+      "manifestSha256": "d50c4acce9a09fea1036a80f7b6975a4fe9ca559f976cd56e46fc38754dfc158",
+      "publishedAt": "2026-09-03",
+      "compatibility": {
+        "biolang": ">=1.5.0",
+        "studio": ">=0.1.0",
+        "runtimes": [
+          "browser",
+          "desktop",
+          "somer"
+        ]
+      },
+      "categories": [
+        "biostatistics",
+        "genomics",
+        "bioinformatics",
+        "teaching"
+      ],
+      "tags": [
+        "statistics",
+        "genomics",
+        "mitochondrial DNA",
+        "CC BY-NC-SA"
+      ],
+      "discoverability": {
+        "problems": [
+          "count nucleotides in a mitochondrial genome",
+          "compare observed bases with equal frequencies",
+          "inspect C. elegans mitochondrial composition"
+        ],
+        "methods": [
+          "nucleotide composition",
+          "observed-versus-expected statistic",
+          "multinomial model preparation"
+        ],
+        "plots": [],
+        "terms": [
+          "Caenorhabditis elegans",
+          "mitochondrial genome",
+          "ce2",
+          "nucleotide frequency",
+          "multinomial",
+          "uniform composition"
+        ],
+        "aliases": [
+          "MSMB Exercise 1.8",
+          "worm mitochondrial composition",
+          "C elegans chrM"
+        ],
+        "functions": [
+          "read_json",
+          "dna",
+          "base_counts",
+          "len"
+        ]
+      },
+      "sourceRepository": "https://github.com/oriclabs/biolang-lessons",
+      "licence": "CC BY-NC-SA",
+      "validation": "Exact UCSC ce2 chrM sequence; published length, four nucleotide counts, proportions, and observed-equal statistic reproduced without simulation",
+      "series": {
+        "id": "modern-statistics-for-modern-biology",
+        "title": "Modern Statistics for Modern Biology",
+        "url": "https://www.huber.embl.de/msmb/",
+        "order": 2,
+        "chapter": "Chapter 1 - Exercise 1.8, C. elegans mitochondrial composition"
+      }
+    },
+    {
+      "schema": 1,
+      "kind": "lesson",
+      "id": "oriclabs/msmb-discrete-models",
+      "name": "msmb-discrete-models",
+      "title": "Modern Statistics for Modern Biology: Discrete Models",
+      "summary": "An exact port of the opening Poisson and binomial calculations with byte-for-byte copies of the published chapter figures.",
+      "publisher": "oriclabs",
+      "version": "1.0.0",
+      "status": "stable",
+      "verified": false,
+      "manifest": "https://raw.githubusercontent.com/oriclabs/biolang-lessons/main/lessons/biostatistics/msmb-discrete-models/lesson.json",
+      "manifestSha256": "321407bc1d7de523007d475862b9b674f972b49e102082f2dcf8d310598c14ac",
+      "publishedAt": "2026-09-03",
       "compatibility": {
         "biolang": ">=1.5.0",
         "studio": ">=0.1.0",
@@ -342,191 +364,140 @@
       },
       "categories": [
         "statistics",
-        "epidemiology",
+        "biostatistics",
         "teaching"
       ],
       "tags": [
-        "biomedical statistics",
-        "risk",
-        "odds ratio",
-        "clinical trials",
-        "meta-analysis",
-        "CC BY"
+        "statistics",
+        "probability",
+        "Poisson",
+        "binomial",
+        "CC BY-NC-SA"
       ],
       "discoverability": {
         "problems": [
-          "choose a biomedical study design",
-          "estimate risk and odds ratios",
-          "test categorical association",
-          "adjust for confounding",
-          "analyse matched case-control data",
-          "test a dose-response trend",
-          "plan sample size and power",
-          "combine results across studies",
-          "choose an epidemiological study design",
-          "identify the unit of analysis",
-          "distinguish exposure sampling from outcome sampling",
-          "compare disease occurrence between exposed and unexposed groups",
-          "estimate effect size from a 2x2 table",
-          "test association between categorical variables",
-          "analyse a sparse contingency table",
-          "adjust a categorical association for a confounder",
-          "check whether effects differ across strata",
-          "analyse matched case-control pairs",
-          "test change in paired binary outcomes",
-          "test whether risk changes with increasing dose",
-          "model an ordered exposure trend",
-          "calculate randomized trial sample size",
-          "estimate power for two proportions",
-          "allow for loss to follow-up",
-          "combine effect estimates across studies",
-          "visualize study uncertainty",
-          "assess between-study heterogeneity"
+          "model mutation counts",
+          "calculate an exact event-count probability",
+          "compare outcomes in repeated binary trials"
         ],
         "methods": [
-          "cohort study",
-          "case-control study",
-          "risk ratio",
-          "odds ratio",
-          "chi-square test",
-          "Fisher exact test",
-          "Mantel-Haenszel odds ratio",
-          "Breslow-Day test",
-          "McNemar test",
-          "linear trend regression",
-          "power calculation",
-          "fixed-effect meta-analysis",
-          "matched study",
-          "randomized controlled trial",
-          "meta-analysis",
-          "Wald confidence interval",
-          "Pearson chi-square test",
-          "expected cell count assessment",
-          "Tarone adjustment",
-          "stratified analysis",
-          "matched odds ratio",
-          "continuity correction",
-          "dose-response analysis",
-          "log-odds transformation",
-          "two-proportion sample size",
-          "normal approximation",
-          "inverse-variance weighting",
-          "Cochran Q test"
+          "Poisson probability mass",
+          "binomial probability mass",
+          "discrete generative modeling"
         ],
         "plots": [
-          "dose-response plot",
-          "scatter plot",
-          "fitted trend line",
-          "forest plot"
+          "Poisson probability bar plot",
+          "binomial probability bar plot"
         ],
         "terms": [
-          "study design",
-          "exposure",
-          "outcome",
-          "risk",
-          "odds",
-          "confidence interval",
-          "confounding",
-          "effect modification",
-          "matched pairs",
-          "dose response",
-          "statistical power",
-          "type I error",
-          "type II error",
-          "heterogeneity",
-          "sampling frame",
-          "temporality",
-          "selection bias",
-          "relative risk",
-          "sample odds ratio",
-          "conditional odds ratio",
-          "observed count",
-          "expected count",
-          "degrees of freedom",
-          "p-value",
-          "effect size",
-          "sparse table",
-          "homogeneity",
-          "common odds ratio",
-          "stratum",
-          "interaction",
-          "matched pair",
-          "discordant pair",
-          "concordant pair",
-          "paired binary data",
-          "conditional analysis",
-          "dose",
-          "response",
-          "monotonic trend",
-          "log odds",
-          "ordered exposure",
-          "slope",
-          "alpha",
-          "attrition",
-          "allocation ratio",
-          "pooled effect",
-          "study weight",
-          "standard error",
-          "odds ratio"
+          "Poisson distribution",
+          "binomial distribution",
+          "probability mass function",
+          "mutation count",
+          "Bernoulli trial"
         ],
         "aliases": [
-          "RR",
-          "OR",
-          "two by two table",
-          "chi squared test",
-          "MH estimate",
-          "paired proportions",
-          "trend test",
-          "RCT planning",
-          "evidence synthesis",
-          "RCT",
-          "observational study",
-          "prospective study",
-          "retrospective study",
-          "risk ratio",
-          "cross-product ratio",
-          "test of independence",
-          "exact test",
-          "categorical association",
-          "adjusted odds ratio",
-          "heterogeneity test",
-          "subgroup analysis",
-          "paired proportions test",
-          "matched 2x2 table",
-          "McNemar chi-square",
-          "exposure-response",
-          "dose effect",
-          "linear trend",
-          "trial size",
-          "power analysis",
-          "required participants",
-          "dropout adjustment",
-          "pooled odds ratio",
-          "inverse variance model",
-          "meta analytic model"
+          "MSMB chapter 1",
+          "discrete probability models",
+          "generative models"
         ],
         "functions": [
-          "fisher_exact",
-          "chi_square_contingency",
-          "breslow_day_test",
-          "stats_relationship_plot",
-          "lm",
-          "forest_plot",
-          "meta_analysis",
-          "qnorm",
-          "pnorm",
-          "table",
-          "sqrt",
-          "exp",
-          "log",
-          "ceil",
-          "abs",
-          "map"
+          "dpois",
+          "dbinom",
+          "range",
+          "map",
+          "table"
         ]
       },
       "sourceRepository": "https://github.com/oriclabs/biolang-lessons",
-      "licence": "CC BY 3.0",
-      "validation": "Eight selectable sections execute in BioLang; adjacent in-notebook Previous/Next links are structurally checked; source example metrics are pinned in collection tests."
+      "licence": "CC BY-NC-SA 4.0",
+      "validation": "Published R probabilities reproduced within 1e-11; both PNGs are byte-for-byte copies of the published chapter assets",
+      "series": {
+        "id": "modern-statistics-for-modern-biology",
+        "title": "Modern Statistics for Modern Biology",
+        "url": "https://www.huber.embl.de/msmb/",
+        "order": 1,
+        "chapter": "Chapter 1 - Opening Poisson and binomial examples"
+      }
+    },
+    {
+      "schema": 1,
+      "kind": "lesson",
+      "id": "oriclabs/rmrwr-blood-storage-columns",
+      "name": "rmrwr-blood-storage-columns",
+      "title": "Reproducible Medical Research with R: Blood-Storage Columns",
+      "summary": "A one-to-one non-contiguous column-selection example using the exact de-identified 316-patient blood-storage cohort.",
+      "publisher": "oriclabs",
+      "version": "1.0.0",
+      "status": "stable",
+      "verified": false,
+      "manifest": "https://raw.githubusercontent.com/oriclabs/biolang-lessons/main/lessons/biostatistics/rmrwr-blood-storage-columns/lesson.json",
+      "manifestSha256": "b42f2eb46cc5781772b89c7702c50d2dec5a7276c6db5324d0ed992cdc1352bd",
+      "publishedAt": "2026-09-03",
+      "compatibility": {
+        "biolang": ">=1.5.0",
+        "studio": ">=0.1.0",
+        "runtimes": [
+          "browser",
+          "desktop",
+          "somer"
+        ]
+      },
+      "categories": [
+        "clinical-research",
+        "biostatistics",
+        "data-analysis",
+        "teaching"
+      ],
+      "tags": [
+        "clinical research",
+        "data wrangling",
+        "cohort",
+        "CC0"
+      ],
+      "discoverability": {
+        "problems": [
+          "select non-contiguous clinical variables",
+          "reorder a clinical table",
+          "inspect a de-identified prostate-cancer cohort"
+        ],
+        "methods": [
+          "column selection",
+          "column range expansion",
+          "clinical data inspection"
+        ],
+        "plots": [],
+        "terms": [
+          "blood storage",
+          "prostate cancer",
+          "retrospective cohort",
+          "Gleason score",
+          "PSA",
+          "column selection"
+        ],
+        "aliases": [
+          "RMRWR selecting columns",
+          "medicaldata blood_storage",
+          "prostate cohort columns"
+        ],
+        "functions": [
+          "read_csv",
+          "select",
+          "head",
+          "colnames",
+          "nrow"
+        ]
+      },
+      "sourceRepository": "https://github.com/oriclabs/biolang-lessons",
+      "licence": "CC0-1.0; data package MIT",
+      "validation": "Exact 316x20 medicaldata object and exact ten-column source order with first rows reproduced",
+      "series": {
+        "id": "reproducible-medical-research-with-r",
+        "title": "Reproducible Medical Research with R",
+        "url": "https://peter-higgins-rmrwr.share.connect.posit.cloud/",
+        "order": 5,
+        "chapter": "Selecting Columns - non-contiguous blood-storage example"
+      }
     }
   ]
 }

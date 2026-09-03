@@ -1,0 +1,30 @@
+{
+  "schema": 1,
+  "kind": "lesson",
+  "id": "oriclabs/msmb-discrete-models",
+  "name": "msmb-discrete-models",
+  "title": "Modern Statistics for Modern Biology: Discrete Models",
+  "summary": "An exact port of the opening Poisson and binomial calculations with byte-for-byte copies of the published chapter figures.",
+  "publisher": "oriclabs",
+  "version": "1.0.0",
+  "status": "stable",
+  "verified": false,
+  "manifest": "https://raw.githubusercontent.com/oriclabs/biolang-lessons/main/lessons/biostatistics/msmb-discrete-models/lesson.json",
+  "manifestSha256": "321407bc1d7de523007d475862b9b674f972b49e102082f2dcf8d310598c14ac",
+  "publishedAt": "2026-09-03",
+  "compatibility": {"biolang": ">=1.5.0", "studio": ">=0.1.0", "runtimes": ["browser", "desktop", "somer"]},
+  "categories": ["statistics", "biostatistics", "teaching"],
+  "tags": ["statistics", "probability", "Poisson", "binomial", "CC BY-NC-SA"],
+  "discoverability": {
+    "problems": ["model mutation counts", "calculate an exact event-count probability", "compare outcomes in repeated binary trials"],
+    "methods": ["Poisson probability mass", "binomial probability mass", "discrete generative modeling"],
+    "plots": ["Poisson probability bar plot", "binomial probability bar plot"],
+    "terms": ["Poisson distribution", "binomial distribution", "probability mass function", "mutation count", "Bernoulli trial"],
+    "aliases": ["MSMB chapter 1", "discrete probability models", "generative models"],
+    "functions": ["dpois", "dbinom", "range", "map", "table"]
+  },
+  "sourceRepository": "https://github.com/oriclabs/biolang-lessons",
+  "licence": "CC BY-NC-SA 4.0",
+  "validation": "Published R probabilities reproduced within 1e-11; both PNGs are byte-for-byte copies of the published chapter assets",
+  "series": {"id": "modern-statistics-for-modern-biology", "title": "Modern Statistics for Modern Biology", "url": "https://www.huber.embl.de/msmb/", "order": 1, "chapter": "Chapter 1 - Opening Poisson and binomial examples"}
+}

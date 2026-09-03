@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "kind": "lesson",
+  "id": "oriclabs/epir-standardised-rates",
+  "name": "epir-standardised-rates",
+  "title": "EpiR Handbook: Directly Standardised Rates",
+  "summary": "A source-faithful port of direct age-and-sex standardisation for two countries using the exact five source tables.",
+  "publisher": "oriclabs",
+  "version": "1.0.0",
+  "status": "stable",
+  "verified": false,
+  "manifest": "https://raw.githubusercontent.com/oriclabs/biolang-lessons/main/lessons/epidemiology/epir-standardised-rates/lesson.json",
+  "manifestSha256": "a77a9f8dd2c9daab83adf7d81a74b9f33059f04d6239c2ff6e870bfeee9e29dd",
+  "publishedAt": "2026-09-03",
+  "compatibility": {
+    "biolang": ">=1.5.0",
+    "studio": ">=0.1.0",
+    "runtimes": [
+      "browser",
+      "desktop",
+      "somer"
+    ]
+  },
+  "categories": [
+    "epidemiology",
+    "statistics",
+    "teaching"
+  ],
+  "tags": [
+    "epidemiology",
+    "standardisation",
+    "mortality",
+    "CC BY-NC-SA"
+  ],
+  "discoverability": {
+    "problems": [
+      "compare mortality rates across populations",
+      "adjust rates for age and sex",
+      "calculate directly standardised rates"
+    ],
+    "methods": [
+      "direct standardisation",
+      "stratum-specific rate weighting",
+      "age-sex adjustment"
+    ],
+    "plots": [],
+    "terms": [
+      "mortality rate",
+      "standard population",
+      "age standardisation",
+      "sex standardisation",
+      "epidemiology"
+    ],
+    "aliases": [
+      "EpiR standardization",
+      "directly standardized rate",
+      "DSR"
+    ],
+    "functions": [
+      "read_csv",
+      "flat_map",
+      "group_by",
+      "summarize",
+      "arrange"
+    ]
+  },
+  "sourceRepository": "https://github.com/oriclabs/biolang-lessons",
+  "licence": "CC BY-NC-SA 4.0",
+  "validation": "Exact five source CSVs and all 36 age-sex strata; totals and direct point estimates checked against R 4.6.1",
+  "series": {
+    "id": "epir-handbook",
+    "title": "EpiR Handbook",
+    "url": "https://epirhandbook.com/",
+    "order": 1,
+    "chapter": "Standardised rates - preparation and direct point estimates"
+  }
+}

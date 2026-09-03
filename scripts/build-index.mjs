@@ -32,6 +32,11 @@ function discoveryTerms(entry) {
   return discoveryFields.flatMap(field => entry.discoverability?.[field] ?? []);
 }
 function validId(value) { return /^[a-z0-9][a-z0-9._-]*\/[a-z0-9][a-z0-9._-]*$/.test(value); }
+function hasMojibake(value) {
+  if (typeof value === "string") return /(?:Ã.|Â.|â[€‚]|�)/u.test(value);
+  if (Array.isArray(value)) return value.some(hasMojibake);
+  return value && typeof value === "object" && Object.values(value).some(hasMojibake);
+}
 function compareVersionsDescending(left, right) {
   const parse = value => {
     const [base, suffix = ""] = value.split(/-(.*)/s, 2);
@@ -48,6 +53,7 @@ function compareVersionsDescending(left, right) {
 }
 
 function validate(entry, file) {
+  if (hasMojibake(entry)) fail(file, "contains likely mojibake; save source metadata as UTF-8 and repair the text");
   if (entry.schema !== 1 || !allowedKinds.has(entry.kind)) fail(file, "invalid schema or kind");
   if (!validId(entry.id) || entry.id !== `${entry.publisher}/${entry.name}`) fail(file, "id must equal publisher/name");
   if (!/^\d+\.\d+\.\d+(?:-[0-9A-Za-z.-]+)?$/.test(entry.version) ||

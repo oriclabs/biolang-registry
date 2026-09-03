@@ -1,0 +1,134 @@
+{
+  "schema": 1,
+  "kind": "lesson",
+  "id": "oriclabs/bdsr-ggtree",
+  "name": "bdsr-ggtree",
+  "title": "Visualizing and annotating phylogenetic trees",
+  "summary": "A browser-compatible, validated BioLang companion to BDSR chapter 13 covering Newick and BEAST/Nexus import, phylograms, cladograms, three tree layouts, all three exercises, exact ggtree node numbering, MRCA, clade annotations, taxon links, an influenza H3 alignment, and the source chapter's seeded multi-tree facets.",
+  "publisher": "oriclabs",
+  "version": "0.1.1",
+  "status": "stable",
+  "verified": false,
+  "manifest": "https://raw.githubusercontent.com/oriclabs/biolang-lessons/main/lessons/phylogenetics/bdsr-ggtree/lesson.json",
+  "manifestSha256": "0cb65df11d052e24cc9b6ad11c296c9e97f6d362357216171524d8f9fdd31788",
+  "publishedAt": "2026-09-02",
+  "compatibility": {
+    "biolang": ">=1.5.0",
+    "studio": ">=0.1.0",
+    "runtimes": [
+      "browser",
+      "desktop",
+      "somer"
+    ]
+  },
+  "categories": [
+    "phylogenetics",
+    "visualization",
+    "teaching",
+    "validation"
+  ],
+  "tags": [
+    "phylogenetics",
+    "ggtree",
+    "Newick",
+    "MRCA",
+    "clade annotation",
+    "visualization"
+  ],
+  "discoverability": {
+    "problems": [
+      "draw an existing phylogenetic tree",
+      "compare phylogram and cladogram layouts",
+      "find a most recent common ancestor",
+      "label and highlight a clade",
+      "show reassortment or horizontal transfer links",
+      "compare many trees reproducibly",
+      "align phylogenetic trees with biological metadata"
+    ],
+    "methods": [
+      "Newick parsing",
+      "phylogram",
+      "cladogram",
+      "MRCA calculation",
+      "ape node numbering",
+      "rectangular tree layout",
+      "slanted tree layout",
+      "circular tree layout",
+      "clade annotation",
+      "taxon-link annotation",
+      "BEAST tree provenance",
+      "multiple sequence alignment"
+    ],
+    "plots": [
+      "phylogenetic tree",
+      "phylogram",
+      "cladogram",
+      "rectangular tree",
+      "slanted tree",
+      "circular tree",
+      "dendrogram",
+      "annotated tree",
+      "clade highlight",
+      "clade label",
+      "taxon link",
+      "faceted tree plot"
+    ],
+    "terms": [
+      "phylogenetics",
+      "phylogeny",
+      "topology",
+      "branch length",
+      "tip",
+      "leaf",
+      "internal node",
+      "clade",
+      "common ancestor",
+      "MRCA",
+      "Newick",
+      "Nexus",
+      "BEAST",
+      "ggtree",
+      "ggplot2",
+      "Bioconductor",
+      "evolutionary distance",
+      "substitutions per site",
+      "reassortment",
+      "horizontal gene transfer",
+      "FASTA",
+      "MSA",
+      "PhyloPic"
+    ],
+    "aliases": [
+      "tree visualization",
+      "tree annotation",
+      "evolutionary tree",
+      "phylogenetic visualization",
+      "tree plot",
+      "circular phylogeny",
+      "most recent common ancestor",
+      "multiPhylo"
+    ],
+    "functions": [
+      "read_text",
+      "nw_parse",
+      "nexus_tree",
+      "tree_leaves",
+      "tree_mrca",
+      "patristic_distance",
+      "nw_to_distance_matrix",
+      "phylo_tree",
+      "read_fasta",
+      "alignment_view"
+    ]
+  },
+  "sourceRepository": "https://github.com/oriclabs/biolang-lessons",
+  "licence": "MIT",
+  "validation": "Pinned Newick topology and branch lengths; exact ape/ggtree MRCA numbering; all twelve seed-42 panel sizes pinned and first-panel geometry matched to the source within 1.1 display pixels; twelve published source figures inspected and independently redrawn",
+  "series": {
+    "id": "biological-data-science-with-r",
+    "title": "Biological Data Science with R",
+    "url": "https://bdsr.stephenturner.us/",
+    "order": 13,
+    "chapter": "Chapter 13 · Visualizing and annotating phylogenetic trees"
+  }
+}

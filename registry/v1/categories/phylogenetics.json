@@ -1,0 +1,175 @@
+{
+  "schema": 1,
+  "category": {
+    "id": "phylogenetics",
+    "title": "Phylogenetics",
+    "count": 2,
+    "kinds": [
+      "lesson"
+    ]
+  },
+  "entries": [
+    {
+      "schema": 1,
+      "kind": "lesson",
+      "id": "oriclabs/treedata-metadata-attachment",
+      "name": "treedata-metadata-attachment",
+      "title": "Phylogenetic Tree Data Integration: Tip and Node Metadata",
+      "summary": "One-to-one Figure 7.1 port using exact TDbook tree, tip, node, and published SVG assets.",
+      "publisher": "oriclabs",
+      "version": "1.0.0",
+      "status": "stable",
+      "verified": false,
+      "manifest": "https://raw.githubusercontent.com/oriclabs/biolang-lessons/main/lessons/phylogenetics/treedata-metadata-attachment/lesson.json",
+      "manifestSha256": "3b68b65147560dc2036ee75bafd895ac8b63c507ef38da37d6e68c023ab681f7",
+      "publishedAt": "2026-09-03",
+      "compatibility": {
+        "biolang": ">=1.5.0",
+        "studio": ">=0.1.0",
+        "runtimes": [
+          "browser",
+          "desktop",
+          "somer"
+        ]
+      },
+      "categories": [
+        "phylogenetics",
+        "bioinformatics",
+        "visualization",
+        "teaching"
+      ],
+      "tags": [
+        "phylogenetics",
+        "metadata",
+        "tree annotation",
+        "CC BY-NC-SA"
+      ],
+      "discoverability": {
+        "problems": [
+          "attach biological metadata to phylogenetic tree tips",
+          "annotate internal tree nodes"
+        ],
+        "methods": [
+          "tip-label keyed integration",
+          "node metadata attachment",
+          "visual encoding of traits"
+        ],
+        "plots": [
+          "annotated phylogenetic tree"
+        ],
+        "terms": [
+          "phylogenetic tree",
+          "tip metadata",
+          "node metadata",
+          "trophic habit",
+          "body mass",
+          "posterior"
+        ],
+        "aliases": [
+          "treedata Figure 7.1",
+          "ggtree attacher",
+          "tree annotation"
+        ],
+        "functions": [
+          "read_csv",
+          "filter",
+          "unique",
+          "summary"
+        ]
+      },
+      "sourceRepository": "https://github.com/oriclabs/biolang-lessons",
+      "licence": "CC BY-NC-SA 4.0; data package Artistic-2.0",
+      "validation": "Exact TDbook objects, mechanical exports, and byte-for-byte published Figure 7.1 SVG",
+      "series": {
+        "id": "treedata-book",
+        "title": "Data Integration, Manipulation and Visualization of Phylogenetic Trees",
+        "url": "https://yulab-smu.top/treedata-book/",
+        "order": 6,
+        "chapter": "Chapter 7 - Figure 7.1"
+      }
+    },
+    {
+      "schema": 1,
+      "kind": "lesson",
+      "id": "oriclabs/treedata-snp-traits",
+      "name": "treedata-snp-traits",
+      "title": "Phylogenetic Tree Data Integration: SNP and Trait Panels",
+      "summary": "A one-to-one port of Chapter 7 Figure 7.2 using the exact official tree, metadata, allele, trait, derived SNP, and published figure assets.",
+      "publisher": "oriclabs",
+      "version": "1.0.0",
+      "status": "stable",
+      "verified": false,
+      "manifest": "https://raw.githubusercontent.com/oriclabs/biolang-lessons/main/lessons/phylogenetics/treedata-snp-traits/lesson.json",
+      "manifestSha256": "5c24b29e4d12618043c8a66dc2baf7e58932e2292f4a554cb7d6676c1ded16f7",
+      "publishedAt": "2026-09-03",
+      "compatibility": {
+        "biolang": ">=1.5.0",
+        "studio": ">=0.1.0",
+        "runtimes": [
+          "browser",
+          "desktop",
+          "somer"
+        ]
+      },
+      "categories": [
+        "phylogenetics",
+        "visualization",
+        "teaching"
+      ],
+      "tags": [
+        "phylogenetics",
+        "SNP",
+        "data integration",
+        "CC BY-NC-SA"
+      ],
+      "discoverability": {
+        "problems": [
+          "align SNPs with a phylogenetic tree",
+          "attach sample metadata to tree tips",
+          "compare traits in phylogenetic order"
+        ],
+        "methods": [
+          "tip-label keyed integration",
+          "reference-allele comparison",
+          "gap exclusion",
+          "tree-aligned data panels"
+        ],
+        "plots": [
+          "phylogenetic tree with SNP and trait panels"
+        ],
+        "terms": [
+          "phylogenetic tree",
+          "SNP",
+          "trait",
+          "tip metadata",
+          "facet plot",
+          "Newick",
+          "tree data integration"
+        ],
+        "aliases": [
+          "treedata book figure 7.2",
+          "ggtree facet plot",
+          "tree SNP trait example"
+        ],
+        "functions": [
+          "read_text",
+          "nw_parse",
+          "tree_leaves",
+          "read_csv",
+          "filter",
+          "unique"
+        ]
+      },
+      "sourceRepository": "https://github.com/oriclabs/biolang-lessons",
+      "licence": "CC BY-NC-SA 4.0; TDbook data Artistic-2.0",
+      "validation": "Exact official TDbook objects and byte-for-byte source figure; 230 tree tips, 386 metadata and trait records, full plotted-tip coverage, and exact 6,482-row published SNP transformation",
+      "series": {
+        "id": "treedata-book",
+        "title": "Data Integration, Manipulation and Visualization of Phylogenetic Trees",
+        "url": "https://yulab-smu.top/treedata-book/",
+        "order": 7,
+        "chapter": "Chapter 7 - Figure 7.2"
+      }
+    }
+  ]
+}

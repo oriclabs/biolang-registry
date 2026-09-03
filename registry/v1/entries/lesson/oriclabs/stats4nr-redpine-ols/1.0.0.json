@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "kind": "lesson",
+  "id": "oriclabs/stats4nr-redpine-ols",
+  "name": "stats4nr-redpine-ols",
+  "title": "Statistics in Natural Resources: Red-Pine OLS",
+  "summary": "A bounded one-to-one Exercise 14.1 port using 450 real tree observations and exact correlation, OLS, and AIC results.",
+  "publisher": "oriclabs",
+  "version": "1.0.0",
+  "status": "stable",
+  "verified": false,
+  "manifest": "https://raw.githubusercontent.com/oriclabs/biolang-lessons/main/lessons/ecology/stats4nr-redpine-ols/lesson.json",
+  "manifestSha256": "81a8f0f02181a92ea7a37352647b2f6eea31b721131aa13e2b6dd4d442561112",
+  "publishedAt": "2026-09-03",
+  "compatibility": {
+    "biolang": ">=1.5.0",
+    "studio": ">=0.1.0",
+    "runtimes": [
+      "browser",
+      "desktop",
+      "somer"
+    ]
+  },
+  "categories": [
+    "ecology",
+    "statistics",
+    "data-analysis",
+    "teaching"
+  ],
+  "tags": [
+    "ecology",
+    "forestry",
+    "linear regression",
+    "CC BY-NC-SA"
+  ],
+  "discoverability": {
+    "problems": [
+      "predict tree height from diameter",
+      "fit ordinary least squares to forestry data",
+      "calculate Pearson correlation for tree measurements"
+    ],
+    "methods": [
+      "Pearson correlation",
+      "simple linear regression",
+      "Akaike information criterion"
+    ],
+    "plots": [],
+    "terms": [
+      "red pine",
+      "Cloquet Forestry Center",
+      "diameter at breast height",
+      "tree height",
+      "OLS",
+      "AIC"
+    ],
+    "aliases": [
+      "Stats4NR redpine",
+      "red pine height diameter",
+      "forestry OLS exercise"
+    ],
+    "functions": [
+      "read_csv",
+      "cor",
+      "lm",
+      "map",
+      "sum",
+      "log"
+    ]
+  },
+  "sourceRepository": "https://github.com/oriclabs/biolang-lessons",
+  "licence": "CC BY-NC-SA 4.0; package data CC0",
+  "validation": "Exact 450-row field dataset, Pearson correlation, OLS coefficients, R squared, and AIC; source table intercept typo disclosed",
+  "series": {
+    "id": "statistics-in-natural-resources",
+    "title": "Statistics in Natural Resources: Applications with R",
+    "url": "https://stats4nr.com/",
+    "order": 14,
+    "chapter": "Chapter 14 - Exercise 14.1 red-pine ordinary least squares"
+  }
+}

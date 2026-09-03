@@ -1,0 +1,549 @@
+{
+  "schema": 1,
+  "category": {
+    "id": "bioinformatics",
+    "title": "Bioinformatics",
+    "count": 6,
+    "kinds": [
+      "lesson"
+    ]
+  },
+  "entries": [
+    {
+      "schema": 1,
+      "kind": "lesson",
+      "id": "oriclabs/computational-genomics-intervals",
+      "name": "computational-genomics-intervals",
+      "title": "Computational Genomics with R: Genomic Intervals",
+      "summary": "A source-faithful BioLang port of the opening GRanges construction examples and exercises 1-2 from Chapter 6.",
+      "publisher": "oriclabs",
+      "version": "1.0.0",
+      "status": "stable",
+      "verified": false,
+      "manifest": "https://raw.githubusercontent.com/oriclabs/biolang-lessons/main/lessons/genomics/computational-genomics-intervals/lesson.json",
+      "manifestSha256": "55d652bb04d89f6fd8afa8b6304501c3b4f4e0b1c00dc95ef84da5c1b4180318",
+      "publishedAt": "2026-09-03",
+      "compatibility": {
+        "biolang": ">=1.5.0",
+        "studio": ">=0.1.0",
+        "runtimes": [
+          "browser",
+          "desktop",
+          "somer"
+        ]
+      },
+      "categories": [
+        "genomics",
+        "bioinformatics",
+        "teaching"
+      ],
+      "tags": [
+        "genomics",
+        "intervals",
+        "GRanges",
+        "CC BY-NC-SA"
+      ],
+      "discoverability": {
+        "problems": [
+          "represent genomic intervals",
+          "inspect interval coordinates",
+          "filter intervals by chromosome or strand"
+        ],
+        "methods": [
+          "genomic interval construction",
+          "closed-coordinate width calculation",
+          "interval filtering"
+        ],
+        "plots": [],
+        "terms": [
+          "genomic interval",
+          "GRanges",
+          "IRanges",
+          "chromosome",
+          "strand",
+          "coordinate system"
+        ],
+        "aliases": [
+          "genome arithmetic",
+          "genomic ranges",
+          "GRanges exercises"
+        ],
+        "functions": [
+          "table",
+          "head",
+          "map",
+          "filter"
+        ]
+      },
+      "sourceRepository": "https://github.com/oriclabs/biolang-lessons",
+      "licence": "CC BY-NC-SA 4.0",
+      "validation": "Exact source rows, metadata, exercise coordinates, strand filters, and closed-coordinate widths against revision 212119889edfeaebc7449e0aeb4fce29a574011d",
+      "series": {
+        "id": "computational-genomics-with-r",
+        "title": "Computational Genomics with R",
+        "url": "https://compgenomr.github.io/book/",
+        "order": 6,
+        "chapter": "Chapter 6 - Genomic intervals, construction and exercises 1-2"
+      }
+    },
+    {
+      "schema": 1,
+      "kind": "lesson",
+      "id": "oriclabs/computational-genomics-refseq-tss",
+      "name": "computational-genomics-refseq-tss",
+      "title": "Computational Genomics with R: RefSeq Transcription Starts",
+      "summary": "A one-to-one Chapter 6 RefSeq BED-to-TSS workflow using the exact hg19 chromosome 21 package file.",
+      "publisher": "oriclabs",
+      "version": "1.0.0",
+      "status": "stable",
+      "verified": false,
+      "manifest": "https://raw.githubusercontent.com/oriclabs/biolang-lessons/main/lessons/genomics/computational-genomics-refseq-tss/lesson.json",
+      "manifestSha256": "c7add6e9f16d27862e7c7098e2d7273692c065d1d1b2c7cd3056e8150e64a9ad",
+      "publishedAt": "2026-09-03",
+      "compatibility": {
+        "biolang": ">=1.5.0",
+        "studio": ">=0.1.0",
+        "runtimes": [
+          "browser",
+          "desktop",
+          "somer"
+        ]
+      },
+      "categories": [
+        "genomics",
+        "bioinformatics",
+        "data-analysis",
+        "teaching"
+      ],
+      "tags": [
+        "genomics",
+        "RefSeq",
+        "BED",
+        "CC BY-NC-SA"
+      ],
+      "discoverability": {
+        "problems": [
+          "import RefSeq genomic intervals",
+          "derive transcription start sites from strand",
+          "remove alternate transcripts with duplicate start sites"
+        ],
+        "methods": [
+          "BED import",
+          "strand-aware TSS extraction",
+          "duplicate interval detection"
+        ],
+        "plots": [],
+        "terms": [
+          "RefSeq",
+          "BED",
+          "hg19",
+          "chromosome 21",
+          "transcription start site",
+          "strand",
+          "alternative transcript"
+        ],
+        "aliases": [
+          "Computational Genomics RefSeq import",
+          "chr21 TSS",
+          "BED to GRanges workflow"
+        ],
+        "functions": [
+          "read_csv",
+          "mutate",
+          "map",
+          "unique",
+          "filter"
+        ]
+      },
+      "sourceRepository": "https://github.com/oriclabs/biolang-lessons",
+      "licence": "CC BY-NC-SA 4.0; data GPL-3",
+      "validation": "Exact 571-row official BED, strand counts, and 378 unique TSS ranges",
+      "series": {
+        "id": "computational-genomics-with-r",
+        "title": "Computational Genomics with R",
+        "url": "https://compgenomr.github.io/book/",
+        "order": 7,
+        "chapter": "Chapter 6 - RefSeq BED import and transcription start sites"
+      }
+    },
+    {
+      "schema": 1,
+      "kind": "lesson",
+      "id": "oriclabs/little-book-r-bioinformatics",
+      "name": "little-book-r-bioinformatics",
+      "title": "A Little Book of R for Bioinformatics",
+      "summary": "Two selectable BioLang notebooks with in-notebook Previous/Next navigation, all twelve exercises, worked solutions, and all eighteen source figures copied byte-for-byte without substitute plots.",
+      "publisher": "oriclabs",
+      "version": "0.1.0",
+      "status": "stable",
+      "verified": false,
+      "manifest": "https://raw.githubusercontent.com/oriclabs/biolang-lessons/main/lessons/sequence-analysis/little-book-r-bioinformatics/lesson.json",
+      "manifestSha256": "1170d965f461cd586a0dc81c1dfaa0a4d889240c5b7cce9cbb219881870fb338",
+      "publishedAt": "2026-09-02",
+      "compatibility": {
+        "biolang": ">=1.5.0",
+        "studio": ">=0.1.0",
+        "runtimes": [
+          "browser",
+          "desktop",
+          "somer"
+        ]
+      },
+      "categories": [
+        "sequence-analysis",
+        "bioinformatics",
+        "teaching"
+      ],
+      "tags": [
+        "FASTA",
+        "GC content",
+        "sliding windows",
+        "k-mer",
+        "SeqinR",
+        "Dengue",
+        "Mycobacterium leprae"
+      ],
+      "discoverability": {
+        "problems": [
+          "inspect a FASTA genome",
+          "calculate genome GC content",
+          "count bases and DNA words",
+          "solve sequence-statistics exercises",
+          "measure local genome composition",
+          "choose a sequence window size",
+          "compare GC and AT content",
+          "calculate observed-to-expected word frequency"
+        ],
+        "methods": [
+          "FASTA parsing",
+          "base composition",
+          "GC content",
+          "sequence complement",
+          "directional k-mer counting",
+          "non-overlapping sliding windows",
+          "local GC analysis",
+          "local AT analysis",
+          "observed-to-expected ratio"
+        ],
+        "plots": [
+          "base-composition bar plot",
+          "sliding-window line plot",
+          "multi-panel comparison plot"
+        ],
+        "terms": [
+          "FASTA",
+          "NCBI accession",
+          "Dengue virus",
+          "Mycobacterium leprae",
+          "DNA",
+          "nucleotide",
+          "ambiguous base",
+          "dinucleotide",
+          "window size",
+          "local GC",
+          "local AT",
+          "k-mer",
+          "rho statistic",
+          "word enrichment",
+          "genome position"
+        ],
+        "aliases": [
+          "SeqinR chapter 1",
+          "DNA sequence statistics 1",
+          "genome composition",
+          "SeqinR chapter 2",
+          "DNA sequence statistics 2",
+          "sliding window GC plot"
+        ],
+        "functions": [
+          "read_fasta",
+          "subseq",
+          "base_counts",
+          "gc_content",
+          "complement",
+          "kmer_index",
+          "range",
+          "map",
+          "motif_count"
+        ]
+      },
+      "sourceRepository": "https://github.com/oriclabs/biolang-lessons",
+      "licence": "CC BY 3.0",
+      "validation": "Exact chapter exercise answers against pinned NCBI accession versions; all eighteen displayed chapter and answer figures copied byte-for-byte; adjacent in-notebook navigation links structurally checked; full BioLang notebooks rerun",
+      "series": {
+        "id": "a-little-book-of-r-for-bioinformatics",
+        "title": "A Little Book of R for Bioinformatics",
+        "url": "https://a-little-book-of-r-for-bioinformatics.readthedocs.io/en/latest/",
+        "order": 1,
+        "chapter": "Chapters 1–2 · DNA Sequence Statistics"
+      }
+    },
+    {
+      "schema": 1,
+      "kind": "lesson",
+      "id": "oriclabs/little-book-r-gene-finding",
+      "name": "little-book-r-gene-finding",
+      "title": "Computational Gene-finding",
+      "summary": "A BioLang notebook porting the Computational Gene-finding chapter with all nine worked answers and four byte-for-byte source figures; the unpublished random draw is not replaced with invented data.",
+      "publisher": "oriclabs",
+      "version": "0.1.0",
+      "status": "stable",
+      "verified": false,
+      "manifest": "https://raw.githubusercontent.com/oriclabs/biolang-lessons/main/lessons/sequence-analysis/little-book-r-gene-finding/lesson.json",
+      "manifestSha256": "a0135b3426106ff9fa58bda41f62cebb97d56f54b625aacdf9cd730343e5ccad",
+      "publishedAt": "2026-09-02",
+      "compatibility": {
+        "biolang": ">=1.5.0",
+        "studio": ">=0.1.0",
+        "runtimes": [
+          "browser",
+          "desktop",
+          "somer"
+        ]
+      },
+      "categories": [
+        "sequence-analysis",
+        "bioinformatics",
+        "teaching"
+      ],
+      "tags": [
+        "ORF",
+        "gene finding",
+        "genetic code",
+        "reading frame",
+        "translation",
+        "Dengue",
+        "rabies virus"
+      ],
+      "discoverability": {
+        "problems": [
+          "find start and stop codons in a sequence",
+          "work out which reading frame a codon is in",
+          "find open reading frames in a genome",
+          "find ORFs on the reverse strand",
+          "translate a predicted coding region",
+          "decide whether an ORF is longer than chance explains",
+          "choose a length threshold for candidate genes"
+        ],
+        "methods": [
+          "codon table lookup",
+          "motif search",
+          "reading-frame arithmetic",
+          "open reading frame detection",
+          "reverse-complement strand search",
+          "translation",
+          "source-reported random null comparison",
+          "ORF length threshold"
+        ],
+        "plots": [
+          "start and stop codon scatter",
+          "ORF genome track",
+          "ORF length distribution"
+        ],
+        "terms": [
+          "genetic code",
+          "codon",
+          "start codon",
+          "stop codon",
+          "reading frame",
+          "open reading frame",
+          "ORF",
+          "forward strand",
+          "reverse strand",
+          "translation",
+          "null model",
+          "gene prediction",
+          "Dengue virus",
+          "rabies virus"
+        ],
+        "aliases": [
+          "SeqinR chapter 7",
+          "computational gene finding",
+          "ORF finding",
+          "gene prediction in BioLang",
+          "open reading frames tutorial"
+        ],
+        "functions": [
+          "read_fasta",
+          "subseq",
+          "find_motif",
+          "find_orfs",
+          "translate",
+          "reverse_complement",
+          "kmers",
+          "table",
+          "arrange",
+          "select",
+          "sort_by"
+        ]
+      },
+      "sourceRepository": "https://github.com/oriclabs/biolang-lessons",
+      "licence": "CC BY 3.0",
+      "validation": "Exercise answers checked against the source chapter using pinned NCBI accessions; four displayed source figures copied byte-for-byte; the source-reported 99% threshold is retained without inventing a replacement random dataset. Full notebook rerun with `bl notebook`.",
+      "series": {
+        "id": "a-little-book-of-r-for-bioinformatics",
+        "title": "A Little Book of R for Bioinformatics",
+        "url": "https://a-little-book-of-r-for-bioinformatics.readthedocs.io/en/latest/",
+        "order": 1,
+        "chapter": "Chapter 7 · Computational Gene-finding"
+      }
+    },
+    {
+      "schema": 1,
+      "kind": "lesson",
+      "id": "oriclabs/msmb-celegans-mitochondrial-composition",
+      "name": "msmb-celegans-mitochondrial-composition",
+      "title": "Modern Statistics for Modern Biology: C. elegans Mitochondrial Composition",
+      "summary": "A deterministic Exercise 1.8 port using the exact UCSC ce2 chromosome M sequence and published nucleotide results.",
+      "publisher": "oriclabs",
+      "version": "1.0.0",
+      "status": "stable",
+      "verified": false,
+      "manifest": "https://raw.githubusercontent.com/oriclabs/biolang-lessons/main/lessons/biostatistics/msmb-celegans-mitochondrial-composition/lesson.json",
+      "manifestSha256": "d50c4acce9a09fea1036a80f7b6975a4fe9ca559f976cd56e46fc38754dfc158",
+      "publishedAt": "2026-09-03",
+      "compatibility": {
+        "biolang": ">=1.5.0",
+        "studio": ">=0.1.0",
+        "runtimes": [
+          "browser",
+          "desktop",
+          "somer"
+        ]
+      },
+      "categories": [
+        "biostatistics",
+        "genomics",
+        "bioinformatics",
+        "teaching"
+      ],
+      "tags": [
+        "statistics",
+        "genomics",
+        "mitochondrial DNA",
+        "CC BY-NC-SA"
+      ],
+      "discoverability": {
+        "problems": [
+          "count nucleotides in a mitochondrial genome",
+          "compare observed bases with equal frequencies",
+          "inspect C. elegans mitochondrial composition"
+        ],
+        "methods": [
+          "nucleotide composition",
+          "observed-versus-expected statistic",
+          "multinomial model preparation"
+        ],
+        "plots": [],
+        "terms": [
+          "Caenorhabditis elegans",
+          "mitochondrial genome",
+          "ce2",
+          "nucleotide frequency",
+          "multinomial",
+          "uniform composition"
+        ],
+        "aliases": [
+          "MSMB Exercise 1.8",
+          "worm mitochondrial composition",
+          "C elegans chrM"
+        ],
+        "functions": [
+          "read_json",
+          "dna",
+          "base_counts",
+          "len"
+        ]
+      },
+      "sourceRepository": "https://github.com/oriclabs/biolang-lessons",
+      "licence": "CC BY-NC-SA",
+      "validation": "Exact UCSC ce2 chrM sequence; published length, four nucleotide counts, proportions, and observed-equal statistic reproduced without simulation",
+      "series": {
+        "id": "modern-statistics-for-modern-biology",
+        "title": "Modern Statistics for Modern Biology",
+        "url": "https://www.huber.embl.de/msmb/",
+        "order": 2,
+        "chapter": "Chapter 1 - Exercise 1.8, C. elegans mitochondrial composition"
+      }
+    },
+    {
+      "schema": 1,
+      "kind": "lesson",
+      "id": "oriclabs/treedata-metadata-attachment",
+      "name": "treedata-metadata-attachment",
+      "title": "Phylogenetic Tree Data Integration: Tip and Node Metadata",
+      "summary": "One-to-one Figure 7.1 port using exact TDbook tree, tip, node, and published SVG assets.",
+      "publisher": "oriclabs",
+      "version": "1.0.0",
+      "status": "stable",
+      "verified": false,
+      "manifest": "https://raw.githubusercontent.com/oriclabs/biolang-lessons/main/lessons/phylogenetics/treedata-metadata-attachment/lesson.json",
+      "manifestSha256": "3b68b65147560dc2036ee75bafd895ac8b63c507ef38da37d6e68c023ab681f7",
+      "publishedAt": "2026-09-03",
+      "compatibility": {
+        "biolang": ">=1.5.0",
+        "studio": ">=0.1.0",
+        "runtimes": [
+          "browser",
+          "desktop",
+          "somer"
+        ]
+      },
+      "categories": [
+        "phylogenetics",
+        "bioinformatics",
+        "visualization",
+        "teaching"
+      ],
+      "tags": [
+        "phylogenetics",
+        "metadata",
+        "tree annotation",
+        "CC BY-NC-SA"
+      ],
+      "discoverability": {
+        "problems": [
+          "attach biological metadata to phylogenetic tree tips",
+          "annotate internal tree nodes"
+        ],
+        "methods": [
+          "tip-label keyed integration",
+          "node metadata attachment",
+          "visual encoding of traits"
+        ],
+        "plots": [
+          "annotated phylogenetic tree"
+        ],
+        "terms": [
+          "phylogenetic tree",
+          "tip metadata",
+          "node metadata",
+          "trophic habit",
+          "body mass",
+          "posterior"
+        ],
+        "aliases": [
+          "treedata Figure 7.1",
+          "ggtree attacher",
+          "tree annotation"
+        ],
+        "functions": [
+          "read_csv",
+          "filter",
+          "unique",
+          "summary"
+        ]
+      },
+      "sourceRepository": "https://github.com/oriclabs/biolang-lessons",
+      "licence": "CC BY-NC-SA 4.0; data package Artistic-2.0",
+      "validation": "Exact TDbook objects, mechanical exports, and byte-for-byte published Figure 7.1 SVG",
+      "series": {
+        "id": "treedata-book",
+        "title": "Data Integration, Manipulation and Visualization of Phylogenetic Trees",
+        "url": "https://yulab-smu.top/treedata-book/",
+        "order": 6,
+        "chapter": "Chapter 7 - Figure 7.1"
+      }
+    }
+  ]
+}

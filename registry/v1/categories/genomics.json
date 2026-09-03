@@ -1,0 +1,248 @@
+{
+  "schema": 1,
+  "category": {
+    "id": "genomics",
+    "title": "Genomics",
+    "count": 3,
+    "kinds": [
+      "lesson"
+    ]
+  },
+  "entries": [
+    {
+      "schema": 1,
+      "kind": "lesson",
+      "id": "oriclabs/computational-genomics-intervals",
+      "name": "computational-genomics-intervals",
+      "title": "Computational Genomics with R: Genomic Intervals",
+      "summary": "A source-faithful BioLang port of the opening GRanges construction examples and exercises 1-2 from Chapter 6.",
+      "publisher": "oriclabs",
+      "version": "1.0.0",
+      "status": "stable",
+      "verified": false,
+      "manifest": "https://raw.githubusercontent.com/oriclabs/biolang-lessons/main/lessons/genomics/computational-genomics-intervals/lesson.json",
+      "manifestSha256": "55d652bb04d89f6fd8afa8b6304501c3b4f4e0b1c00dc95ef84da5c1b4180318",
+      "publishedAt": "2026-09-03",
+      "compatibility": {
+        "biolang": ">=1.5.0",
+        "studio": ">=0.1.0",
+        "runtimes": [
+          "browser",
+          "desktop",
+          "somer"
+        ]
+      },
+      "categories": [
+        "genomics",
+        "bioinformatics",
+        "teaching"
+      ],
+      "tags": [
+        "genomics",
+        "intervals",
+        "GRanges",
+        "CC BY-NC-SA"
+      ],
+      "discoverability": {
+        "problems": [
+          "represent genomic intervals",
+          "inspect interval coordinates",
+          "filter intervals by chromosome or strand"
+        ],
+        "methods": [
+          "genomic interval construction",
+          "closed-coordinate width calculation",
+          "interval filtering"
+        ],
+        "plots": [],
+        "terms": [
+          "genomic interval",
+          "GRanges",
+          "IRanges",
+          "chromosome",
+          "strand",
+          "coordinate system"
+        ],
+        "aliases": [
+          "genome arithmetic",
+          "genomic ranges",
+          "GRanges exercises"
+        ],
+        "functions": [
+          "table",
+          "head",
+          "map",
+          "filter"
+        ]
+      },
+      "sourceRepository": "https://github.com/oriclabs/biolang-lessons",
+      "licence": "CC BY-NC-SA 4.0",
+      "validation": "Exact source rows, metadata, exercise coordinates, strand filters, and closed-coordinate widths against revision 212119889edfeaebc7449e0aeb4fce29a574011d",
+      "series": {
+        "id": "computational-genomics-with-r",
+        "title": "Computational Genomics with R",
+        "url": "https://compgenomr.github.io/book/",
+        "order": 6,
+        "chapter": "Chapter 6 - Genomic intervals, construction and exercises 1-2"
+      }
+    },
+    {
+      "schema": 1,
+      "kind": "lesson",
+      "id": "oriclabs/computational-genomics-refseq-tss",
+      "name": "computational-genomics-refseq-tss",
+      "title": "Computational Genomics with R: RefSeq Transcription Starts",
+      "summary": "A one-to-one Chapter 6 RefSeq BED-to-TSS workflow using the exact hg19 chromosome 21 package file.",
+      "publisher": "oriclabs",
+      "version": "1.0.0",
+      "status": "stable",
+      "verified": false,
+      "manifest": "https://raw.githubusercontent.com/oriclabs/biolang-lessons/main/lessons/genomics/computational-genomics-refseq-tss/lesson.json",
+      "manifestSha256": "c7add6e9f16d27862e7c7098e2d7273692c065d1d1b2c7cd3056e8150e64a9ad",
+      "publishedAt": "2026-09-03",
+      "compatibility": {
+        "biolang": ">=1.5.0",
+        "studio": ">=0.1.0",
+        "runtimes": [
+          "browser",
+          "desktop",
+          "somer"
+        ]
+      },
+      "categories": [
+        "genomics",
+        "bioinformatics",
+        "data-analysis",
+        "teaching"
+      ],
+      "tags": [
+        "genomics",
+        "RefSeq",
+        "BED",
+        "CC BY-NC-SA"
+      ],
+      "discoverability": {
+        "problems": [
+          "import RefSeq genomic intervals",
+          "derive transcription start sites from strand",
+          "remove alternate transcripts with duplicate start sites"
+        ],
+        "methods": [
+          "BED import",
+          "strand-aware TSS extraction",
+          "duplicate interval detection"
+        ],
+        "plots": [],
+        "terms": [
+          "RefSeq",
+          "BED",
+          "hg19",
+          "chromosome 21",
+          "transcription start site",
+          "strand",
+          "alternative transcript"
+        ],
+        "aliases": [
+          "Computational Genomics RefSeq import",
+          "chr21 TSS",
+          "BED to GRanges workflow"
+        ],
+        "functions": [
+          "read_csv",
+          "mutate",
+          "map",
+          "unique",
+          "filter"
+        ]
+      },
+      "sourceRepository": "https://github.com/oriclabs/biolang-lessons",
+      "licence": "CC BY-NC-SA 4.0; data GPL-3",
+      "validation": "Exact 571-row official BED, strand counts, and 378 unique TSS ranges",
+      "series": {
+        "id": "computational-genomics-with-r",
+        "title": "Computational Genomics with R",
+        "url": "https://compgenomr.github.io/book/",
+        "order": 7,
+        "chapter": "Chapter 6 - RefSeq BED import and transcription start sites"
+      }
+    },
+    {
+      "schema": 1,
+      "kind": "lesson",
+      "id": "oriclabs/msmb-celegans-mitochondrial-composition",
+      "name": "msmb-celegans-mitochondrial-composition",
+      "title": "Modern Statistics for Modern Biology: C. elegans Mitochondrial Composition",
+      "summary": "A deterministic Exercise 1.8 port using the exact UCSC ce2 chromosome M sequence and published nucleotide results.",
+      "publisher": "oriclabs",
+      "version": "1.0.0",
+      "status": "stable",
+      "verified": false,
+      "manifest": "https://raw.githubusercontent.com/oriclabs/biolang-lessons/main/lessons/biostatistics/msmb-celegans-mitochondrial-composition/lesson.json",
+      "manifestSha256": "d50c4acce9a09fea1036a80f7b6975a4fe9ca559f976cd56e46fc38754dfc158",
+      "publishedAt": "2026-09-03",
+      "compatibility": {
+        "biolang": ">=1.5.0",
+        "studio": ">=0.1.0",
+        "runtimes": [
+          "browser",
+          "desktop",
+          "somer"
+        ]
+      },
+      "categories": [
+        "biostatistics",
+        "genomics",
+        "bioinformatics",
+        "teaching"
+      ],
+      "tags": [
+        "statistics",
+        "genomics",
+        "mitochondrial DNA",
+        "CC BY-NC-SA"
+      ],
+      "discoverability": {
+        "problems": [
+          "count nucleotides in a mitochondrial genome",
+          "compare observed bases with equal frequencies",
+          "inspect C. elegans mitochondrial composition"
+        ],
+        "methods": [
+          "nucleotide composition",
+          "observed-versus-expected statistic",
+          "multinomial model preparation"
+        ],
+        "plots": [],
+        "terms": [
+          "Caenorhabditis elegans",
+          "mitochondrial genome",
+          "ce2",
+          "nucleotide frequency",
+          "multinomial",
+          "uniform composition"
+        ],
+        "aliases": [
+          "MSMB Exercise 1.8",
+          "worm mitochondrial composition",
+          "C elegans chrM"
+        ],
+        "functions": [
+          "read_json",
+          "dna",
+          "base_counts",
+          "len"
+        ]
+      },
+      "sourceRepository": "https://github.com/oriclabs/biolang-lessons",
+      "licence": "CC BY-NC-SA",
+      "validation": "Exact UCSC ce2 chrM sequence; published length, four nucleotide counts, proportions, and observed-equal statistic reproduced without simulation",
+      "series": {
+        "id": "modern-statistics-for-modern-biology",
+        "title": "Modern Statistics for Modern Biology",
+        "url": "https://www.huber.embl.de/msmb/",
+        "order": 2,
+        "chapter": "Chapter 1 - Exercise 1.8, C. elegans mitochondrial composition"
+      }
+    }
+  ]
+}

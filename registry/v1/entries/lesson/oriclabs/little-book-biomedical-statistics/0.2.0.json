@@ -4,13 +4,13 @@
   "id": "oriclabs/little-book-biomedical-statistics",
   "name": "little-book-biomedical-statistics",
   "title": "Biomedical statistics in BioLang",
-  "summary": "One guided medical-statistics course with eight selectable sections on epidemiological measures, study design, trials, and evidence synthesis.",
+  "summary": "One guided medical-statistics course with eight selectable sections and in-notebook Previous/Next navigation across epidemiological measures, study design, trials, and evidence synthesis.",
   "publisher": "oriclabs",
   "version": "0.2.0",
   "status": "preview",
   "verified": false,
   "manifest": "https://raw.githubusercontent.com/oriclabs/biolang-lessons/main/lessons/biostatistics/little-book-biomedical/lesson.json",
-  "manifestSha256": "d7855219e5183bb9ba38d40cae290f85b7eb986ffd0b9816feca317f7214dabd",
+  "manifestSha256": "e8418effaaedd86dec18b9de398a14ccd2149dd9df8b6ee2c5e01289796c341e",
   "publishedAt": "2026-08-30",
   "compatibility": {
     "biolang": ">=1.5.0",
@@ -207,5 +207,5 @@
   },
   "sourceRepository": "https://github.com/oriclabs/biolang-lessons",
   "licence": "CC BY 3.0",
-  "validation": "Eight selectable sections execute in BioLang and the source example metrics are pinned in collection tests."
+  "validation": "Eight selectable sections execute in BioLang; adjacent in-notebook Previous/Next links are structurally checked; source example metrics are pinned in collection tests."
 }

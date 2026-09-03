@@ -2,6 +2,38 @@
   "schema": 1,
   "categories": [
     {
+      "id": "bioinformatics",
+      "title": "Bioinformatics",
+      "count": 6,
+      "kinds": [
+        "lesson"
+      ]
+    },
+    {
+      "id": "biostatistics",
+      "title": "Biostatistics",
+      "count": 6,
+      "kinds": [
+        "lesson"
+      ]
+    },
+    {
+      "id": "clinical-research",
+      "title": "Clinical Research",
+      "count": 2,
+      "kinds": [
+        "lesson"
+      ]
+    },
+    {
+      "id": "data-analysis",
+      "title": "Data Analysis",
+      "count": 5,
+      "kinds": [
+        "lesson"
+      ]
+    },
+    {
       "id": "datasets",
       "title": "Datasets",
       "count": 1,
@@ -10,9 +42,17 @@
       ]
     },
     {
+      "id": "ecology",
+      "title": "Ecology",
+      "count": 4,
+      "kinds": [
+        "lesson"
+      ]
+    },
+    {
       "id": "epidemiology",
       "title": "Epidemiology",
-      "count": 3,
+      "count": 5,
       "kinds": [
         "dataset",
         "lesson"
@@ -35,6 +75,30 @@
       ]
     },
     {
+      "id": "genomics",
+      "title": "Genomics",
+      "count": 3,
+      "kinds": [
+        "lesson"
+      ]
+    },
+    {
+      "id": "phylogenetics",
+      "title": "Phylogenetics",
+      "count": 2,
+      "kinds": [
+        "lesson"
+      ]
+    },
+    {
+      "id": "sequence-analysis",
+      "title": "Sequence Analysis",
+      "count": 2,
+      "kinds": [
+        "lesson"
+      ]
+    },
+    {
       "id": "single-cell",
       "title": "Single Cell",
       "count": 1,
@@ -45,7 +109,7 @@
     {
       "id": "statistics",
       "title": "Statistics",
-      "count": 6,
+      "count": 7,
       "kinds": [
         "dataset",
         "lesson",
@@ -55,7 +119,7 @@
     {
       "id": "teaching",
       "title": "Teaching",
-      "count": 6,
+      "count": 20,
       "kinds": [
         "dataset",
         "lesson",
@@ -76,6 +140,14 @@
       "count": 1,
       "kinds": [
         "workflow"
+      ]
+    },
+    {
+      "id": "visualization",
+      "title": "Visualization",
+      "count": 6,
+      "kinds": [
+        "lesson"
       ]
     }
   ]

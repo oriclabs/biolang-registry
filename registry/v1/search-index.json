@@ -22,329 +22,398 @@
       "text": "oriclabs/nhanes-bdsr-teaching nhanes bdsr teaching extract a compact nhanes table and dictionary for learning exploratory and inferential statistics. oriclabs statistics epidemiology teaching nhanes survey eda regression csv oriclabs/direct-https csv tabular homo sapiens     "
     },
     {
-      "id": "oriclabs/bdsr-essential-statistics",
-      "version": "0.1.0",
+      "id": "oriclabs/bdsr-nhanes-eda",
+      "version": "1.0.0",
       "kind": "lesson",
-      "title": "Essential statistics with NHANES",
-      "summary": "An independent BioLang companion to Stephen D. Turner's BDSR essential-statistics chapter.",
+      "title": "Biological Data Science with R: NHANES Exploratory Analysis",
+      "summary": "A one-to-one port of the NHANES descriptive exercises and six EDA figures using exact source data and byte-for-byte published PNGs.",
       "categories": [
-        "statistics",
-        "teaching"
+        "biostatistics",
+        "epidemiology",
+        "teaching",
+        "visualization"
       ],
       "tags": [
-        "statistics",
+        "biostatistics",
         "NHANES",
         "EDA",
-        "inference",
-        "regression"
+        "CC BY-NC"
       ],
       "discoverability": {
         "problems": [
-          "summarize a biomedical dataset",
-          "find missing values and unusual observations",
-          "compare two independent groups",
-          "compare more than two groups",
-          "measure relationships between continuous variables",
-          "test association between categorical variables",
-          "adjust an outcome for several predictors",
-          "estimate sample size and statistical power",
-          "diagnose a fitted statistical model"
+          "explore biomedical measurements before modeling",
+          "inspect NHANES variable distributions",
+          "compare height and weight by gender"
         ],
         "methods": [
           "descriptive statistics",
+          "complete-case counting",
           "exploratory data analysis",
-          "Welch t-test",
-          "Wilcoxon rank-sum test",
-          "analysis of variance",
-          "Tukey HSD",
-          "linear regression",
-          "multiple regression",
-          "chi-square test",
-          "Fisher exact test",
-          "logistic regression",
-          "power analysis"
+          "stratified linear smoothing"
         ],
         "plots": [
-          "histogram",
-          "scatter plot",
-          "regression plot",
-          "confidence band",
-          "box plot",
-          "mosaic plot",
-          "residual plot"
+          "BMI histogram",
+          "weight histogram",
+          "age histogram",
+          "height-weight scatter plot",
+          "adult gender-specific regression plot"
         ],
         "terms": [
-          "mean",
-          "median",
+          "NHANES",
+          "BMI",
+          "pulse",
+          "blood pressure",
           "quartile",
-          "variance",
-          "standard deviation",
-          "missing data",
-          "outlier",
-          "distribution",
-          "continuous variable",
-          "categorical variable",
-          "contingency table",
-          "p-value",
-          "effect size",
-          "confidence interval",
-          "batch effect",
-          "biological replicate",
-          "technical replicate",
-          "independent observations"
+          "histogram",
+          "scatter plot",
+          "gender"
         ],
         "aliases": [
-          "EDA",
-          "t test",
-          "Student t test",
-          "Mann-Whitney U test",
-          "rank sum test",
-          "ANOVA",
-          "OLS",
-          "generalized linear model",
-          "GLM",
-          "chi squared test",
-          "sample size calculation"
+          "BDSR essential statistics",
+          "NHANES EDA",
+          "Biological Data Science with R statistics"
         ],
         "functions": [
           "read_csv",
-          "summary",
+          "drop_null",
           "mean",
-          "median",
+          "summary",
           "quantile",
           "variance",
           "stdev",
-          "histogram",
-          "stats_relationship_plot",
-          "ttest",
-          "wilcoxon",
-          "anova",
-          "tukey_hsd",
-          "lm",
-          "stats_group_plot",
-          "cross_tab",
-          "chi_square_contingency",
-          "fisher_exact",
-          "mosaic_plot",
-          "stats_glm_diagnostics",
-          "stats_multiple_linear_diagnostics",
-          "power_t_test",
-          "power_prop_test"
+          "filter"
         ]
       },
-      "text": "oriclabs/bdsr-essential-statistics essential statistics with nhanes an independent biolang companion to stephen d. turner's bdsr essential-statistics chapter. oriclabs statistics teaching statistics nhanes eda inference regression summarize a biomedical dataset find missing values and unusual observations compare two independent groups compare more than two groups measure relationships between continuous variables test association between categorical variables adjust an outcome for several predictors estimate sample size and statistical power diagnose a fitted statistical model descriptive statistics exploratory data analysis welch t-test wilcoxon rank-sum test analysis of variance tukey hsd linear regression multiple regression chi-square test fisher exact test logistic regression power analysis histogram scatter plot regression plot confidence band box plot mosaic plot residual plot mean median quartile variance standard deviation missing data outlier distribution continuous variable categorical variable contingency table p-value effect size confidence interval batch effect biological replicate technical replicate independent observations eda t test student t test mann-whitney u test rank sum test anova ols generalized linear model glm chi squared test sample size calculation read_csv summary mean median quantile variance stdev histogram stats_relationship_plot ttest wilcoxon anova tukey_hsd lm stats_group_plot cross_tab chi_square_contingency fisher_exact mosaic_plot stats_glm_diagnostics stats_multiple_linear_diagnostics power_t_test power_prop_test    biological-data-science-with-r biological data science with r chapter 8 · essential statistics"
+      "text": "oriclabs/bdsr-nhanes-eda biological data science with r: nhanes exploratory analysis a one-to-one port of the nhanes descriptive exercises and six eda figures using exact source data and byte-for-byte published pngs. oriclabs biostatistics epidemiology teaching visualization biostatistics nhanes eda cc by-nc explore biomedical measurements before modeling inspect nhanes variable distributions compare height and weight by gender descriptive statistics complete-case counting exploratory data analysis stratified linear smoothing bmi histogram weight histogram age histogram height-weight scatter plot adult gender-specific regression plot nhanes bmi pulse blood pressure quartile histogram scatter plot gender bdsr essential statistics nhanes eda biological data science with r statistics read_csv drop_null mean summary quantile variance stdev filter    biological-data-science-with-r biological data science with r essential statistics - descriptive statistics and eda"
     },
     {
-      "id": "oriclabs/bdsr-predictive-influenza",
-      "version": "0.1.0",
+      "id": "oriclabs/bdsr-nhanes-group-tests",
+      "version": "1.0.0",
       "kind": "lesson",
-      "title": "Predicting and forecasting influenza",
-      "summary": "A complete BioLang companion to BDSR chapter 10 using H7N9 and CDC data: EDA, feature engineering, four bootstrap-tuned classifiers, unknown-outcome prediction, and five-year additive forecasts.",
+      "title": "Biological Data Science with R: NHANES Group Comparisons",
+      "summary": "Exact NHANES Welch-test and smoking-status ANOVA examples with the byte-for-byte published boxplot.",
       "categories": [
-        "statistics",
+        "biostatistics",
         "epidemiology",
-        "teaching"
+        "teaching",
+        "visualization"
       ],
       "tags": [
-        "predictive modeling",
-        "random forest",
-        "gradient boosting",
-        "elastic net",
-        "kNN",
-        "forecasting",
-        "influenza",
-        "H7N9",
-        "CDC"
+        "biostatistics",
+        "NHANES",
+        "t-test",
+        "ANOVA",
+        "CC BY-NC"
       ],
       "discoverability": {
         "problems": [
-          "predict a binary clinical outcome",
-          "compare classification algorithms",
-          "rank important predictors",
-          "predict outcomes for new patients",
-          "handle missing predictor values",
-          "engineer features from dates and categories",
-          "forecast seasonal influenza counts",
-          "quantify out-of-sample classification performance"
+          "compare adult age by gender",
+          "compare BMI across smoking groups"
         ],
         "methods": [
-          "random forest",
-          "gradient boosting",
-          "elastic net logistic regression",
-          "k-nearest neighbours",
-          "bootstrap resampling",
-          "class probability prediction",
-          "variable importance",
-          "model comparison",
-          "additive time-series forecasting",
-          "Fourier seasonality",
-          "piecewise linear trend"
+          "Welch two-sample t-test",
+          "one-way ANOVA",
+          "Tukey HSD"
         ],
         "plots": [
-          "grouped density plot",
-          "faceted bar chart",
-          "grouped box plot",
-          "event timeline",
-          "bootstrap distribution histogram",
-          "variable importance plot",
-          "resampling box plot",
-          "forecast plot",
-          "forecast uncertainty ribbon",
-          "seasonal components plot"
+          "BMI by smoking-status boxplot"
         ],
         "terms": [
-          "classification",
-          "feature engineering",
-          "imputation",
-          "training data",
-          "unknown outcome",
-          "reproducible random seed",
-          "accuracy",
-          "kappa",
-          "out-of-bag prediction",
-          "hyperparameter tuning",
-          "time series",
-          "seasonality",
-          "forecast horizon",
-          "prediction interval",
-          "influenza",
-          "H7N9",
-          "CDC ILINet"
+          "NHANES",
+          "group comparison",
+          "Welch test",
+          "ANOVA",
+          "multiple comparisons"
         ],
         "aliases": [
-          "predictive modelling",
-          "predictive modeling",
-          "RF",
-          "GBM",
-          "glmnet",
-          "kNN",
-          "nearest neighbour classifier",
-          "feature importance",
-          "caret model comparison",
-          "Prophet-style forecast",
-          "ILI forecast"
+          "BDSR t test",
+          "BDSR ANOVA",
+          "NHANES smoking BMI"
         ],
         "functions": [
-          "stats_missingness",
-          "grouped_density_plot",
-          "grouped_bar_plot",
-          "grouped_boxplot_plot",
-          "pivot_longer",
-          "event_timeline_plot",
-          "histogram",
-          "predictive_train",
-          "predictive_importance_plot",
-          "predictive_compare",
-          "predictive_resample_plot",
-          "predictive_predict",
-          "seasonal_forecast",
-          "seasonal_forecast_plot",
-          "seasonal_components_plot",
-          "set_seed"
+          "read_csv",
+          "filter",
+          "drop_null",
+          "ttest",
+          "anova",
+          "tukey_hsd"
         ]
       },
-      "text": "oriclabs/bdsr-predictive-influenza predicting and forecasting influenza a complete biolang companion to bdsr chapter 10 using h7n9 and cdc data: eda, feature engineering, four bootstrap-tuned classifiers, unknown-outcome prediction, and five-year additive forecasts. oriclabs statistics epidemiology teaching predictive modeling random forest gradient boosting elastic net knn forecasting influenza h7n9 cdc predict a binary clinical outcome compare classification algorithms rank important predictors predict outcomes for new patients handle missing predictor values engineer features from dates and categories forecast seasonal influenza counts quantify out-of-sample classification performance random forest gradient boosting elastic net logistic regression k-nearest neighbours bootstrap resampling class probability prediction variable importance model comparison additive time-series forecasting fourier seasonality piecewise linear trend grouped density plot faceted bar chart grouped box plot event timeline bootstrap distribution histogram variable importance plot resampling box plot forecast plot forecast uncertainty ribbon seasonal components plot classification feature engineering imputation training data unknown outcome reproducible random seed accuracy kappa out-of-bag prediction hyperparameter tuning time series seasonality forecast horizon prediction interval influenza h7n9 cdc ilinet predictive modelling predictive modeling rf gbm glmnet knn nearest neighbour classifier feature importance caret model comparison prophet-style forecast ili forecast stats_missingness grouped_density_plot grouped_bar_plot grouped_boxplot_plot pivot_longer event_timeline_plot histogram predictive_train predictive_importance_plot predictive_compare predictive_resample_plot predictive_predict seasonal_forecast seasonal_forecast_plot seasonal_components_plot set_seed    biological-data-science-with-r biological data science with r chapter 10 · predictive analytics"
+      "text": "oriclabs/bdsr-nhanes-group-tests biological data science with r: nhanes group comparisons exact nhanes welch-test and smoking-status anova examples with the byte-for-byte published boxplot. oriclabs biostatistics epidemiology teaching visualization biostatistics nhanes t-test anova cc by-nc compare adult age by gender compare bmi across smoking groups welch two-sample t-test one-way anova tukey hsd bmi by smoking-status boxplot nhanes group comparison welch test anova multiple comparisons bdsr t test bdsr anova nhanes smoking bmi read_csv filter drop_null ttest anova tukey_hsd    biological-data-science-with-r biological data science with r essential statistics - group comparisons"
     },
     {
-      "id": "oriclabs/bdsr-survival-analysis",
-      "version": "0.1.0",
+      "id": "oriclabs/bdsr-nhanes-regression",
+      "version": "1.0.0",
       "kind": "lesson",
-      "title": "Survival analysis with lung, colon, and TCGA data",
-      "summary": "A validated BioLang lesson covering all 13 BDSR survival exercises and their figures, including Kaplan-Meier, Cox, TCGA expression, and pan-kidney analysis.",
+      "title": "Biological Data Science with R: NHANES Linear Regression",
+      "summary": "Exact adult height-weight model with both byte-for-byte published regression figures.",
       "categories": [
-        "statistics",
-        "teaching"
+        "biostatistics",
+        "epidemiology",
+        "teaching",
+        "visualization"
       ],
       "tags": [
-        "survival",
-        "Kaplan-Meier",
-        "log-rank",
-        "Cox regression",
-        "TCGA",
-        "kidney",
-        "clinical",
-        "exercises"
+        "biostatistics",
+        "NHANES",
+        "linear regression",
+        "CC BY-NC"
       ],
       "discoverability": {
         "problems": [
-          "analyse time until death or recurrence",
-          "handle censored follow-up data",
-          "estimate survival over time",
-          "compare survival between patient groups",
-          "estimate an adjusted hazard ratio",
-          "assess treatment and prognostic factors",
-          "relate gene expression to patient survival"
+          "model adult weight from height",
+          "recognize unsafe model extrapolation"
         ],
         "methods": [
-          "Kaplan-Meier estimator",
-          "life table",
-          "log-rank test",
-          "Cox proportional hazards regression",
-          "multivariable Cox model",
-          "risk set estimation",
-          "survival stratification"
+          "ordinary least squares",
+          "complete-case analysis",
+          "range-aware interpretation"
         ],
         "plots": [
-          "survival curve",
-          "Kaplan-Meier plot",
-          "risk table",
-          "censoring marks",
-          "hazard ratio forest plot",
-          "histogram",
-          "box plot",
-          "violin plot",
-          "faceted gene expression plot"
+          "height-weight regression with confidence band",
+          "regression extrapolation plot"
         ],
         "terms": [
-          "right censoring",
-          "event time",
-          "follow-up time",
-          "median survival",
-          "hazard",
-          "hazard ratio",
-          "proportional hazards",
-          "confidence interval",
-          "number at risk",
-          "recurrence-free survival",
-          "overall survival",
-          "clinical covariate",
-          "TCGA",
-          "RTCGA",
-          "pan-kidney cohort"
+          "NHANES",
+          "linear regression",
+          "slope",
+          "intercept",
+          "R squared",
+          "extrapolation"
         ],
         "aliases": [
-          "time-to-event analysis",
-          "KM curve",
-          "survival probability",
-          "log rank test",
-          "Cox model",
-          "Cox PH",
-          "relative hazard",
-          "censored observations",
-          "patient outcome analysis"
+          "BDSR linear model",
+          "NHANES height weight",
+          "adult weight regression"
         ],
         "functions": [
-          "kaplan_meier",
-          "log_rank_test",
-          "stats_cox_diagnostics",
-          "forest_plot",
-          "histogram",
-          "stats_group_plot",
-          "violin_plot",
-          "plot_grid",
-          "cross_tab",
-          "inner_join",
-          "read_csv"
+          "read_csv",
+          "filter",
+          "drop_null",
+          "lm"
         ]
       },
-      "text": "oriclabs/bdsr-survival-analysis survival analysis with lung, colon, and tcga data a validated biolang lesson covering all 13 bdsr survival exercises and their figures, including kaplan-meier, cox, tcga expression, and pan-kidney analysis. oriclabs statistics teaching survival kaplan-meier log-rank cox regression tcga kidney clinical exercises analyse time until death or recurrence handle censored follow-up data estimate survival over time compare survival between patient groups estimate an adjusted hazard ratio assess treatment and prognostic factors relate gene expression to patient survival kaplan-meier estimator life table log-rank test cox proportional hazards regression multivariable cox model risk set estimation survival stratification survival curve kaplan-meier plot risk table censoring marks hazard ratio forest plot histogram box plot violin plot faceted gene expression plot right censoring event time follow-up time median survival hazard hazard ratio proportional hazards confidence interval number at risk recurrence-free survival overall survival clinical covariate tcga rtcga pan-kidney cohort time-to-event analysis km curve survival probability log rank test cox model cox ph relative hazard censored observations patient outcome analysis kaplan_meier log_rank_test stats_cox_diagnostics forest_plot histogram stats_group_plot violin_plot plot_grid cross_tab inner_join read_csv    biological-data-science-with-r biological data science with r chapter 9 · survival analysis"
+      "text": "oriclabs/bdsr-nhanes-regression biological data science with r: nhanes linear regression exact adult height-weight model with both byte-for-byte published regression figures. oriclabs biostatistics epidemiology teaching visualization biostatistics nhanes linear regression cc by-nc model adult weight from height recognize unsafe model extrapolation ordinary least squares complete-case analysis range-aware interpretation height-weight regression with confidence band regression extrapolation plot nhanes linear regression slope intercept r squared extrapolation bdsr linear model nhanes height weight adult weight regression read_csv filter drop_null lm    biological-data-science-with-r biological data science with r essential statistics - simple linear regression"
+    },
+    {
+      "id": "oriclabs/computational-genomics-intervals",
+      "version": "1.0.0",
+      "kind": "lesson",
+      "title": "Computational Genomics with R: Genomic Intervals",
+      "summary": "A source-faithful BioLang port of the opening GRanges construction examples and exercises 1-2 from Chapter 6.",
+      "categories": [
+        "genomics",
+        "bioinformatics",
+        "teaching"
+      ],
+      "tags": [
+        "genomics",
+        "intervals",
+        "GRanges",
+        "CC BY-NC-SA"
+      ],
+      "discoverability": {
+        "problems": [
+          "represent genomic intervals",
+          "inspect interval coordinates",
+          "filter intervals by chromosome or strand"
+        ],
+        "methods": [
+          "genomic interval construction",
+          "closed-coordinate width calculation",
+          "interval filtering"
+        ],
+        "plots": [],
+        "terms": [
+          "genomic interval",
+          "GRanges",
+          "IRanges",
+          "chromosome",
+          "strand",
+          "coordinate system"
+        ],
+        "aliases": [
+          "genome arithmetic",
+          "genomic ranges",
+          "GRanges exercises"
+        ],
+        "functions": [
+          "table",
+          "head",
+          "map",
+          "filter"
+        ]
+      },
+      "text": "oriclabs/computational-genomics-intervals computational genomics with r: genomic intervals a source-faithful biolang port of the opening granges construction examples and exercises 1-2 from chapter 6. oriclabs genomics bioinformatics teaching genomics intervals granges cc by-nc-sa represent genomic intervals inspect interval coordinates filter intervals by chromosome or strand genomic interval construction closed-coordinate width calculation interval filtering genomic interval granges iranges chromosome strand coordinate system genome arithmetic genomic ranges granges exercises table head map filter    computational-genomics-with-r computational genomics with r chapter 6 - genomic intervals, construction and exercises 1-2"
+    },
+    {
+      "id": "oriclabs/computational-genomics-refseq-tss",
+      "version": "1.0.0",
+      "kind": "lesson",
+      "title": "Computational Genomics with R: RefSeq Transcription Starts",
+      "summary": "A one-to-one Chapter 6 RefSeq BED-to-TSS workflow using the exact hg19 chromosome 21 package file.",
+      "categories": [
+        "genomics",
+        "bioinformatics",
+        "data-analysis",
+        "teaching"
+      ],
+      "tags": [
+        "genomics",
+        "RefSeq",
+        "BED",
+        "CC BY-NC-SA"
+      ],
+      "discoverability": {
+        "problems": [
+          "import RefSeq genomic intervals",
+          "derive transcription start sites from strand",
+          "remove alternate transcripts with duplicate start sites"
+        ],
+        "methods": [
+          "BED import",
+          "strand-aware TSS extraction",
+          "duplicate interval detection"
+        ],
+        "plots": [],
+        "terms": [
+          "RefSeq",
+          "BED",
+          "hg19",
+          "chromosome 21",
+          "transcription start site",
+          "strand",
+          "alternative transcript"
+        ],
+        "aliases": [
+          "Computational Genomics RefSeq import",
+          "chr21 TSS",
+          "BED to GRanges workflow"
+        ],
+        "functions": [
+          "read_csv",
+          "mutate",
+          "map",
+          "unique",
+          "filter"
+        ]
+      },
+      "text": "oriclabs/computational-genomics-refseq-tss computational genomics with r: refseq transcription starts a one-to-one chapter 6 refseq bed-to-tss workflow using the exact hg19 chromosome 21 package file. oriclabs genomics bioinformatics data-analysis teaching genomics refseq bed cc by-nc-sa import refseq genomic intervals derive transcription start sites from strand remove alternate transcripts with duplicate start sites bed import strand-aware tss extraction duplicate interval detection refseq bed hg19 chromosome 21 transcription start site strand alternative transcript computational genomics refseq import chr21 tss bed to granges workflow read_csv mutate map unique filter    computational-genomics-with-r computational genomics with r chapter 6 - refseq bed import and transcription start sites"
+    },
+    {
+      "id": "oriclabs/data-carpentry-daily-counts",
+      "version": "1.0.0",
+      "kind": "lesson",
+      "title": "Data Analysis and Visualization in R for Ecologists: Daily Counts",
+      "summary": "A one-to-one port of daily animal counts by sex using the exact Portal field-data extract and byte-for-byte published time-series figure.",
+      "categories": [
+        "ecology",
+        "data-analysis",
+        "visualization",
+        "teaching"
+      ],
+      "tags": [
+        "ecology",
+        "time series",
+        "grouped counts",
+        "CC BY"
+      ],
+      "discoverability": {
+        "problems": [
+          "count field observations by day and sex",
+          "build an ecological time series",
+          "preserve missing sex as a grouping level"
+        ],
+        "methods": [
+          "split-apply-combine",
+          "daily grouped counts",
+          "time-series preparation"
+        ],
+        "plots": [
+          "daily animal-count time series"
+        ],
+        "terms": [
+          "Portal Project",
+          "ecological survey",
+          "daily counts",
+          "sex",
+          "time series",
+          "missing values"
+        ],
+        "aliases": [
+          "Data Carpentry daily counts",
+          "R ecology time series",
+          "Portal survey Challenge 4"
+        ],
+        "functions": [
+          "read_csv",
+          "mutate",
+          "group_by",
+          "summarize",
+          "arrange"
+        ]
+      },
+      "text": "oriclabs/data-carpentry-daily-counts data analysis and visualization in r for ecologists: daily counts a one-to-one port of daily animal counts by sex using the exact portal field-data extract and byte-for-byte published time-series figure. oriclabs ecology data-analysis visualization teaching ecology time series grouped counts cc by count field observations by day and sex build an ecological time series preserve missing sex as a grouping level split-apply-combine daily grouped counts time-series preparation daily animal-count time series portal project ecological survey daily counts sex time series missing values data carpentry daily counts r ecology time series portal survey challenge 4 read_csv mutate group_by summarize arrange    data-analysis-visualization-r-ecologists data analysis and visualization in r for ecologists working with data - challenge 4 daily counts"
+    },
+    {
+      "id": "oriclabs/data-carpentry-ecology",
+      "version": "1.0.0",
+      "kind": "lesson",
+      "title": "Data Analysis and Visualization in R for Ecologists: Grouped Summaries",
+      "summary": "A source-faithful port of the species-by-sex mean-weight workflow using the exact cleaned Portal Project teaching CSV.",
+      "categories": [
+        "ecology",
+        "data-analysis",
+        "teaching"
+      ],
+      "tags": [
+        "ecology",
+        "data wrangling",
+        "grouped summaries",
+        "CC BY"
+      ],
+      "discoverability": {
+        "problems": [
+          "summarize ecological observations by species and sex",
+          "remove missing weights before aggregation",
+          "rank ecological groups by mean weight"
+        ],
+        "methods": [
+          "split-apply-combine",
+          "grouped mean",
+          "missing-value filtering"
+        ],
+        "plots": [],
+        "terms": [
+          "ecological survey",
+          "species",
+          "sex",
+          "mean weight",
+          "grouped summary",
+          "Portal Project"
+        ],
+        "aliases": [
+          "Data Carpentry ecology",
+          "R ecology lesson",
+          "species weight summary"
+        ],
+        "functions": [
+          "read_csv",
+          "drop_null",
+          "mutate",
+          "group_by",
+          "summarize",
+          "arrange"
+        ]
+      },
+      "text": "oriclabs/data-carpentry-ecology data analysis and visualization in r for ecologists: grouped summaries a source-faithful port of the species-by-sex mean-weight workflow using the exact cleaned portal project teaching csv. oriclabs ecology data-analysis teaching ecology data wrangling grouped summaries cc by summarize ecological observations by species and sex remove missing weights before aggregation rank ecological groups by mean weight split-apply-combine grouped mean missing-value filtering ecological survey species sex mean weight grouped summary portal project data carpentry ecology r ecology lesson species weight summary read_csv drop_null mutate group_by summarize arrange    data-analysis-visualization-r-ecologists data analysis and visualization in r for ecologists working with data - group_by, summarize, and arrange"
     },
     {
       "id": "oriclabs/little-book-biomedical-statistics",
       "version": "0.2.0",
       "kind": "lesson",
       "title": "Biomedical statistics in BioLang",
-      "summary": "One guided medical-statistics course with eight selectable sections on epidemiological measures, study design, trials, and evidence synthesis.",
+      "summary": "One guided medical-statistics course with eight selectable sections and in-notebook Previous/Next navigation across epidemiological measures, study design, trials, and evidence synthesis.",
       "categories": [
         "statistics",
         "epidemiology",
@@ -529,7 +598,605 @@
           "map"
         ]
       },
-      "text": "oriclabs/little-book-biomedical-statistics biomedical statistics in biolang one guided medical-statistics course with eight selectable sections on epidemiological measures, study design, trials, and evidence synthesis. oriclabs statistics epidemiology teaching biomedical statistics risk odds ratio clinical trials meta-analysis cc by choose a biomedical study design estimate risk and odds ratios test categorical association adjust for confounding analyse matched case-control data test a dose-response trend plan sample size and power combine results across studies choose an epidemiological study design identify the unit of analysis distinguish exposure sampling from outcome sampling compare disease occurrence between exposed and unexposed groups estimate effect size from a 2x2 table test association between categorical variables analyse a sparse contingency table adjust a categorical association for a confounder check whether effects differ across strata analyse matched case-control pairs test change in paired binary outcomes test whether risk changes with increasing dose model an ordered exposure trend calculate randomized trial sample size estimate power for two proportions allow for loss to follow-up combine effect estimates across studies visualize study uncertainty assess between-study heterogeneity cohort study case-control study risk ratio odds ratio chi-square test fisher exact test mantel-haenszel odds ratio breslow-day test mcnemar test linear trend regression power calculation fixed-effect meta-analysis matched study randomized controlled trial meta-analysis wald confidence interval pearson chi-square test expected cell count assessment tarone adjustment stratified analysis matched odds ratio continuity correction dose-response analysis log-odds transformation two-proportion sample size normal approximation inverse-variance weighting cochran q test dose-response plot scatter plot fitted trend line forest plot study design exposure outcome risk odds confidence interval confounding effect modification matched pairs dose response statistical power type i error type ii error heterogeneity sampling frame temporality selection bias relative risk sample odds ratio conditional odds ratio observed count expected count degrees of freedom p-value effect size sparse table homogeneity common odds ratio stratum interaction matched pair discordant pair concordant pair paired binary data conditional analysis dose response monotonic trend log odds ordered exposure slope alpha attrition allocation ratio pooled effect study weight standard error odds ratio rr or two by two table chi squared test mh estimate paired proportions trend test rct planning evidence synthesis rct observational study prospective study retrospective study risk ratio cross-product ratio test of independence exact test categorical association adjusted odds ratio heterogeneity test subgroup analysis paired proportions test matched 2x2 table mcnemar chi-square exposure-response dose effect linear trend trial size power analysis required participants dropout adjustment pooled odds ratio inverse variance model meta analytic model fisher_exact chi_square_contingency breslow_day_test stats_relationship_plot lm forest_plot meta_analysis qnorm pnorm table sqrt exp log ceil abs map      "
+      "text": "oriclabs/little-book-biomedical-statistics biomedical statistics in biolang one guided medical-statistics course with eight selectable sections and in-notebook previous/next navigation across epidemiological measures, study design, trials, and evidence synthesis. oriclabs statistics epidemiology teaching biomedical statistics risk odds ratio clinical trials meta-analysis cc by choose a biomedical study design estimate risk and odds ratios test categorical association adjust for confounding analyse matched case-control data test a dose-response trend plan sample size and power combine results across studies choose an epidemiological study design identify the unit of analysis distinguish exposure sampling from outcome sampling compare disease occurrence between exposed and unexposed groups estimate effect size from a 2x2 table test association between categorical variables analyse a sparse contingency table adjust a categorical association for a confounder check whether effects differ across strata analyse matched case-control pairs test change in paired binary outcomes test whether risk changes with increasing dose model an ordered exposure trend calculate randomized trial sample size estimate power for two proportions allow for loss to follow-up combine effect estimates across studies visualize study uncertainty assess between-study heterogeneity cohort study case-control study risk ratio odds ratio chi-square test fisher exact test mantel-haenszel odds ratio breslow-day test mcnemar test linear trend regression power calculation fixed-effect meta-analysis matched study randomized controlled trial meta-analysis wald confidence interval pearson chi-square test expected cell count assessment tarone adjustment stratified analysis matched odds ratio continuity correction dose-response analysis log-odds transformation two-proportion sample size normal approximation inverse-variance weighting cochran q test dose-response plot scatter plot fitted trend line forest plot study design exposure outcome risk odds confidence interval confounding effect modification matched pairs dose response statistical power type i error type ii error heterogeneity sampling frame temporality selection bias relative risk sample odds ratio conditional odds ratio observed count expected count degrees of freedom p-value effect size sparse table homogeneity common odds ratio stratum interaction matched pair discordant pair concordant pair paired binary data conditional analysis dose response monotonic trend log odds ordered exposure slope alpha attrition allocation ratio pooled effect study weight standard error odds ratio rr or two by two table chi squared test mh estimate paired proportions trend test rct planning evidence synthesis rct observational study prospective study retrospective study risk ratio cross-product ratio test of independence exact test categorical association adjusted odds ratio heterogeneity test subgroup analysis paired proportions test matched 2x2 table mcnemar chi-square exposure-response dose effect linear trend trial size power analysis required participants dropout adjustment pooled odds ratio inverse variance model meta analytic model fisher_exact chi_square_contingency breslow_day_test stats_relationship_plot lm forest_plot meta_analysis qnorm pnorm table sqrt exp log ceil abs map      "
+    },
+    {
+      "id": "oriclabs/little-book-r-bioinformatics",
+      "version": "0.1.0",
+      "kind": "lesson",
+      "title": "A Little Book of R for Bioinformatics",
+      "summary": "Two selectable BioLang notebooks with in-notebook Previous/Next navigation, all twelve exercises, worked solutions, and all eighteen source figures copied byte-for-byte without substitute plots.",
+      "categories": [
+        "sequence-analysis",
+        "bioinformatics",
+        "teaching"
+      ],
+      "tags": [
+        "FASTA",
+        "GC content",
+        "sliding windows",
+        "k-mer",
+        "SeqinR",
+        "Dengue",
+        "Mycobacterium leprae"
+      ],
+      "discoverability": {
+        "problems": [
+          "inspect a FASTA genome",
+          "calculate genome GC content",
+          "count bases and DNA words",
+          "solve sequence-statistics exercises",
+          "measure local genome composition",
+          "choose a sequence window size",
+          "compare GC and AT content",
+          "calculate observed-to-expected word frequency"
+        ],
+        "methods": [
+          "FASTA parsing",
+          "base composition",
+          "GC content",
+          "sequence complement",
+          "directional k-mer counting",
+          "non-overlapping sliding windows",
+          "local GC analysis",
+          "local AT analysis",
+          "observed-to-expected ratio"
+        ],
+        "plots": [
+          "base-composition bar plot",
+          "sliding-window line plot",
+          "multi-panel comparison plot"
+        ],
+        "terms": [
+          "FASTA",
+          "NCBI accession",
+          "Dengue virus",
+          "Mycobacterium leprae",
+          "DNA",
+          "nucleotide",
+          "ambiguous base",
+          "dinucleotide",
+          "window size",
+          "local GC",
+          "local AT",
+          "k-mer",
+          "rho statistic",
+          "word enrichment",
+          "genome position"
+        ],
+        "aliases": [
+          "SeqinR chapter 1",
+          "DNA sequence statistics 1",
+          "genome composition",
+          "SeqinR chapter 2",
+          "DNA sequence statistics 2",
+          "sliding window GC plot"
+        ],
+        "functions": [
+          "read_fasta",
+          "subseq",
+          "base_counts",
+          "gc_content",
+          "complement",
+          "kmer_index",
+          "range",
+          "map",
+          "motif_count"
+        ]
+      },
+      "text": "oriclabs/little-book-r-bioinformatics a little book of r for bioinformatics two selectable biolang notebooks with in-notebook previous/next navigation, all twelve exercises, worked solutions, and all eighteen source figures copied byte-for-byte without substitute plots. oriclabs sequence-analysis bioinformatics teaching fasta gc content sliding windows k-mer seqinr dengue mycobacterium leprae inspect a fasta genome calculate genome gc content count bases and dna words solve sequence-statistics exercises measure local genome composition choose a sequence window size compare gc and at content calculate observed-to-expected word frequency fasta parsing base composition gc content sequence complement directional k-mer counting non-overlapping sliding windows local gc analysis local at analysis observed-to-expected ratio base-composition bar plot sliding-window line plot multi-panel comparison plot fasta ncbi accession dengue virus mycobacterium leprae dna nucleotide ambiguous base dinucleotide window size local gc local at k-mer rho statistic word enrichment genome position seqinr chapter 1 dna sequence statistics 1 genome composition seqinr chapter 2 dna sequence statistics 2 sliding window gc plot read_fasta subseq base_counts gc_content complement kmer_index range map motif_count    a-little-book-of-r-for-bioinformatics a little book of r for bioinformatics chapters 1–2 · dna sequence statistics"
+    },
+    {
+      "id": "oriclabs/little-book-r-gene-finding",
+      "version": "0.1.0",
+      "kind": "lesson",
+      "title": "Computational Gene-finding",
+      "summary": "A BioLang notebook porting the Computational Gene-finding chapter with all nine worked answers and four byte-for-byte source figures; the unpublished random draw is not replaced with invented data.",
+      "categories": [
+        "sequence-analysis",
+        "bioinformatics",
+        "teaching"
+      ],
+      "tags": [
+        "ORF",
+        "gene finding",
+        "genetic code",
+        "reading frame",
+        "translation",
+        "Dengue",
+        "rabies virus"
+      ],
+      "discoverability": {
+        "problems": [
+          "find start and stop codons in a sequence",
+          "work out which reading frame a codon is in",
+          "find open reading frames in a genome",
+          "find ORFs on the reverse strand",
+          "translate a predicted coding region",
+          "decide whether an ORF is longer than chance explains",
+          "choose a length threshold for candidate genes"
+        ],
+        "methods": [
+          "codon table lookup",
+          "motif search",
+          "reading-frame arithmetic",
+          "open reading frame detection",
+          "reverse-complement strand search",
+          "translation",
+          "source-reported random null comparison",
+          "ORF length threshold"
+        ],
+        "plots": [
+          "start and stop codon scatter",
+          "ORF genome track",
+          "ORF length distribution"
+        ],
+        "terms": [
+          "genetic code",
+          "codon",
+          "start codon",
+          "stop codon",
+          "reading frame",
+          "open reading frame",
+          "ORF",
+          "forward strand",
+          "reverse strand",
+          "translation",
+          "null model",
+          "gene prediction",
+          "Dengue virus",
+          "rabies virus"
+        ],
+        "aliases": [
+          "SeqinR chapter 7",
+          "computational gene finding",
+          "ORF finding",
+          "gene prediction in BioLang",
+          "open reading frames tutorial"
+        ],
+        "functions": [
+          "read_fasta",
+          "subseq",
+          "find_motif",
+          "find_orfs",
+          "translate",
+          "reverse_complement",
+          "kmers",
+          "table",
+          "arrange",
+          "select",
+          "sort_by"
+        ]
+      },
+      "text": "oriclabs/little-book-r-gene-finding computational gene-finding a biolang notebook porting the computational gene-finding chapter with all nine worked answers and four byte-for-byte source figures; the unpublished random draw is not replaced with invented data. oriclabs sequence-analysis bioinformatics teaching orf gene finding genetic code reading frame translation dengue rabies virus find start and stop codons in a sequence work out which reading frame a codon is in find open reading frames in a genome find orfs on the reverse strand translate a predicted coding region decide whether an orf is longer than chance explains choose a length threshold for candidate genes codon table lookup motif search reading-frame arithmetic open reading frame detection reverse-complement strand search translation source-reported random null comparison orf length threshold start and stop codon scatter orf genome track orf length distribution genetic code codon start codon stop codon reading frame open reading frame orf forward strand reverse strand translation null model gene prediction dengue virus rabies virus seqinr chapter 7 computational gene finding orf finding gene prediction in biolang open reading frames tutorial read_fasta subseq find_motif find_orfs translate reverse_complement kmers table arrange select sort_by    a-little-book-of-r-for-bioinformatics a little book of r for bioinformatics chapter 7 · computational gene-finding"
+    },
+    {
+      "id": "oriclabs/msmb-celegans-mitochondrial-composition",
+      "version": "1.0.0",
+      "kind": "lesson",
+      "title": "Modern Statistics for Modern Biology: C. elegans Mitochondrial Composition",
+      "summary": "A deterministic Exercise 1.8 port using the exact UCSC ce2 chromosome M sequence and published nucleotide results.",
+      "categories": [
+        "biostatistics",
+        "genomics",
+        "bioinformatics",
+        "teaching"
+      ],
+      "tags": [
+        "statistics",
+        "genomics",
+        "mitochondrial DNA",
+        "CC BY-NC-SA"
+      ],
+      "discoverability": {
+        "problems": [
+          "count nucleotides in a mitochondrial genome",
+          "compare observed bases with equal frequencies",
+          "inspect C. elegans mitochondrial composition"
+        ],
+        "methods": [
+          "nucleotide composition",
+          "observed-versus-expected statistic",
+          "multinomial model preparation"
+        ],
+        "plots": [],
+        "terms": [
+          "Caenorhabditis elegans",
+          "mitochondrial genome",
+          "ce2",
+          "nucleotide frequency",
+          "multinomial",
+          "uniform composition"
+        ],
+        "aliases": [
+          "MSMB Exercise 1.8",
+          "worm mitochondrial composition",
+          "C elegans chrM"
+        ],
+        "functions": [
+          "read_json",
+          "dna",
+          "base_counts",
+          "len"
+        ]
+      },
+      "text": "oriclabs/msmb-celegans-mitochondrial-composition modern statistics for modern biology: c. elegans mitochondrial composition a deterministic exercise 1.8 port using the exact ucsc ce2 chromosome m sequence and published nucleotide results. oriclabs biostatistics genomics bioinformatics teaching statistics genomics mitochondrial dna cc by-nc-sa count nucleotides in a mitochondrial genome compare observed bases with equal frequencies inspect c. elegans mitochondrial composition nucleotide composition observed-versus-expected statistic multinomial model preparation caenorhabditis elegans mitochondrial genome ce2 nucleotide frequency multinomial uniform composition msmb exercise 1.8 worm mitochondrial composition c elegans chrm read_json dna base_counts len    modern-statistics-for-modern-biology modern statistics for modern biology chapter 1 - exercise 1.8, c. elegans mitochondrial composition"
+    },
+    {
+      "id": "oriclabs/msmb-discrete-models",
+      "version": "1.0.0",
+      "kind": "lesson",
+      "title": "Modern Statistics for Modern Biology: Discrete Models",
+      "summary": "An exact port of the opening Poisson and binomial calculations with byte-for-byte copies of the published chapter figures.",
+      "categories": [
+        "statistics",
+        "biostatistics",
+        "teaching"
+      ],
+      "tags": [
+        "statistics",
+        "probability",
+        "Poisson",
+        "binomial",
+        "CC BY-NC-SA"
+      ],
+      "discoverability": {
+        "problems": [
+          "model mutation counts",
+          "calculate an exact event-count probability",
+          "compare outcomes in repeated binary trials"
+        ],
+        "methods": [
+          "Poisson probability mass",
+          "binomial probability mass",
+          "discrete generative modeling"
+        ],
+        "plots": [
+          "Poisson probability bar plot",
+          "binomial probability bar plot"
+        ],
+        "terms": [
+          "Poisson distribution",
+          "binomial distribution",
+          "probability mass function",
+          "mutation count",
+          "Bernoulli trial"
+        ],
+        "aliases": [
+          "MSMB chapter 1",
+          "discrete probability models",
+          "generative models"
+        ],
+        "functions": [
+          "dpois",
+          "dbinom",
+          "range",
+          "map",
+          "table"
+        ]
+      },
+      "text": "oriclabs/msmb-discrete-models modern statistics for modern biology: discrete models an exact port of the opening poisson and binomial calculations with byte-for-byte copies of the published chapter figures. oriclabs statistics biostatistics teaching statistics probability poisson binomial cc by-nc-sa model mutation counts calculate an exact event-count probability compare outcomes in repeated binary trials poisson probability mass binomial probability mass discrete generative modeling poisson probability bar plot binomial probability bar plot poisson distribution binomial distribution probability mass function mutation count bernoulli trial msmb chapter 1 discrete probability models generative models dpois dbinom range map table    modern-statistics-for-modern-biology modern statistics for modern biology chapter 1 - opening poisson and binomial examples"
+    },
+    {
+      "id": "oriclabs/rmrwr-blood-storage-columns",
+      "version": "1.0.0",
+      "kind": "lesson",
+      "title": "Reproducible Medical Research with R: Blood-Storage Columns",
+      "summary": "A one-to-one non-contiguous column-selection example using the exact de-identified 316-patient blood-storage cohort.",
+      "categories": [
+        "clinical-research",
+        "biostatistics",
+        "data-analysis",
+        "teaching"
+      ],
+      "tags": [
+        "clinical research",
+        "data wrangling",
+        "cohort",
+        "CC0"
+      ],
+      "discoverability": {
+        "problems": [
+          "select non-contiguous clinical variables",
+          "reorder a clinical table",
+          "inspect a de-identified prostate-cancer cohort"
+        ],
+        "methods": [
+          "column selection",
+          "column range expansion",
+          "clinical data inspection"
+        ],
+        "plots": [],
+        "terms": [
+          "blood storage",
+          "prostate cancer",
+          "retrospective cohort",
+          "Gleason score",
+          "PSA",
+          "column selection"
+        ],
+        "aliases": [
+          "RMRWR selecting columns",
+          "medicaldata blood_storage",
+          "prostate cohort columns"
+        ],
+        "functions": [
+          "read_csv",
+          "select",
+          "head",
+          "colnames",
+          "nrow"
+        ]
+      },
+      "text": "oriclabs/rmrwr-blood-storage-columns reproducible medical research with r: blood-storage columns a one-to-one non-contiguous column-selection example using the exact de-identified 316-patient blood-storage cohort. oriclabs clinical-research biostatistics data-analysis teaching clinical research data wrangling cohort cc0 select non-contiguous clinical variables reorder a clinical table inspect a de-identified prostate-cancer cohort column selection column range expansion clinical data inspection blood storage prostate cancer retrospective cohort gleason score psa column selection rmrwr selecting columns medicaldata blood_storage prostate cohort columns read_csv select head colnames nrow    reproducible-medical-research-with-r reproducible medical research with r selecting columns - non-contiguous blood-storage example"
+    },
+    {
+      "id": "oriclabs/rmrwr-sample-size",
+      "version": "1.0.0",
+      "kind": "lesson",
+      "title": "Reproducible Medical Research with R: Sample Size",
+      "summary": "A source-mapped BioLang port of the opening two-arm A1c sample-size and constrained-power example.",
+      "categories": [
+        "statistics",
+        "clinical-research",
+        "teaching"
+      ],
+      "tags": [
+        "sample size",
+        "power",
+        "two-sample t test",
+        "clinical research",
+        "CC0"
+      ],
+      "discoverability": {
+        "problems": [
+          "plan a two-arm clinical study",
+          "inflate sample size for participant dropout",
+          "calculate achieved power with a fixed budget"
+        ],
+        "methods": [
+          "Cohen effect size",
+          "two-sample t-test power",
+          "attrition inflation"
+        ],
+        "plots": [],
+        "terms": [
+          "sample size",
+          "statistical power",
+          "Cohen d",
+          "alpha",
+          "dropout",
+          "participants per arm"
+        ],
+        "aliases": [
+          "clinical trial planning",
+          "pwr t test",
+          "A1c study example"
+        ],
+        "functions": [
+          "power_t_test",
+          "abs"
+        ]
+      },
+      "text": "oriclabs/rmrwr-sample-size reproducible medical research with r: sample size a source-mapped biolang port of the opening two-arm a1c sample-size and constrained-power example. oriclabs statistics clinical-research teaching sample size power two-sample t test clinical research cc0 plan a two-arm clinical study inflate sample size for participant dropout calculate achieved power with a fixed budget cohen effect size two-sample t-test power attrition inflation sample size statistical power cohen d alpha dropout participants per arm clinical trial planning pwr t test a1c study example power_t_test abs    reproducible-medical-research-with-r reproducible medical research with r sample size calculations - opening continuous endpoint example"
+    },
+    {
+      "id": "oriclabs/stats4nr-fishing-dispersion",
+      "version": "1.0.0",
+      "kind": "lesson",
+      "title": "Statistics in Natural Resources: Fishing-Count Dispersion",
+      "summary": "A one-to-one port of the fishing-count distribution check using exact package data, published summary values, and the byte-for-byte source histogram.",
+      "categories": [
+        "ecology",
+        "statistics",
+        "teaching"
+      ],
+      "tags": [
+        "ecology",
+        "count data",
+        "overdispersion",
+        "CC BY-NC-SA"
+      ],
+      "discoverability": {
+        "problems": [
+          "diagnose overdispersion in wildlife count data",
+          "measure excess zeros in fishing catches",
+          "inspect a count response before regression"
+        ],
+        "methods": [
+          "mean-variance comparison",
+          "zero-frequency analysis",
+          "count-data exploratory analysis"
+        ],
+        "plots": [
+          "fish-catch histogram"
+        ],
+        "terms": [
+          "count data",
+          "overdispersion",
+          "zero inflation",
+          "Poisson assumption",
+          "fishing success",
+          "variance-to-mean ratio"
+        ],
+        "aliases": [
+          "Stats4NR fishing case study",
+          "fishing count dispersion",
+          "natural resources count data"
+        ],
+        "functions": [
+          "read_csv",
+          "mean",
+          "variance",
+          "filter",
+          "nrow"
+        ]
+      },
+      "text": "oriclabs/stats4nr-fishing-dispersion statistics in natural resources: fishing-count dispersion a one-to-one port of the fishing-count distribution check using exact package data, published summary values, and the byte-for-byte source histogram. oriclabs ecology statistics teaching ecology count data overdispersion cc by-nc-sa diagnose overdispersion in wildlife count data measure excess zeros in fishing catches inspect a count response before regression mean-variance comparison zero-frequency analysis count-data exploratory analysis fish-catch histogram count data overdispersion zero inflation poisson assumption fishing success variance-to-mean ratio stats4nr fishing case study fishing count dispersion natural resources count data read_csv mean variance filter nrow    statistics-in-natural-resources statistics in natural resources: applications with r chapter 13 - fishing count distribution and dispersion"
+    },
+    {
+      "id": "oriclabs/stats4nr-redpine-ols",
+      "version": "1.0.0",
+      "kind": "lesson",
+      "title": "Statistics in Natural Resources: Red-Pine OLS",
+      "summary": "A bounded one-to-one Exercise 14.1 port using 450 real tree observations and exact correlation, OLS, and AIC results.",
+      "categories": [
+        "ecology",
+        "statistics",
+        "data-analysis",
+        "teaching"
+      ],
+      "tags": [
+        "ecology",
+        "forestry",
+        "linear regression",
+        "CC BY-NC-SA"
+      ],
+      "discoverability": {
+        "problems": [
+          "predict tree height from diameter",
+          "fit ordinary least squares to forestry data",
+          "calculate Pearson correlation for tree measurements"
+        ],
+        "methods": [
+          "Pearson correlation",
+          "simple linear regression",
+          "Akaike information criterion"
+        ],
+        "plots": [],
+        "terms": [
+          "red pine",
+          "Cloquet Forestry Center",
+          "diameter at breast height",
+          "tree height",
+          "OLS",
+          "AIC"
+        ],
+        "aliases": [
+          "Stats4NR redpine",
+          "red pine height diameter",
+          "forestry OLS exercise"
+        ],
+        "functions": [
+          "read_csv",
+          "cor",
+          "lm",
+          "map",
+          "sum",
+          "log"
+        ]
+      },
+      "text": "oriclabs/stats4nr-redpine-ols statistics in natural resources: red-pine ols a bounded one-to-one exercise 14.1 port using 450 real tree observations and exact correlation, ols, and aic results. oriclabs ecology statistics data-analysis teaching ecology forestry linear regression cc by-nc-sa predict tree height from diameter fit ordinary least squares to forestry data calculate pearson correlation for tree measurements pearson correlation simple linear regression akaike information criterion red pine cloquet forestry center diameter at breast height tree height ols aic stats4nr redpine red pine height diameter forestry ols exercise read_csv cor lm map sum log    statistics-in-natural-resources statistics in natural resources: applications with r chapter 14 - exercise 14.1 red-pine ordinary least squares"
+    },
+    {
+      "id": "oriclabs/treedata-metadata-attachment",
+      "version": "1.0.0",
+      "kind": "lesson",
+      "title": "Phylogenetic Tree Data Integration: Tip and Node Metadata",
+      "summary": "One-to-one Figure 7.1 port using exact TDbook tree, tip, node, and published SVG assets.",
+      "categories": [
+        "phylogenetics",
+        "bioinformatics",
+        "visualization",
+        "teaching"
+      ],
+      "tags": [
+        "phylogenetics",
+        "metadata",
+        "tree annotation",
+        "CC BY-NC-SA"
+      ],
+      "discoverability": {
+        "problems": [
+          "attach biological metadata to phylogenetic tree tips",
+          "annotate internal tree nodes"
+        ],
+        "methods": [
+          "tip-label keyed integration",
+          "node metadata attachment",
+          "visual encoding of traits"
+        ],
+        "plots": [
+          "annotated phylogenetic tree"
+        ],
+        "terms": [
+          "phylogenetic tree",
+          "tip metadata",
+          "node metadata",
+          "trophic habit",
+          "body mass",
+          "posterior"
+        ],
+        "aliases": [
+          "treedata Figure 7.1",
+          "ggtree attacher",
+          "tree annotation"
+        ],
+        "functions": [
+          "read_csv",
+          "filter",
+          "unique",
+          "summary"
+        ]
+      },
+      "text": "oriclabs/treedata-metadata-attachment phylogenetic tree data integration: tip and node metadata one-to-one figure 7.1 port using exact tdbook tree, tip, node, and published svg assets. oriclabs phylogenetics bioinformatics visualization teaching phylogenetics metadata tree annotation cc by-nc-sa attach biological metadata to phylogenetic tree tips annotate internal tree nodes tip-label keyed integration node metadata attachment visual encoding of traits annotated phylogenetic tree phylogenetic tree tip metadata node metadata trophic habit body mass posterior treedata figure 7.1 ggtree attacher tree annotation read_csv filter unique summary    treedata-book data integration, manipulation and visualization of phylogenetic trees chapter 7 - figure 7.1"
+    },
+    {
+      "id": "oriclabs/treedata-snp-traits",
+      "version": "1.0.0",
+      "kind": "lesson",
+      "title": "Phylogenetic Tree Data Integration: SNP and Trait Panels",
+      "summary": "A one-to-one port of Chapter 7 Figure 7.2 using the exact official tree, metadata, allele, trait, derived SNP, and published figure assets.",
+      "categories": [
+        "phylogenetics",
+        "visualization",
+        "teaching"
+      ],
+      "tags": [
+        "phylogenetics",
+        "SNP",
+        "data integration",
+        "CC BY-NC-SA"
+      ],
+      "discoverability": {
+        "problems": [
+          "align SNPs with a phylogenetic tree",
+          "attach sample metadata to tree tips",
+          "compare traits in phylogenetic order"
+        ],
+        "methods": [
+          "tip-label keyed integration",
+          "reference-allele comparison",
+          "gap exclusion",
+          "tree-aligned data panels"
+        ],
+        "plots": [
+          "phylogenetic tree with SNP and trait panels"
+        ],
+        "terms": [
+          "phylogenetic tree",
+          "SNP",
+          "trait",
+          "tip metadata",
+          "facet plot",
+          "Newick",
+          "tree data integration"
+        ],
+        "aliases": [
+          "treedata book figure 7.2",
+          "ggtree facet plot",
+          "tree SNP trait example"
+        ],
+        "functions": [
+          "read_text",
+          "nw_parse",
+          "tree_leaves",
+          "read_csv",
+          "filter",
+          "unique"
+        ]
+      },
+      "text": "oriclabs/treedata-snp-traits phylogenetic tree data integration: snp and trait panels a one-to-one port of chapter 7 figure 7.2 using the exact official tree, metadata, allele, trait, derived snp, and published figure assets. oriclabs phylogenetics visualization teaching phylogenetics snp data integration cc by-nc-sa align snps with a phylogenetic tree attach sample metadata to tree tips compare traits in phylogenetic order tip-label keyed integration reference-allele comparison gap exclusion tree-aligned data panels phylogenetic tree with snp and trait panels phylogenetic tree snp trait tip metadata facet plot newick tree data integration treedata book figure 7.2 ggtree facet plot tree snp trait example read_text nw_parse tree_leaves read_csv filter unique    treedata-book data integration, manipulation and visualization of phylogenetic trees chapter 7 - figure 7.2"
     },
     {
       "id": "oriclabs/statdata",

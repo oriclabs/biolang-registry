@@ -59,17 +59,17 @@
     {
       "schema": 1,
       "kind": "lesson",
-      "id": "oriclabs/bdsr-essential-statistics",
-      "name": "bdsr-essential-statistics",
-      "title": "Essential statistics with NHANES",
-      "summary": "An independent BioLang companion to Stephen D. Turner's BDSR essential-statistics chapter.",
+      "id": "oriclabs/bdsr-nhanes-eda",
+      "name": "bdsr-nhanes-eda",
+      "title": "Biological Data Science with R: NHANES Exploratory Analysis",
+      "summary": "A one-to-one port of the NHANES descriptive exercises and six EDA figures using exact source data and byte-for-byte published PNGs.",
       "publisher": "oriclabs",
-      "version": "0.1.0",
+      "version": "1.0.0",
       "status": "stable",
       "verified": false,
-      "manifest": "https://raw.githubusercontent.com/oriclabs/biolang-lessons/main/lessons/biostatistics/bdsr-essential/lesson.json",
-      "manifestSha256": "0a110dce3a44afab51b714bf860ac4884fb63ef01972e21e7652252be5a99418",
-      "publishedAt": "2026-08-27",
+      "manifest": "https://raw.githubusercontent.com/oriclabs/biolang-lessons/main/lessons/biostatistics/bdsr-nhanes-eda/lesson.json",
+      "manifestSha256": "218ad2c847dbb0de6cedc0b8ce5fd4ed88f52887141f428777f57dc47f8bb0c0",
+      "publishedAt": "2026-09-03",
       "compatibility": {
         "biolang": ">=1.5.0",
         "studio": ">=0.1.0",
@@ -80,135 +80,87 @@
         ]
       },
       "categories": [
-        "statistics",
-        "teaching"
+        "biostatistics",
+        "epidemiology",
+        "teaching",
+        "visualization"
       ],
       "tags": [
-        "statistics",
+        "biostatistics",
         "NHANES",
         "EDA",
-        "inference",
-        "regression"
+        "CC BY-NC"
       ],
       "discoverability": {
         "problems": [
-          "summarize a biomedical dataset",
-          "find missing values and unusual observations",
-          "compare two independent groups",
-          "compare more than two groups",
-          "measure relationships between continuous variables",
-          "test association between categorical variables",
-          "adjust an outcome for several predictors",
-          "estimate sample size and statistical power",
-          "diagnose a fitted statistical model"
+          "explore biomedical measurements before modeling",
+          "inspect NHANES variable distributions",
+          "compare height and weight by gender"
         ],
         "methods": [
           "descriptive statistics",
+          "complete-case counting",
           "exploratory data analysis",
-          "Welch t-test",
-          "Wilcoxon rank-sum test",
-          "analysis of variance",
-          "Tukey HSD",
-          "linear regression",
-          "multiple regression",
-          "chi-square test",
-          "Fisher exact test",
-          "logistic regression",
-          "power analysis"
+          "stratified linear smoothing"
         ],
         "plots": [
-          "histogram",
-          "scatter plot",
-          "regression plot",
-          "confidence band",
-          "box plot",
-          "mosaic plot",
-          "residual plot"
+          "BMI histogram",
+          "weight histogram",
+          "age histogram",
+          "height-weight scatter plot",
+          "adult gender-specific regression plot"
         ],
         "terms": [
-          "mean",
-          "median",
+          "NHANES",
+          "BMI",
+          "pulse",
+          "blood pressure",
           "quartile",
-          "variance",
-          "standard deviation",
-          "missing data",
-          "outlier",
-          "distribution",
-          "continuous variable",
-          "categorical variable",
-          "contingency table",
-          "p-value",
-          "effect size",
-          "confidence interval",
-          "batch effect",
-          "biological replicate",
-          "technical replicate",
-          "independent observations"
+          "histogram",
+          "scatter plot",
+          "gender"
         ],
         "aliases": [
-          "EDA",
-          "t test",
-          "Student t test",
-          "Mann-Whitney U test",
-          "rank sum test",
-          "ANOVA",
-          "OLS",
-          "generalized linear model",
-          "GLM",
-          "chi squared test",
-          "sample size calculation"
+          "BDSR essential statistics",
+          "NHANES EDA",
+          "Biological Data Science with R statistics"
         ],
         "functions": [
           "read_csv",
-          "summary",
+          "drop_null",
           "mean",
-          "median",
+          "summary",
           "quantile",
           "variance",
           "stdev",
-          "histogram",
-          "stats_relationship_plot",
-          "ttest",
-          "wilcoxon",
-          "anova",
-          "tukey_hsd",
-          "lm",
-          "stats_group_plot",
-          "cross_tab",
-          "chi_square_contingency",
-          "fisher_exact",
-          "mosaic_plot",
-          "stats_glm_diagnostics",
-          "stats_multiple_linear_diagnostics",
-          "power_t_test",
-          "power_prop_test"
+          "filter"
         ]
       },
       "sourceRepository": "https://github.com/oriclabs/biolang-lessons",
-      "licence": "MIT",
-      "validation": "content-owned",
+      "licence": "CC BY-NC 4.0",
+      "validation": "Exact source-hosted 5,000-row NHANES table and dictionary; six byte-for-byte published PNGs; dimensions, exercise statistics, and complete-case counts reproduced",
       "series": {
         "id": "biological-data-science-with-r",
         "title": "Biological Data Science with R",
         "url": "https://bdsr.stephenturner.us/",
         "order": 8,
-        "chapter": "Chapter 8 · Essential statistics"
+        "chapter": "Essential statistics - descriptive statistics and EDA"
       }
     },
     {
       "schema": 1,
       "kind": "lesson",
-      "id": "oriclabs/bdsr-predictive-influenza",
-      "name": "bdsr-predictive-influenza",
-      "title": "Predicting and forecasting influenza",
-      "summary": "A complete BioLang companion to BDSR chapter 10 using H7N9 and CDC data: EDA, feature engineering, four bootstrap-tuned classifiers, unknown-outcome prediction, and five-year additive forecasts.",
+      "id": "oriclabs/bdsr-nhanes-group-tests",
+      "name": "bdsr-nhanes-group-tests",
+      "title": "Biological Data Science with R: NHANES Group Comparisons",
+      "summary": "Exact NHANES Welch-test and smoking-status ANOVA examples with the byte-for-byte published boxplot.",
       "publisher": "oriclabs",
-      "version": "0.1.0",
+      "version": "1.0.0",
       "status": "stable",
       "verified": false,
-      "manifest": "https://raw.githubusercontent.com/oriclabs/biolang-lessons/main/lessons/biostatistics/bdsr-predictive/lesson.json",
-      "manifestSha256": "55b6c351030eb78d02787e8cec1972d1833826734e0d6f3d57a6f0b335237e73",
-      "publishedAt": "2026-08-30",
+      "manifest": "https://raw.githubusercontent.com/oriclabs/biolang-lessons/main/lessons/biostatistics/bdsr-nhanes-group-tests/lesson.json",
+      "manifestSha256": "645a07b970e452c3f9d3b669f7f0e14877f7cf5e956716ca49ae4587e4a22ca7",
+      "publishedAt": "2026-09-03",
       "compatibility": {
         "biolang": ">=1.5.0",
         "studio": ">=0.1.0",
@@ -219,237 +171,458 @@
         ]
       },
       "categories": [
-        "statistics",
+        "biostatistics",
         "epidemiology",
-        "teaching"
+        "teaching",
+        "visualization"
       ],
       "tags": [
-        "predictive modeling",
-        "random forest",
-        "gradient boosting",
-        "elastic net",
-        "kNN",
-        "forecasting",
-        "influenza",
-        "H7N9",
-        "CDC"
+        "biostatistics",
+        "NHANES",
+        "t-test",
+        "ANOVA",
+        "CC BY-NC"
       ],
       "discoverability": {
         "problems": [
-          "predict a binary clinical outcome",
-          "compare classification algorithms",
-          "rank important predictors",
-          "predict outcomes for new patients",
-          "handle missing predictor values",
-          "engineer features from dates and categories",
-          "forecast seasonal influenza counts",
-          "quantify out-of-sample classification performance"
+          "compare adult age by gender",
+          "compare BMI across smoking groups"
         ],
         "methods": [
-          "random forest",
-          "gradient boosting",
-          "elastic net logistic regression",
-          "k-nearest neighbours",
-          "bootstrap resampling",
-          "class probability prediction",
-          "variable importance",
-          "model comparison",
-          "additive time-series forecasting",
-          "Fourier seasonality",
-          "piecewise linear trend"
+          "Welch two-sample t-test",
+          "one-way ANOVA",
+          "Tukey HSD"
         ],
         "plots": [
-          "grouped density plot",
-          "faceted bar chart",
-          "grouped box plot",
-          "event timeline",
-          "bootstrap distribution histogram",
-          "variable importance plot",
-          "resampling box plot",
-          "forecast plot",
-          "forecast uncertainty ribbon",
-          "seasonal components plot"
+          "BMI by smoking-status boxplot"
         ],
         "terms": [
-          "classification",
-          "feature engineering",
-          "imputation",
-          "training data",
-          "unknown outcome",
-          "reproducible random seed",
-          "accuracy",
-          "kappa",
-          "out-of-bag prediction",
-          "hyperparameter tuning",
-          "time series",
-          "seasonality",
-          "forecast horizon",
-          "prediction interval",
-          "influenza",
-          "H7N9",
-          "CDC ILINet"
+          "NHANES",
+          "group comparison",
+          "Welch test",
+          "ANOVA",
+          "multiple comparisons"
         ],
         "aliases": [
-          "predictive modelling",
-          "predictive modeling",
-          "RF",
-          "GBM",
-          "glmnet",
-          "kNN",
-          "nearest neighbour classifier",
-          "feature importance",
-          "caret model comparison",
-          "Prophet-style forecast",
-          "ILI forecast"
+          "BDSR t test",
+          "BDSR ANOVA",
+          "NHANES smoking BMI"
         ],
         "functions": [
-          "stats_missingness",
-          "grouped_density_plot",
-          "grouped_bar_plot",
-          "grouped_boxplot_plot",
-          "pivot_longer",
-          "event_timeline_plot",
-          "histogram",
-          "predictive_train",
-          "predictive_importance_plot",
-          "predictive_compare",
-          "predictive_resample_plot",
-          "predictive_predict",
-          "seasonal_forecast",
-          "seasonal_forecast_plot",
-          "seasonal_components_plot",
-          "set_seed"
+          "read_csv",
+          "filter",
+          "drop_null",
+          "ttest",
+          "anova",
+          "tukey_hsd"
         ]
       },
       "sourceRepository": "https://github.com/oriclabs/biolang-lessons",
-      "licence": "MIT",
-      "validation": "R 4.5.2 with current caret 7.0-1, randomForest 4.7-1.2, gbm 2.3.1, glmnet 5.0, kknn 1.4.1, and Prophet 1.1.7 on checksum-pinned data",
-      "series": {
-        "id": "biological-data-science-with-r",
-        "title": "Biological Data Science with R",
-        "url": "https://bdsr.stephenturner.us/",
-        "order": 10,
-        "chapter": "Chapter 10 · Predictive analytics"
-      }
-    },
-    {
-      "schema": 1,
-      "kind": "lesson",
-      "id": "oriclabs/bdsr-survival-analysis",
-      "name": "bdsr-survival-analysis",
-      "title": "Survival analysis with lung, colon, and TCGA data",
-      "summary": "A validated BioLang lesson covering all 13 BDSR survival exercises and their figures, including Kaplan-Meier, Cox, TCGA expression, and pan-kidney analysis.",
-      "publisher": "oriclabs",
-      "version": "0.1.0",
-      "status": "stable",
-      "verified": false,
-      "manifest": "https://raw.githubusercontent.com/oriclabs/biolang-lessons/main/lessons/biostatistics/bdsr-survival/lesson.json",
-      "manifestSha256": "18a98ccda8d8fef9cc69936204b1bff2362f388d2599583f153eb7336ace548a",
-      "publishedAt": "2026-08-30",
-      "compatibility": {
-        "biolang": ">=1.5.0",
-        "studio": ">=0.1.0",
-        "runtimes": [
-          "browser",
-          "desktop",
-          "somer"
-        ]
-      },
-      "categories": [
-        "statistics",
-        "teaching"
-      ],
-      "tags": [
-        "survival",
-        "Kaplan-Meier",
-        "log-rank",
-        "Cox regression",
-        "TCGA",
-        "kidney",
-        "clinical",
-        "exercises"
-      ],
-      "discoverability": {
-        "problems": [
-          "analyse time until death or recurrence",
-          "handle censored follow-up data",
-          "estimate survival over time",
-          "compare survival between patient groups",
-          "estimate an adjusted hazard ratio",
-          "assess treatment and prognostic factors",
-          "relate gene expression to patient survival"
-        ],
-        "methods": [
-          "Kaplan-Meier estimator",
-          "life table",
-          "log-rank test",
-          "Cox proportional hazards regression",
-          "multivariable Cox model",
-          "risk set estimation",
-          "survival stratification"
-        ],
-        "plots": [
-          "survival curve",
-          "Kaplan-Meier plot",
-          "risk table",
-          "censoring marks",
-          "hazard ratio forest plot",
-          "histogram",
-          "box plot",
-          "violin plot",
-          "faceted gene expression plot"
-        ],
-        "terms": [
-          "right censoring",
-          "event time",
-          "follow-up time",
-          "median survival",
-          "hazard",
-          "hazard ratio",
-          "proportional hazards",
-          "confidence interval",
-          "number at risk",
-          "recurrence-free survival",
-          "overall survival",
-          "clinical covariate",
-          "TCGA",
-          "RTCGA",
-          "pan-kidney cohort"
-        ],
-        "aliases": [
-          "time-to-event analysis",
-          "KM curve",
-          "survival probability",
-          "log rank test",
-          "Cox model",
-          "Cox PH",
-          "relative hazard",
-          "censored observations",
-          "patient outcome analysis"
-        ],
-        "functions": [
-          "kaplan_meier",
-          "log_rank_test",
-          "stats_cox_diagnostics",
-          "forest_plot",
-          "histogram",
-          "stats_group_plot",
-          "violin_plot",
-          "plot_grid",
-          "cross_tab",
-          "inner_join",
-          "read_csv"
-        ]
-      },
-      "sourceRepository": "https://github.com/oriclabs/biolang-lessons",
-      "licence": "MIT",
-      "validation": "R 4.5.2 survival 3.8-3 and RTCGA content-owned oracle",
+      "licence": "CC BY-NC 4.0",
+      "validation": "Exact source-hosted NHANES data, Welch and ANOVA results, and byte-for-byte published smoking-BMI boxplot",
       "series": {
         "id": "biological-data-science-with-r",
         "title": "Biological Data Science with R",
         "url": "https://bdsr.stephenturner.us/",
         "order": 9,
-        "chapter": "Chapter 9 · Survival analysis"
+        "chapter": "Essential statistics - group comparisons"
+      }
+    },
+    {
+      "schema": 1,
+      "kind": "lesson",
+      "id": "oriclabs/bdsr-nhanes-regression",
+      "name": "bdsr-nhanes-regression",
+      "title": "Biological Data Science with R: NHANES Linear Regression",
+      "summary": "Exact adult height-weight model with both byte-for-byte published regression figures.",
+      "publisher": "oriclabs",
+      "version": "1.0.0",
+      "status": "stable",
+      "verified": false,
+      "manifest": "https://raw.githubusercontent.com/oriclabs/biolang-lessons/main/lessons/biostatistics/bdsr-nhanes-regression/lesson.json",
+      "manifestSha256": "8cb7af7aa127161f6cfd21561998e528e074c086bba91a43ab01c031c1f0fa74",
+      "publishedAt": "2026-09-03",
+      "compatibility": {
+        "biolang": ">=1.5.0",
+        "studio": ">=0.1.0",
+        "runtimes": [
+          "browser",
+          "desktop",
+          "somer"
+        ]
+      },
+      "categories": [
+        "biostatistics",
+        "epidemiology",
+        "teaching",
+        "visualization"
+      ],
+      "tags": [
+        "biostatistics",
+        "NHANES",
+        "linear regression",
+        "CC BY-NC"
+      ],
+      "discoverability": {
+        "problems": [
+          "model adult weight from height",
+          "recognize unsafe model extrapolation"
+        ],
+        "methods": [
+          "ordinary least squares",
+          "complete-case analysis",
+          "range-aware interpretation"
+        ],
+        "plots": [
+          "height-weight regression with confidence band",
+          "regression extrapolation plot"
+        ],
+        "terms": [
+          "NHANES",
+          "linear regression",
+          "slope",
+          "intercept",
+          "R squared",
+          "extrapolation"
+        ],
+        "aliases": [
+          "BDSR linear model",
+          "NHANES height weight",
+          "adult weight regression"
+        ],
+        "functions": [
+          "read_csv",
+          "filter",
+          "drop_null",
+          "lm"
+        ]
+      },
+      "sourceRepository": "https://github.com/oriclabs/biolang-lessons",
+      "licence": "CC BY-NC 4.0",
+      "validation": "Exact official-data model coefficients and two byte-for-byte published PNGs",
+      "series": {
+        "id": "biological-data-science-with-r",
+        "title": "Biological Data Science with R",
+        "url": "https://bdsr.stephenturner.us/",
+        "order": 10,
+        "chapter": "Essential statistics - simple linear regression"
+      }
+    },
+    {
+      "schema": 1,
+      "kind": "lesson",
+      "id": "oriclabs/computational-genomics-intervals",
+      "name": "computational-genomics-intervals",
+      "title": "Computational Genomics with R: Genomic Intervals",
+      "summary": "A source-faithful BioLang port of the opening GRanges construction examples and exercises 1-2 from Chapter 6.",
+      "publisher": "oriclabs",
+      "version": "1.0.0",
+      "status": "stable",
+      "verified": false,
+      "manifest": "https://raw.githubusercontent.com/oriclabs/biolang-lessons/main/lessons/genomics/computational-genomics-intervals/lesson.json",
+      "manifestSha256": "55d652bb04d89f6fd8afa8b6304501c3b4f4e0b1c00dc95ef84da5c1b4180318",
+      "publishedAt": "2026-09-03",
+      "compatibility": {
+        "biolang": ">=1.5.0",
+        "studio": ">=0.1.0",
+        "runtimes": [
+          "browser",
+          "desktop",
+          "somer"
+        ]
+      },
+      "categories": [
+        "genomics",
+        "bioinformatics",
+        "teaching"
+      ],
+      "tags": [
+        "genomics",
+        "intervals",
+        "GRanges",
+        "CC BY-NC-SA"
+      ],
+      "discoverability": {
+        "problems": [
+          "represent genomic intervals",
+          "inspect interval coordinates",
+          "filter intervals by chromosome or strand"
+        ],
+        "methods": [
+          "genomic interval construction",
+          "closed-coordinate width calculation",
+          "interval filtering"
+        ],
+        "plots": [],
+        "terms": [
+          "genomic interval",
+          "GRanges",
+          "IRanges",
+          "chromosome",
+          "strand",
+          "coordinate system"
+        ],
+        "aliases": [
+          "genome arithmetic",
+          "genomic ranges",
+          "GRanges exercises"
+        ],
+        "functions": [
+          "table",
+          "head",
+          "map",
+          "filter"
+        ]
+      },
+      "sourceRepository": "https://github.com/oriclabs/biolang-lessons",
+      "licence": "CC BY-NC-SA 4.0",
+      "validation": "Exact source rows, metadata, exercise coordinates, strand filters, and closed-coordinate widths against revision 212119889edfeaebc7449e0aeb4fce29a574011d",
+      "series": {
+        "id": "computational-genomics-with-r",
+        "title": "Computational Genomics with R",
+        "url": "https://compgenomr.github.io/book/",
+        "order": 6,
+        "chapter": "Chapter 6 - Genomic intervals, construction and exercises 1-2"
+      }
+    },
+    {
+      "schema": 1,
+      "kind": "lesson",
+      "id": "oriclabs/computational-genomics-refseq-tss",
+      "name": "computational-genomics-refseq-tss",
+      "title": "Computational Genomics with R: RefSeq Transcription Starts",
+      "summary": "A one-to-one Chapter 6 RefSeq BED-to-TSS workflow using the exact hg19 chromosome 21 package file.",
+      "publisher": "oriclabs",
+      "version": "1.0.0",
+      "status": "stable",
+      "verified": false,
+      "manifest": "https://raw.githubusercontent.com/oriclabs/biolang-lessons/main/lessons/genomics/computational-genomics-refseq-tss/lesson.json",
+      "manifestSha256": "c7add6e9f16d27862e7c7098e2d7273692c065d1d1b2c7cd3056e8150e64a9ad",
+      "publishedAt": "2026-09-03",
+      "compatibility": {
+        "biolang": ">=1.5.0",
+        "studio": ">=0.1.0",
+        "runtimes": [
+          "browser",
+          "desktop",
+          "somer"
+        ]
+      },
+      "categories": [
+        "genomics",
+        "bioinformatics",
+        "data-analysis",
+        "teaching"
+      ],
+      "tags": [
+        "genomics",
+        "RefSeq",
+        "BED",
+        "CC BY-NC-SA"
+      ],
+      "discoverability": {
+        "problems": [
+          "import RefSeq genomic intervals",
+          "derive transcription start sites from strand",
+          "remove alternate transcripts with duplicate start sites"
+        ],
+        "methods": [
+          "BED import",
+          "strand-aware TSS extraction",
+          "duplicate interval detection"
+        ],
+        "plots": [],
+        "terms": [
+          "RefSeq",
+          "BED",
+          "hg19",
+          "chromosome 21",
+          "transcription start site",
+          "strand",
+          "alternative transcript"
+        ],
+        "aliases": [
+          "Computational Genomics RefSeq import",
+          "chr21 TSS",
+          "BED to GRanges workflow"
+        ],
+        "functions": [
+          "read_csv",
+          "mutate",
+          "map",
+          "unique",
+          "filter"
+        ]
+      },
+      "sourceRepository": "https://github.com/oriclabs/biolang-lessons",
+      "licence": "CC BY-NC-SA 4.0; data GPL-3",
+      "validation": "Exact 571-row official BED, strand counts, and 378 unique TSS ranges",
+      "series": {
+        "id": "computational-genomics-with-r",
+        "title": "Computational Genomics with R",
+        "url": "https://compgenomr.github.io/book/",
+        "order": 7,
+        "chapter": "Chapter 6 - RefSeq BED import and transcription start sites"
+      }
+    },
+    {
+      "schema": 1,
+      "kind": "lesson",
+      "id": "oriclabs/data-carpentry-daily-counts",
+      "name": "data-carpentry-daily-counts",
+      "title": "Data Analysis and Visualization in R for Ecologists: Daily Counts",
+      "summary": "A one-to-one port of daily animal counts by sex using the exact Portal field-data extract and byte-for-byte published time-series figure.",
+      "publisher": "oriclabs",
+      "version": "1.0.0",
+      "status": "stable",
+      "verified": false,
+      "manifest": "https://raw.githubusercontent.com/oriclabs/biolang-lessons/main/lessons/ecology/data-carpentry-daily-counts/lesson.json",
+      "manifestSha256": "3df077302566a7a4a46dd12221113925565886bc72f77a896e92044ccad9bd9e",
+      "publishedAt": "2026-09-03",
+      "compatibility": {
+        "biolang": ">=1.5.0",
+        "studio": ">=0.1.0",
+        "runtimes": [
+          "browser",
+          "desktop",
+          "somer"
+        ]
+      },
+      "categories": [
+        "ecology",
+        "data-analysis",
+        "visualization",
+        "teaching"
+      ],
+      "tags": [
+        "ecology",
+        "time series",
+        "grouped counts",
+        "CC BY"
+      ],
+      "discoverability": {
+        "problems": [
+          "count field observations by day and sex",
+          "build an ecological time series",
+          "preserve missing sex as a grouping level"
+        ],
+        "methods": [
+          "split-apply-combine",
+          "daily grouped counts",
+          "time-series preparation"
+        ],
+        "plots": [
+          "daily animal-count time series"
+        ],
+        "terms": [
+          "Portal Project",
+          "ecological survey",
+          "daily counts",
+          "sex",
+          "time series",
+          "missing values"
+        ],
+        "aliases": [
+          "Data Carpentry daily counts",
+          "R ecology time series",
+          "Portal survey Challenge 4"
+        ],
+        "functions": [
+          "read_csv",
+          "mutate",
+          "group_by",
+          "summarize",
+          "arrange"
+        ]
+      },
+      "sourceRepository": "https://github.com/oriclabs/biolang-lessons",
+      "licence": "CC BY 4.0; code MIT",
+      "validation": "Exact 16,878-row Portal data, 927 daily-sex groups, maximum count 116, and byte-for-byte source plot",
+      "series": {
+        "id": "data-analysis-visualization-r-ecologists",
+        "title": "Data Analysis and Visualization in R for Ecologists",
+        "url": "https://datacarpentry.github.io/R-ecology-lesson/",
+        "order": 5,
+        "chapter": "Working with data - Challenge 4 daily counts"
+      }
+    },
+    {
+      "schema": 1,
+      "kind": "lesson",
+      "id": "oriclabs/data-carpentry-ecology",
+      "name": "data-carpentry-ecology",
+      "title": "Data Analysis and Visualization in R for Ecologists: Grouped Summaries",
+      "summary": "A source-faithful port of the species-by-sex mean-weight workflow using the exact cleaned Portal Project teaching CSV.",
+      "publisher": "oriclabs",
+      "version": "1.0.0",
+      "status": "stable",
+      "verified": false,
+      "manifest": "https://raw.githubusercontent.com/oriclabs/biolang-lessons/main/lessons/ecology/data-carpentry-ecology/lesson.json",
+      "manifestSha256": "6963b9e434b9534aa5e227f164f1884db67fd6ebf35a34014c11f8c7cb1c4766",
+      "publishedAt": "2026-09-03",
+      "compatibility": {
+        "biolang": ">=1.5.0",
+        "studio": ">=0.1.0",
+        "runtimes": [
+          "browser",
+          "desktop",
+          "somer"
+        ]
+      },
+      "categories": [
+        "ecology",
+        "data-analysis",
+        "teaching"
+      ],
+      "tags": [
+        "ecology",
+        "data wrangling",
+        "grouped summaries",
+        "CC BY"
+      ],
+      "discoverability": {
+        "problems": [
+          "summarize ecological observations by species and sex",
+          "remove missing weights before aggregation",
+          "rank ecological groups by mean weight"
+        ],
+        "methods": [
+          "split-apply-combine",
+          "grouped mean",
+          "missing-value filtering"
+        ],
+        "plots": [],
+        "terms": [
+          "ecological survey",
+          "species",
+          "sex",
+          "mean weight",
+          "grouped summary",
+          "Portal Project"
+        ],
+        "aliases": [
+          "Data Carpentry ecology",
+          "R ecology lesson",
+          "species weight summary"
+        ],
+        "functions": [
+          "read_csv",
+          "drop_null",
+          "mutate",
+          "group_by",
+          "summarize",
+          "arrange"
+        ]
+      },
+      "sourceRepository": "https://github.com/oriclabs/biolang-lessons",
+      "licence": "CC BY 4.0",
+      "validation": "Exact 1,223,055-byte source CSV and SHA-256; row count, group count, ordering, counts, and means checked against R 4.6.1 with dplyr",
+      "series": {
+        "id": "data-analysis-visualization-r-ecologists",
+        "title": "Data Analysis and Visualization in R for Ecologists",
+        "url": "https://datacarpentry.github.io/R-ecology-lesson/",
+        "order": 4,
+        "chapter": "Working with Data - group_by, summarize, and arrange"
       }
     },
     {
@@ -458,13 +631,13 @@
       "id": "oriclabs/little-book-biomedical-statistics",
       "name": "little-book-biomedical-statistics",
       "title": "Biomedical statistics in BioLang",
-      "summary": "One guided medical-statistics course with eight selectable sections on epidemiological measures, study design, trials, and evidence synthesis.",
+      "summary": "One guided medical-statistics course with eight selectable sections and in-notebook Previous/Next navigation across epidemiological measures, study design, trials, and evidence synthesis.",
       "publisher": "oriclabs",
       "version": "0.2.0",
       "status": "preview",
       "verified": false,
       "manifest": "https://raw.githubusercontent.com/oriclabs/biolang-lessons/main/lessons/biostatistics/little-book-biomedical/lesson.json",
-      "manifestSha256": "d7855219e5183bb9ba38d40cae290f85b7eb986ffd0b9816feca317f7214dabd",
+      "manifestSha256": "e8418effaaedd86dec18b9de398a14ccd2149dd9df8b6ee2c5e01289796c341e",
       "publishedAt": "2026-08-30",
       "compatibility": {
         "biolang": ">=1.5.0",
@@ -661,7 +834,865 @@
       },
       "sourceRepository": "https://github.com/oriclabs/biolang-lessons",
       "licence": "CC BY 3.0",
-      "validation": "Eight selectable sections execute in BioLang and the source example metrics are pinned in collection tests."
+      "validation": "Eight selectable sections execute in BioLang; adjacent in-notebook Previous/Next links are structurally checked; source example metrics are pinned in collection tests."
+    },
+    {
+      "schema": 1,
+      "kind": "lesson",
+      "id": "oriclabs/little-book-r-bioinformatics",
+      "name": "little-book-r-bioinformatics",
+      "title": "A Little Book of R for Bioinformatics",
+      "summary": "Two selectable BioLang notebooks with in-notebook Previous/Next navigation, all twelve exercises, worked solutions, and all eighteen source figures copied byte-for-byte without substitute plots.",
+      "publisher": "oriclabs",
+      "version": "0.1.0",
+      "status": "stable",
+      "verified": false,
+      "manifest": "https://raw.githubusercontent.com/oriclabs/biolang-lessons/main/lessons/sequence-analysis/little-book-r-bioinformatics/lesson.json",
+      "manifestSha256": "1170d965f461cd586a0dc81c1dfaa0a4d889240c5b7cce9cbb219881870fb338",
+      "publishedAt": "2026-09-02",
+      "compatibility": {
+        "biolang": ">=1.5.0",
+        "studio": ">=0.1.0",
+        "runtimes": [
+          "browser",
+          "desktop",
+          "somer"
+        ]
+      },
+      "categories": [
+        "sequence-analysis",
+        "bioinformatics",
+        "teaching"
+      ],
+      "tags": [
+        "FASTA",
+        "GC content",
+        "sliding windows",
+        "k-mer",
+        "SeqinR",
+        "Dengue",
+        "Mycobacterium leprae"
+      ],
+      "discoverability": {
+        "problems": [
+          "inspect a FASTA genome",
+          "calculate genome GC content",
+          "count bases and DNA words",
+          "solve sequence-statistics exercises",
+          "measure local genome composition",
+          "choose a sequence window size",
+          "compare GC and AT content",
+          "calculate observed-to-expected word frequency"
+        ],
+        "methods": [
+          "FASTA parsing",
+          "base composition",
+          "GC content",
+          "sequence complement",
+          "directional k-mer counting",
+          "non-overlapping sliding windows",
+          "local GC analysis",
+          "local AT analysis",
+          "observed-to-expected ratio"
+        ],
+        "plots": [
+          "base-composition bar plot",
+          "sliding-window line plot",
+          "multi-panel comparison plot"
+        ],
+        "terms": [
+          "FASTA",
+          "NCBI accession",
+          "Dengue virus",
+          "Mycobacterium leprae",
+          "DNA",
+          "nucleotide",
+          "ambiguous base",
+          "dinucleotide",
+          "window size",
+          "local GC",
+          "local AT",
+          "k-mer",
+          "rho statistic",
+          "word enrichment",
+          "genome position"
+        ],
+        "aliases": [
+          "SeqinR chapter 1",
+          "DNA sequence statistics 1",
+          "genome composition",
+          "SeqinR chapter 2",
+          "DNA sequence statistics 2",
+          "sliding window GC plot"
+        ],
+        "functions": [
+          "read_fasta",
+          "subseq",
+          "base_counts",
+          "gc_content",
+          "complement",
+          "kmer_index",
+          "range",
+          "map",
+          "motif_count"
+        ]
+      },
+      "sourceRepository": "https://github.com/oriclabs/biolang-lessons",
+      "licence": "CC BY 3.0",
+      "validation": "Exact chapter exercise answers against pinned NCBI accession versions; all eighteen displayed chapter and answer figures copied byte-for-byte; adjacent in-notebook navigation links structurally checked; full BioLang notebooks rerun",
+      "series": {
+        "id": "a-little-book-of-r-for-bioinformatics",
+        "title": "A Little Book of R for Bioinformatics",
+        "url": "https://a-little-book-of-r-for-bioinformatics.readthedocs.io/en/latest/",
+        "order": 1,
+        "chapter": "Chapters 1–2 · DNA Sequence Statistics"
+      }
+    },
+    {
+      "schema": 1,
+      "kind": "lesson",
+      "id": "oriclabs/little-book-r-gene-finding",
+      "name": "little-book-r-gene-finding",
+      "title": "Computational Gene-finding",
+      "summary": "A BioLang notebook porting the Computational Gene-finding chapter with all nine worked answers and four byte-for-byte source figures; the unpublished random draw is not replaced with invented data.",
+      "publisher": "oriclabs",
+      "version": "0.1.0",
+      "status": "stable",
+      "verified": false,
+      "manifest": "https://raw.githubusercontent.com/oriclabs/biolang-lessons/main/lessons/sequence-analysis/little-book-r-gene-finding/lesson.json",
+      "manifestSha256": "a0135b3426106ff9fa58bda41f62cebb97d56f54b625aacdf9cd730343e5ccad",
+      "publishedAt": "2026-09-02",
+      "compatibility": {
+        "biolang": ">=1.5.0",
+        "studio": ">=0.1.0",
+        "runtimes": [
+          "browser",
+          "desktop",
+          "somer"
+        ]
+      },
+      "categories": [
+        "sequence-analysis",
+        "bioinformatics",
+        "teaching"
+      ],
+      "tags": [
+        "ORF",
+        "gene finding",
+        "genetic code",
+        "reading frame",
+        "translation",
+        "Dengue",
+        "rabies virus"
+      ],
+      "discoverability": {
+        "problems": [
+          "find start and stop codons in a sequence",
+          "work out which reading frame a codon is in",
+          "find open reading frames in a genome",
+          "find ORFs on the reverse strand",
+          "translate a predicted coding region",
+          "decide whether an ORF is longer than chance explains",
+          "choose a length threshold for candidate genes"
+        ],
+        "methods": [
+          "codon table lookup",
+          "motif search",
+          "reading-frame arithmetic",
+          "open reading frame detection",
+          "reverse-complement strand search",
+          "translation",
+          "source-reported random null comparison",
+          "ORF length threshold"
+        ],
+        "plots": [
+          "start and stop codon scatter",
+          "ORF genome track",
+          "ORF length distribution"
+        ],
+        "terms": [
+          "genetic code",
+          "codon",
+          "start codon",
+          "stop codon",
+          "reading frame",
+          "open reading frame",
+          "ORF",
+          "forward strand",
+          "reverse strand",
+          "translation",
+          "null model",
+          "gene prediction",
+          "Dengue virus",
+          "rabies virus"
+        ],
+        "aliases": [
+          "SeqinR chapter 7",
+          "computational gene finding",
+          "ORF finding",
+          "gene prediction in BioLang",
+          "open reading frames tutorial"
+        ],
+        "functions": [
+          "read_fasta",
+          "subseq",
+          "find_motif",
+          "find_orfs",
+          "translate",
+          "reverse_complement",
+          "kmers",
+          "table",
+          "arrange",
+          "select",
+          "sort_by"
+        ]
+      },
+      "sourceRepository": "https://github.com/oriclabs/biolang-lessons",
+      "licence": "CC BY 3.0",
+      "validation": "Exercise answers checked against the source chapter using pinned NCBI accessions; four displayed source figures copied byte-for-byte; the source-reported 99% threshold is retained without inventing a replacement random dataset. Full notebook rerun with `bl notebook`.",
+      "series": {
+        "id": "a-little-book-of-r-for-bioinformatics",
+        "title": "A Little Book of R for Bioinformatics",
+        "url": "https://a-little-book-of-r-for-bioinformatics.readthedocs.io/en/latest/",
+        "order": 1,
+        "chapter": "Chapter 7 · Computational Gene-finding"
+      }
+    },
+    {
+      "schema": 1,
+      "kind": "lesson",
+      "id": "oriclabs/msmb-celegans-mitochondrial-composition",
+      "name": "msmb-celegans-mitochondrial-composition",
+      "title": "Modern Statistics for Modern Biology: C. elegans Mitochondrial Composition",
+      "summary": "A deterministic Exercise 1.8 port using the exact UCSC ce2 chromosome M sequence and published nucleotide results.",
+      "publisher": "oriclabs",
+      "version": "1.0.0",
+      "status": "stable",
+      "verified": false,
+      "manifest": "https://raw.githubusercontent.com/oriclabs/biolang-lessons/main/lessons/biostatistics/msmb-celegans-mitochondrial-composition/lesson.json",
+      "manifestSha256": "d50c4acce9a09fea1036a80f7b6975a4fe9ca559f976cd56e46fc38754dfc158",
+      "publishedAt": "2026-09-03",
+      "compatibility": {
+        "biolang": ">=1.5.0",
+        "studio": ">=0.1.0",
+        "runtimes": [
+          "browser",
+          "desktop",
+          "somer"
+        ]
+      },
+      "categories": [
+        "biostatistics",
+        "genomics",
+        "bioinformatics",
+        "teaching"
+      ],
+      "tags": [
+        "statistics",
+        "genomics",
+        "mitochondrial DNA",
+        "CC BY-NC-SA"
+      ],
+      "discoverability": {
+        "problems": [
+          "count nucleotides in a mitochondrial genome",
+          "compare observed bases with equal frequencies",
+          "inspect C. elegans mitochondrial composition"
+        ],
+        "methods": [
+          "nucleotide composition",
+          "observed-versus-expected statistic",
+          "multinomial model preparation"
+        ],
+        "plots": [],
+        "terms": [
+          "Caenorhabditis elegans",
+          "mitochondrial genome",
+          "ce2",
+          "nucleotide frequency",
+          "multinomial",
+          "uniform composition"
+        ],
+        "aliases": [
+          "MSMB Exercise 1.8",
+          "worm mitochondrial composition",
+          "C elegans chrM"
+        ],
+        "functions": [
+          "read_json",
+          "dna",
+          "base_counts",
+          "len"
+        ]
+      },
+      "sourceRepository": "https://github.com/oriclabs/biolang-lessons",
+      "licence": "CC BY-NC-SA",
+      "validation": "Exact UCSC ce2 chrM sequence; published length, four nucleotide counts, proportions, and observed-equal statistic reproduced without simulation",
+      "series": {
+        "id": "modern-statistics-for-modern-biology",
+        "title": "Modern Statistics for Modern Biology",
+        "url": "https://www.huber.embl.de/msmb/",
+        "order": 2,
+        "chapter": "Chapter 1 - Exercise 1.8, C. elegans mitochondrial composition"
+      }
+    },
+    {
+      "schema": 1,
+      "kind": "lesson",
+      "id": "oriclabs/msmb-discrete-models",
+      "name": "msmb-discrete-models",
+      "title": "Modern Statistics for Modern Biology: Discrete Models",
+      "summary": "An exact port of the opening Poisson and binomial calculations with byte-for-byte copies of the published chapter figures.",
+      "publisher": "oriclabs",
+      "version": "1.0.0",
+      "status": "stable",
+      "verified": false,
+      "manifest": "https://raw.githubusercontent.com/oriclabs/biolang-lessons/main/lessons/biostatistics/msmb-discrete-models/lesson.json",
+      "manifestSha256": "321407bc1d7de523007d475862b9b674f972b49e102082f2dcf8d310598c14ac",
+      "publishedAt": "2026-09-03",
+      "compatibility": {
+        "biolang": ">=1.5.0",
+        "studio": ">=0.1.0",
+        "runtimes": [
+          "browser",
+          "desktop",
+          "somer"
+        ]
+      },
+      "categories": [
+        "statistics",
+        "biostatistics",
+        "teaching"
+      ],
+      "tags": [
+        "statistics",
+        "probability",
+        "Poisson",
+        "binomial",
+        "CC BY-NC-SA"
+      ],
+      "discoverability": {
+        "problems": [
+          "model mutation counts",
+          "calculate an exact event-count probability",
+          "compare outcomes in repeated binary trials"
+        ],
+        "methods": [
+          "Poisson probability mass",
+          "binomial probability mass",
+          "discrete generative modeling"
+        ],
+        "plots": [
+          "Poisson probability bar plot",
+          "binomial probability bar plot"
+        ],
+        "terms": [
+          "Poisson distribution",
+          "binomial distribution",
+          "probability mass function",
+          "mutation count",
+          "Bernoulli trial"
+        ],
+        "aliases": [
+          "MSMB chapter 1",
+          "discrete probability models",
+          "generative models"
+        ],
+        "functions": [
+          "dpois",
+          "dbinom",
+          "range",
+          "map",
+          "table"
+        ]
+      },
+      "sourceRepository": "https://github.com/oriclabs/biolang-lessons",
+      "licence": "CC BY-NC-SA 4.0",
+      "validation": "Published R probabilities reproduced within 1e-11; both PNGs are byte-for-byte copies of the published chapter assets",
+      "series": {
+        "id": "modern-statistics-for-modern-biology",
+        "title": "Modern Statistics for Modern Biology",
+        "url": "https://www.huber.embl.de/msmb/",
+        "order": 1,
+        "chapter": "Chapter 1 - Opening Poisson and binomial examples"
+      }
+    },
+    {
+      "schema": 1,
+      "kind": "lesson",
+      "id": "oriclabs/rmrwr-blood-storage-columns",
+      "name": "rmrwr-blood-storage-columns",
+      "title": "Reproducible Medical Research with R: Blood-Storage Columns",
+      "summary": "A one-to-one non-contiguous column-selection example using the exact de-identified 316-patient blood-storage cohort.",
+      "publisher": "oriclabs",
+      "version": "1.0.0",
+      "status": "stable",
+      "verified": false,
+      "manifest": "https://raw.githubusercontent.com/oriclabs/biolang-lessons/main/lessons/biostatistics/rmrwr-blood-storage-columns/lesson.json",
+      "manifestSha256": "b42f2eb46cc5781772b89c7702c50d2dec5a7276c6db5324d0ed992cdc1352bd",
+      "publishedAt": "2026-09-03",
+      "compatibility": {
+        "biolang": ">=1.5.0",
+        "studio": ">=0.1.0",
+        "runtimes": [
+          "browser",
+          "desktop",
+          "somer"
+        ]
+      },
+      "categories": [
+        "clinical-research",
+        "biostatistics",
+        "data-analysis",
+        "teaching"
+      ],
+      "tags": [
+        "clinical research",
+        "data wrangling",
+        "cohort",
+        "CC0"
+      ],
+      "discoverability": {
+        "problems": [
+          "select non-contiguous clinical variables",
+          "reorder a clinical table",
+          "inspect a de-identified prostate-cancer cohort"
+        ],
+        "methods": [
+          "column selection",
+          "column range expansion",
+          "clinical data inspection"
+        ],
+        "plots": [],
+        "terms": [
+          "blood storage",
+          "prostate cancer",
+          "retrospective cohort",
+          "Gleason score",
+          "PSA",
+          "column selection"
+        ],
+        "aliases": [
+          "RMRWR selecting columns",
+          "medicaldata blood_storage",
+          "prostate cohort columns"
+        ],
+        "functions": [
+          "read_csv",
+          "select",
+          "head",
+          "colnames",
+          "nrow"
+        ]
+      },
+      "sourceRepository": "https://github.com/oriclabs/biolang-lessons",
+      "licence": "CC0-1.0; data package MIT",
+      "validation": "Exact 316x20 medicaldata object and exact ten-column source order with first rows reproduced",
+      "series": {
+        "id": "reproducible-medical-research-with-r",
+        "title": "Reproducible Medical Research with R",
+        "url": "https://peter-higgins-rmrwr.share.connect.posit.cloud/",
+        "order": 5,
+        "chapter": "Selecting Columns - non-contiguous blood-storage example"
+      }
+    },
+    {
+      "schema": 1,
+      "kind": "lesson",
+      "id": "oriclabs/rmrwr-sample-size",
+      "name": "rmrwr-sample-size",
+      "title": "Reproducible Medical Research with R: Sample Size",
+      "summary": "A source-mapped BioLang port of the opening two-arm A1c sample-size and constrained-power example.",
+      "publisher": "oriclabs",
+      "version": "1.0.0",
+      "status": "stable",
+      "verified": false,
+      "manifest": "https://raw.githubusercontent.com/oriclabs/biolang-lessons/main/lessons/biostatistics/rmrwr-sample-size/lesson.json",
+      "manifestSha256": "99391c70d48e22c89cec4f1057553a94818bf318b60fcff1ac6c89734fcaada1",
+      "publishedAt": "2026-09-03",
+      "compatibility": {
+        "biolang": ">=1.5.0",
+        "studio": ">=0.1.0",
+        "runtimes": [
+          "browser",
+          "desktop",
+          "somer"
+        ]
+      },
+      "categories": [
+        "statistics",
+        "clinical-research",
+        "teaching"
+      ],
+      "tags": [
+        "sample size",
+        "power",
+        "two-sample t test",
+        "clinical research",
+        "CC0"
+      ],
+      "discoverability": {
+        "problems": [
+          "plan a two-arm clinical study",
+          "inflate sample size for participant dropout",
+          "calculate achieved power with a fixed budget"
+        ],
+        "methods": [
+          "Cohen effect size",
+          "two-sample t-test power",
+          "attrition inflation"
+        ],
+        "plots": [],
+        "terms": [
+          "sample size",
+          "statistical power",
+          "Cohen d",
+          "alpha",
+          "dropout",
+          "participants per arm"
+        ],
+        "aliases": [
+          "clinical trial planning",
+          "pwr t test",
+          "A1c study example"
+        ],
+        "functions": [
+          "power_t_test",
+          "abs"
+        ]
+      },
+      "sourceRepository": "https://github.com/oriclabs/biolang-lessons",
+      "licence": "MIT",
+      "validation": "BioLang sample size and achieved power checked against the source pwr.t.test inputs; the published 45-per-arm/90-total attrition result is reproduced exactly and its arithmetic inconsistency is disclosed",
+      "series": {
+        "id": "reproducible-medical-research-with-r",
+        "title": "Reproducible Medical Research with R",
+        "url": "https://peter-higgins-rmrwr.share.connect.posit.cloud/",
+        "order": 69,
+        "chapter": "Sample Size Calculations - opening continuous endpoint example"
+      }
+    },
+    {
+      "schema": 1,
+      "kind": "lesson",
+      "id": "oriclabs/stats4nr-fishing-dispersion",
+      "name": "stats4nr-fishing-dispersion",
+      "title": "Statistics in Natural Resources: Fishing-Count Dispersion",
+      "summary": "A one-to-one port of the fishing-count distribution check using exact package data, published summary values, and the byte-for-byte source histogram.",
+      "publisher": "oriclabs",
+      "version": "1.0.0",
+      "status": "stable",
+      "verified": false,
+      "manifest": "https://raw.githubusercontent.com/oriclabs/biolang-lessons/main/lessons/ecology/stats4nr-fishing-dispersion/lesson.json",
+      "manifestSha256": "1ede647d0980e7991679fc349ff20e9eafb8e751f43bb6728a7666f23d3599c4",
+      "publishedAt": "2026-09-03",
+      "compatibility": {
+        "biolang": ">=1.5.0",
+        "studio": ">=0.1.0",
+        "runtimes": [
+          "browser",
+          "desktop",
+          "somer"
+        ]
+      },
+      "categories": [
+        "ecology",
+        "statistics",
+        "teaching"
+      ],
+      "tags": [
+        "ecology",
+        "count data",
+        "overdispersion",
+        "CC BY-NC-SA"
+      ],
+      "discoverability": {
+        "problems": [
+          "diagnose overdispersion in wildlife count data",
+          "measure excess zeros in fishing catches",
+          "inspect a count response before regression"
+        ],
+        "methods": [
+          "mean-variance comparison",
+          "zero-frequency analysis",
+          "count-data exploratory analysis"
+        ],
+        "plots": [
+          "fish-catch histogram"
+        ],
+        "terms": [
+          "count data",
+          "overdispersion",
+          "zero inflation",
+          "Poisson assumption",
+          "fishing success",
+          "variance-to-mean ratio"
+        ],
+        "aliases": [
+          "Stats4NR fishing case study",
+          "fishing count dispersion",
+          "natural resources count data"
+        ],
+        "functions": [
+          "read_csv",
+          "mean",
+          "variance",
+          "filter",
+          "nrow"
+        ]
+      },
+      "sourceRepository": "https://github.com/oriclabs/biolang-lessons",
+      "licence": "CC BY-NC-SA 4.0; package data CC0",
+      "validation": "Exact official 250-row fishing object and byte-for-byte source histogram; mean 3.296, sample variance 135.373879518072, and 56.8% zero catches reproduced",
+      "series": {
+        "id": "statistics-in-natural-resources",
+        "title": "Statistics in Natural Resources: Applications with R",
+        "url": "https://stats4nr.com/",
+        "order": 13,
+        "chapter": "Chapter 13 - Fishing count distribution and dispersion"
+      }
+    },
+    {
+      "schema": 1,
+      "kind": "lesson",
+      "id": "oriclabs/stats4nr-redpine-ols",
+      "name": "stats4nr-redpine-ols",
+      "title": "Statistics in Natural Resources: Red-Pine OLS",
+      "summary": "A bounded one-to-one Exercise 14.1 port using 450 real tree observations and exact correlation, OLS, and AIC results.",
+      "publisher": "oriclabs",
+      "version": "1.0.0",
+      "status": "stable",
+      "verified": false,
+      "manifest": "https://raw.githubusercontent.com/oriclabs/biolang-lessons/main/lessons/ecology/stats4nr-redpine-ols/lesson.json",
+      "manifestSha256": "81a8f0f02181a92ea7a37352647b2f6eea31b721131aa13e2b6dd4d442561112",
+      "publishedAt": "2026-09-03",
+      "compatibility": {
+        "biolang": ">=1.5.0",
+        "studio": ">=0.1.0",
+        "runtimes": [
+          "browser",
+          "desktop",
+          "somer"
+        ]
+      },
+      "categories": [
+        "ecology",
+        "statistics",
+        "data-analysis",
+        "teaching"
+      ],
+      "tags": [
+        "ecology",
+        "forestry",
+        "linear regression",
+        "CC BY-NC-SA"
+      ],
+      "discoverability": {
+        "problems": [
+          "predict tree height from diameter",
+          "fit ordinary least squares to forestry data",
+          "calculate Pearson correlation for tree measurements"
+        ],
+        "methods": [
+          "Pearson correlation",
+          "simple linear regression",
+          "Akaike information criterion"
+        ],
+        "plots": [],
+        "terms": [
+          "red pine",
+          "Cloquet Forestry Center",
+          "diameter at breast height",
+          "tree height",
+          "OLS",
+          "AIC"
+        ],
+        "aliases": [
+          "Stats4NR redpine",
+          "red pine height diameter",
+          "forestry OLS exercise"
+        ],
+        "functions": [
+          "read_csv",
+          "cor",
+          "lm",
+          "map",
+          "sum",
+          "log"
+        ]
+      },
+      "sourceRepository": "https://github.com/oriclabs/biolang-lessons",
+      "licence": "CC BY-NC-SA 4.0; package data CC0",
+      "validation": "Exact 450-row field dataset, Pearson correlation, OLS coefficients, R squared, and AIC; source table intercept typo disclosed",
+      "series": {
+        "id": "statistics-in-natural-resources",
+        "title": "Statistics in Natural Resources: Applications with R",
+        "url": "https://stats4nr.com/",
+        "order": 14,
+        "chapter": "Chapter 14 - Exercise 14.1 red-pine ordinary least squares"
+      }
+    },
+    {
+      "schema": 1,
+      "kind": "lesson",
+      "id": "oriclabs/treedata-metadata-attachment",
+      "name": "treedata-metadata-attachment",
+      "title": "Phylogenetic Tree Data Integration: Tip and Node Metadata",
+      "summary": "One-to-one Figure 7.1 port using exact TDbook tree, tip, node, and published SVG assets.",
+      "publisher": "oriclabs",
+      "version": "1.0.0",
+      "status": "stable",
+      "verified": false,
+      "manifest": "https://raw.githubusercontent.com/oriclabs/biolang-lessons/main/lessons/phylogenetics/treedata-metadata-attachment/lesson.json",
+      "manifestSha256": "3b68b65147560dc2036ee75bafd895ac8b63c507ef38da37d6e68c023ab681f7",
+      "publishedAt": "2026-09-03",
+      "compatibility": {
+        "biolang": ">=1.5.0",
+        "studio": ">=0.1.0",
+        "runtimes": [
+          "browser",
+          "desktop",
+          "somer"
+        ]
+      },
+      "categories": [
+        "phylogenetics",
+        "bioinformatics",
+        "visualization",
+        "teaching"
+      ],
+      "tags": [
+        "phylogenetics",
+        "metadata",
+        "tree annotation",
+        "CC BY-NC-SA"
+      ],
+      "discoverability": {
+        "problems": [
+          "attach biological metadata to phylogenetic tree tips",
+          "annotate internal tree nodes"
+        ],
+        "methods": [
+          "tip-label keyed integration",
+          "node metadata attachment",
+          "visual encoding of traits"
+        ],
+        "plots": [
+          "annotated phylogenetic tree"
+        ],
+        "terms": [
+          "phylogenetic tree",
+          "tip metadata",
+          "node metadata",
+          "trophic habit",
+          "body mass",
+          "posterior"
+        ],
+        "aliases": [
+          "treedata Figure 7.1",
+          "ggtree attacher",
+          "tree annotation"
+        ],
+        "functions": [
+          "read_csv",
+          "filter",
+          "unique",
+          "summary"
+        ]
+      },
+      "sourceRepository": "https://github.com/oriclabs/biolang-lessons",
+      "licence": "CC BY-NC-SA 4.0; data package Artistic-2.0",
+      "validation": "Exact TDbook objects, mechanical exports, and byte-for-byte published Figure 7.1 SVG",
+      "series": {
+        "id": "treedata-book",
+        "title": "Data Integration, Manipulation and Visualization of Phylogenetic Trees",
+        "url": "https://yulab-smu.top/treedata-book/",
+        "order": 6,
+        "chapter": "Chapter 7 - Figure 7.1"
+      }
+    },
+    {
+      "schema": 1,
+      "kind": "lesson",
+      "id": "oriclabs/treedata-snp-traits",
+      "name": "treedata-snp-traits",
+      "title": "Phylogenetic Tree Data Integration: SNP and Trait Panels",
+      "summary": "A one-to-one port of Chapter 7 Figure 7.2 using the exact official tree, metadata, allele, trait, derived SNP, and published figure assets.",
+      "publisher": "oriclabs",
+      "version": "1.0.0",
+      "status": "stable",
+      "verified": false,
+      "manifest": "https://raw.githubusercontent.com/oriclabs/biolang-lessons/main/lessons/phylogenetics/treedata-snp-traits/lesson.json",
+      "manifestSha256": "5c24b29e4d12618043c8a66dc2baf7e58932e2292f4a554cb7d6676c1ded16f7",
+      "publishedAt": "2026-09-03",
+      "compatibility": {
+        "biolang": ">=1.5.0",
+        "studio": ">=0.1.0",
+        "runtimes": [
+          "browser",
+          "desktop",
+          "somer"
+        ]
+      },
+      "categories": [
+        "phylogenetics",
+        "visualization",
+        "teaching"
+      ],
+      "tags": [
+        "phylogenetics",
+        "SNP",
+        "data integration",
+        "CC BY-NC-SA"
+      ],
+      "discoverability": {
+        "problems": [
+          "align SNPs with a phylogenetic tree",
+          "attach sample metadata to tree tips",
+          "compare traits in phylogenetic order"
+        ],
+        "methods": [
+          "tip-label keyed integration",
+          "reference-allele comparison",
+          "gap exclusion",
+          "tree-aligned data panels"
+        ],
+        "plots": [
+          "phylogenetic tree with SNP and trait panels"
+        ],
+        "terms": [
+          "phylogenetic tree",
+          "SNP",
+          "trait",
+          "tip metadata",
+          "facet plot",
+          "Newick",
+          "tree data integration"
+        ],
+        "aliases": [
+          "treedata book figure 7.2",
+          "ggtree facet plot",
+          "tree SNP trait example"
+        ],
+        "functions": [
+          "read_text",
+          "nw_parse",
+          "tree_leaves",
+          "read_csv",
+          "filter",
+          "unique"
+        ]
+      },
+      "sourceRepository": "https://github.com/oriclabs/biolang-lessons",
+      "licence": "CC BY-NC-SA 4.0; TDbook data Artistic-2.0",
+      "validation": "Exact official TDbook objects and byte-for-byte source figure; 230 tree tips, 386 metadata and trait records, full plotted-tip coverage, and exact 6,482-row published SNP transformation",
+      "series": {
+        "id": "treedata-book",
+        "title": "Data Integration, Manipulation and Visualization of Phylogenetic Trees",
+        "url": "https://yulab-smu.top/treedata-book/",
+        "order": 7,
+        "chapter": "Chapter 7 - Figure 7.2"
+      }
     },
     {
       "schema": 1,

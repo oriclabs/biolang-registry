@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "kind": "lesson",
+  "id": "oriclabs/msmb-celegans-mitochondrial-composition",
+  "name": "msmb-celegans-mitochondrial-composition",
+  "title": "Modern Statistics for Modern Biology: C. elegans Mitochondrial Composition",
+  "summary": "A deterministic Exercise 1.8 port using the exact UCSC ce2 chromosome M sequence and published nucleotide results.",
+  "publisher": "oriclabs",
+  "version": "1.0.0",
+  "status": "stable",
+  "verified": false,
+  "manifest": "https://raw.githubusercontent.com/oriclabs/biolang-lessons/main/lessons/biostatistics/msmb-celegans-mitochondrial-composition/lesson.json",
+  "manifestSha256": "d50c4acce9a09fea1036a80f7b6975a4fe9ca559f976cd56e46fc38754dfc158",
+  "publishedAt": "2026-09-03",
+  "compatibility": {
+    "biolang": ">=1.5.0",
+    "studio": ">=0.1.0",
+    "runtimes": [
+      "browser",
+      "desktop",
+      "somer"
+    ]
+  },
+  "categories": [
+    "biostatistics",
+    "genomics",
+    "bioinformatics",
+    "teaching"
+  ],
+  "tags": [
+    "statistics",
+    "genomics",
+    "mitochondrial DNA",
+    "CC BY-NC-SA"
+  ],
+  "discoverability": {
+    "problems": [
+      "count nucleotides in a mitochondrial genome",
+      "compare observed bases with equal frequencies",
+      "inspect C. elegans mitochondrial composition"
+    ],
+    "methods": [
+      "nucleotide composition",
+      "observed-versus-expected statistic",
+      "multinomial model preparation"
+    ],
+    "plots": [],
+    "terms": [
+      "Caenorhabditis elegans",
+      "mitochondrial genome",
+      "ce2",
+      "nucleotide frequency",
+      "multinomial",
+      "uniform composition"
+    ],
+    "aliases": [
+      "MSMB Exercise 1.8",
+      "worm mitochondrial composition",
+      "C elegans chrM"
+    ],
+    "functions": [
+      "read_json",
+      "dna",
+      "base_counts",
+      "len"
+    ]
+  },
+  "sourceRepository": "https://github.com/oriclabs/biolang-lessons",
+  "licence": "CC BY-NC-SA",
+  "validation": "Exact UCSC ce2 chrM sequence; published length, four nucleotide counts, proportions, and observed-equal statistic reproduced without simulation",
+  "series": {
+    "id": "modern-statistics-for-modern-biology",
+    "title": "Modern Statistics for Modern Biology",
+    "url": "https://www.huber.embl.de/msmb/",
+    "order": 2,
+    "chapter": "Chapter 1 - Exercise 1.8, C. elegans mitochondrial composition"
+  }
+}

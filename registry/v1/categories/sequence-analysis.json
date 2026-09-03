@@ -1,0 +1,235 @@
+{
+  "schema": 1,
+  "category": {
+    "id": "sequence-analysis",
+    "title": "Sequence Analysis",
+    "count": 2,
+    "kinds": [
+      "lesson"
+    ]
+  },
+  "entries": [
+    {
+      "schema": 1,
+      "kind": "lesson",
+      "id": "oriclabs/little-book-r-bioinformatics",
+      "name": "little-book-r-bioinformatics",
+      "title": "A Little Book of R for Bioinformatics",
+      "summary": "Two selectable BioLang notebooks with in-notebook Previous/Next navigation, all twelve exercises, worked solutions, and all eighteen source figures copied byte-for-byte without substitute plots.",
+      "publisher": "oriclabs",
+      "version": "0.1.0",
+      "status": "stable",
+      "verified": false,
+      "manifest": "https://raw.githubusercontent.com/oriclabs/biolang-lessons/main/lessons/sequence-analysis/little-book-r-bioinformatics/lesson.json",
+      "manifestSha256": "1170d965f461cd586a0dc81c1dfaa0a4d889240c5b7cce9cbb219881870fb338",
+      "publishedAt": "2026-09-02",
+      "compatibility": {
+        "biolang": ">=1.5.0",
+        "studio": ">=0.1.0",
+        "runtimes": [
+          "browser",
+          "desktop",
+          "somer"
+        ]
+      },
+      "categories": [
+        "sequence-analysis",
+        "bioinformatics",
+        "teaching"
+      ],
+      "tags": [
+        "FASTA",
+        "GC content",
+        "sliding windows",
+        "k-mer",
+        "SeqinR",
+        "Dengue",
+        "Mycobacterium leprae"
+      ],
+      "discoverability": {
+        "problems": [
+          "inspect a FASTA genome",
+          "calculate genome GC content",
+          "count bases and DNA words",
+          "solve sequence-statistics exercises",
+          "measure local genome composition",
+          "choose a sequence window size",
+          "compare GC and AT content",
+          "calculate observed-to-expected word frequency"
+        ],
+        "methods": [
+          "FASTA parsing",
+          "base composition",
+          "GC content",
+          "sequence complement",
+          "directional k-mer counting",
+          "non-overlapping sliding windows",
+          "local GC analysis",
+          "local AT analysis",
+          "observed-to-expected ratio"
+        ],
+        "plots": [
+          "base-composition bar plot",
+          "sliding-window line plot",
+          "multi-panel comparison plot"
+        ],
+        "terms": [
+          "FASTA",
+          "NCBI accession",
+          "Dengue virus",
+          "Mycobacterium leprae",
+          "DNA",
+          "nucleotide",
+          "ambiguous base",
+          "dinucleotide",
+          "window size",
+          "local GC",
+          "local AT",
+          "k-mer",
+          "rho statistic",
+          "word enrichment",
+          "genome position"
+        ],
+        "aliases": [
+          "SeqinR chapter 1",
+          "DNA sequence statistics 1",
+          "genome composition",
+          "SeqinR chapter 2",
+          "DNA sequence statistics 2",
+          "sliding window GC plot"
+        ],
+        "functions": [
+          "read_fasta",
+          "subseq",
+          "base_counts",
+          "gc_content",
+          "complement",
+          "kmer_index",
+          "range",
+          "map",
+          "motif_count"
+        ]
+      },
+      "sourceRepository": "https://github.com/oriclabs/biolang-lessons",
+      "licence": "CC BY 3.0",
+      "validation": "Exact chapter exercise answers against pinned NCBI accession versions; all eighteen displayed chapter and answer figures copied byte-for-byte; adjacent in-notebook navigation links structurally checked; full BioLang notebooks rerun",
+      "series": {
+        "id": "a-little-book-of-r-for-bioinformatics",
+        "title": "A Little Book of R for Bioinformatics",
+        "url": "https://a-little-book-of-r-for-bioinformatics.readthedocs.io/en/latest/",
+        "order": 1,
+        "chapter": "Chapters 1–2 · DNA Sequence Statistics"
+      }
+    },
+    {
+      "schema": 1,
+      "kind": "lesson",
+      "id": "oriclabs/little-book-r-gene-finding",
+      "name": "little-book-r-gene-finding",
+      "title": "Computational Gene-finding",
+      "summary": "A BioLang notebook porting the Computational Gene-finding chapter with all nine worked answers and four byte-for-byte source figures; the unpublished random draw is not replaced with invented data.",
+      "publisher": "oriclabs",
+      "version": "0.1.0",
+      "status": "stable",
+      "verified": false,
+      "manifest": "https://raw.githubusercontent.com/oriclabs/biolang-lessons/main/lessons/sequence-analysis/little-book-r-gene-finding/lesson.json",
+      "manifestSha256": "a0135b3426106ff9fa58bda41f62cebb97d56f54b625aacdf9cd730343e5ccad",
+      "publishedAt": "2026-09-02",
+      "compatibility": {
+        "biolang": ">=1.5.0",
+        "studio": ">=0.1.0",
+        "runtimes": [
+          "browser",
+          "desktop",
+          "somer"
+        ]
+      },
+      "categories": [
+        "sequence-analysis",
+        "bioinformatics",
+        "teaching"
+      ],
+      "tags": [
+        "ORF",
+        "gene finding",
+        "genetic code",
+        "reading frame",
+        "translation",
+        "Dengue",
+        "rabies virus"
+      ],
+      "discoverability": {
+        "problems": [
+          "find start and stop codons in a sequence",
+          "work out which reading frame a codon is in",
+          "find open reading frames in a genome",
+          "find ORFs on the reverse strand",
+          "translate a predicted coding region",
+          "decide whether an ORF is longer than chance explains",
+          "choose a length threshold for candidate genes"
+        ],
+        "methods": [
+          "codon table lookup",
+          "motif search",
+          "reading-frame arithmetic",
+          "open reading frame detection",
+          "reverse-complement strand search",
+          "translation",
+          "source-reported random null comparison",
+          "ORF length threshold"
+        ],
+        "plots": [
+          "start and stop codon scatter",
+          "ORF genome track",
+          "ORF length distribution"
+        ],
+        "terms": [
+          "genetic code",
+          "codon",
+          "start codon",
+          "stop codon",
+          "reading frame",
+          "open reading frame",
+          "ORF",
+          "forward strand",
+          "reverse strand",
+          "translation",
+          "null model",
+          "gene prediction",
+          "Dengue virus",
+          "rabies virus"
+        ],
+        "aliases": [
+          "SeqinR chapter 7",
+          "computational gene finding",
+          "ORF finding",
+          "gene prediction in BioLang",
+          "open reading frames tutorial"
+        ],
+        "functions": [
+          "read_fasta",
+          "subseq",
+          "find_motif",
+          "find_orfs",
+          "translate",
+          "reverse_complement",
+          "kmers",
+          "table",
+          "arrange",
+          "select",
+          "sort_by"
+        ]
+      },
+      "sourceRepository": "https://github.com/oriclabs/biolang-lessons",
+      "licence": "CC BY 3.0",
+      "validation": "Exercise answers checked against the source chapter using pinned NCBI accessions; four displayed source figures copied byte-for-byte; the source-reported 99% threshold is retained without inventing a replacement random dataset. Full notebook rerun with `bl notebook`.",
+      "series": {
+        "id": "a-little-book-of-r-for-bioinformatics",
+        "title": "A Little Book of R for Bioinformatics",
+        "url": "https://a-little-book-of-r-for-bioinformatics.readthedocs.io/en/latest/",
+        "order": 1,
+        "chapter": "Chapter 7 · Computational Gene-finding"
+      }
+    }
+  ]
+}

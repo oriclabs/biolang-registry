@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "kind": "lesson",
+  "id": "oriclabs/treedata-metadata-attachment",
+  "name": "treedata-metadata-attachment",
+  "title": "Phylogenetic Tree Data Integration: Tip and Node Metadata",
+  "summary": "One-to-one Figure 7.1 port using exact TDbook tree, tip, node, and published SVG assets.",
+  "publisher": "oriclabs",
+  "version": "1.0.0",
+  "status": "stable",
+  "verified": false,
+  "manifest": "https://raw.githubusercontent.com/oriclabs/biolang-lessons/main/lessons/phylogenetics/treedata-metadata-attachment/lesson.json",
+  "manifestSha256": "3b68b65147560dc2036ee75bafd895ac8b63c507ef38da37d6e68c023ab681f7",
+  "publishedAt": "2026-09-03",
+  "compatibility": {
+    "biolang": ">=1.5.0",
+    "studio": ">=0.1.0",
+    "runtimes": [
+      "browser",
+      "desktop",
+      "somer"
+    ]
+  },
+  "categories": [
+    "phylogenetics",
+    "bioinformatics",
+    "visualization",
+    "teaching"
+  ],
+  "tags": [
+    "phylogenetics",
+    "metadata",
+    "tree annotation",
+    "CC BY-NC-SA"
+  ],
+  "discoverability": {
+    "problems": [
+      "attach biological metadata to phylogenetic tree tips",
+      "annotate internal tree nodes"
+    ],
+    "methods": [
+      "tip-label keyed integration",
+      "node metadata attachment",
+      "visual encoding of traits"
+    ],
+    "plots": [
+      "annotated phylogenetic tree"
+    ],
+    "terms": [
+      "phylogenetic tree",
+      "tip metadata",
+      "node metadata",
+      "trophic habit",
+      "body mass",
+      "posterior"
+    ],
+    "aliases": [
+      "treedata Figure 7.1",
+      "ggtree attacher",
+      "tree annotation"
+    ],
+    "functions": [
+      "read_csv",
+      "filter",
+      "unique",
+      "summary"
+    ]
+  },
+  "sourceRepository": "https://github.com/oriclabs/biolang-lessons",
+  "licence": "CC BY-NC-SA 4.0; data package Artistic-2.0",
+  "validation": "Exact TDbook objects, mechanical exports, and byte-for-byte published Figure 7.1 SVG",
+  "series": {
+    "id": "treedata-book",
+    "title": "Data Integration, Manipulation and Visualization of Phylogenetic Trees",
+    "url": "https://yulab-smu.top/treedata-book/",
+    "order": 6,
+    "chapter": "Chapter 7 - Figure 7.1"
+  }
+}

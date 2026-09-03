@@ -1,0 +1,91 @@
+{
+  "schema": 1,
+  "kind": "lesson",
+  "id": "oriclabs/bdsr-nhanes-eda",
+  "name": "bdsr-nhanes-eda",
+  "title": "Biological Data Science with R: NHANES Exploratory Analysis",
+  "summary": "A one-to-one port of the NHANES descriptive exercises and six EDA figures using exact source data and byte-for-byte published PNGs.",
+  "publisher": "oriclabs",
+  "version": "1.0.0",
+  "status": "stable",
+  "verified": false,
+  "manifest": "https://raw.githubusercontent.com/oriclabs/biolang-lessons/main/lessons/biostatistics/bdsr-nhanes-eda/lesson.json",
+  "manifestSha256": "218ad2c847dbb0de6cedc0b8ce5fd4ed88f52887141f428777f57dc47f8bb0c0",
+  "publishedAt": "2026-09-03",
+  "compatibility": {
+    "biolang": ">=1.5.0",
+    "studio": ">=0.1.0",
+    "runtimes": [
+      "browser",
+      "desktop",
+      "somer"
+    ]
+  },
+  "categories": [
+    "biostatistics",
+    "epidemiology",
+    "teaching",
+    "visualization"
+  ],
+  "tags": [
+    "biostatistics",
+    "NHANES",
+    "EDA",
+    "CC BY-NC"
+  ],
+  "discoverability": {
+    "problems": [
+      "explore biomedical measurements before modeling",
+      "inspect NHANES variable distributions",
+      "compare height and weight by gender"
+    ],
+    "methods": [
+      "descriptive statistics",
+      "complete-case counting",
+      "exploratory data analysis",
+      "stratified linear smoothing"
+    ],
+    "plots": [
+      "BMI histogram",
+      "weight histogram",
+      "age histogram",
+      "height-weight scatter plot",
+      "adult gender-specific regression plot"
+    ],
+    "terms": [
+      "NHANES",
+      "BMI",
+      "pulse",
+      "blood pressure",
+      "quartile",
+      "histogram",
+      "scatter plot",
+      "gender"
+    ],
+    "aliases": [
+      "BDSR essential statistics",
+      "NHANES EDA",
+      "Biological Data Science with R statistics"
+    ],
+    "functions": [
+      "read_csv",
+      "drop_null",
+      "mean",
+      "summary",
+      "quantile",
+      "variance",
+      "stdev",
+      "filter"
+    ]
+  },
+  "sourceRepository": "https://github.com/oriclabs/biolang-lessons",
+  "licence": "CC BY-NC 4.0",
+  "validation": "Exact source-hosted 5,000-row NHANES table and dictionary; six byte-for-byte published PNGs; dimensions, exercise statistics, and complete-case counts reproduced",
+  "series": {
+    "id": "biological-data-science-with-r",
+    "title": "Biological Data Science with R",
+    "url": "https://bdsr.stephenturner.us/",
+    "order": 8,
+    "chapter": "Essential statistics - descriptive statistics and EDA"
+  }
+}

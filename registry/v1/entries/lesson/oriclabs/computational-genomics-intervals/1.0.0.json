@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "kind": "lesson",
+  "id": "oriclabs/computational-genomics-intervals",
+  "name": "computational-genomics-intervals",
+  "title": "Computational Genomics with R: Genomic Intervals",
+  "summary": "A source-faithful BioLang port of the opening GRanges construction examples and exercises 1-2 from Chapter 6.",
+  "publisher": "oriclabs",
+  "version": "1.0.0",
+  "status": "stable",
+  "verified": false,
+  "manifest": "https://raw.githubusercontent.com/oriclabs/biolang-lessons/main/lessons/genomics/computational-genomics-intervals/lesson.json",
+  "manifestSha256": "55d652bb04d89f6fd8afa8b6304501c3b4f4e0b1c00dc95ef84da5c1b4180318",
+  "publishedAt": "2026-09-03",
+  "compatibility": {
+    "biolang": ">=1.5.0",
+    "studio": ">=0.1.0",
+    "runtimes": [
+      "browser",
+      "desktop",
+      "somer"
+    ]
+  },
+  "categories": [
+    "genomics",
+    "bioinformatics",
+    "teaching"
+  ],
+  "tags": [
+    "genomics",
+    "intervals",
+    "GRanges",
+    "CC BY-NC-SA"
+  ],
+  "discoverability": {
+    "problems": [
+      "represent genomic intervals",
+      "inspect interval coordinates",
+      "filter intervals by chromosome or strand"
+    ],
+    "methods": [
+      "genomic interval construction",
+      "closed-coordinate width calculation",
+      "interval filtering"
+    ],
+    "plots": [],
+    "terms": [
+      "genomic interval",
+      "GRanges",
+      "IRanges",
+      "chromosome",
+      "strand",
+      "coordinate system"
+    ],
+    "aliases": [
+      "genome arithmetic",
+      "genomic ranges",
+      "GRanges exercises"
+    ],
+    "functions": [
+      "table",
+      "head",
+      "map",
+      "filter"
+    ]
+  },
+  "sourceRepository": "https://github.com/oriclabs/biolang-lessons",
+  "licence": "CC BY-NC-SA 4.0",
+  "validation": "Exact source rows, metadata, exercise coordinates, strand filters, and closed-coordinate widths against revision 212119889edfeaebc7449e0aeb4fce29a574011d",
+  "series": {
+    "id": "computational-genomics-with-r",
+    "title": "Computational Genomics with R",
+    "url": "https://compgenomr.github.io/book/",
+    "order": 6,
+    "chapter": "Chapter 6 - Genomic intervals, construction and exercises 1-2"
+  }
+}

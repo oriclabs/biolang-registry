@@ -1,0 +1,333 @@
+{
+  "schema": 1,
+  "category": {
+    "id": "ecology",
+    "title": "Ecology",
+    "count": 4,
+    "kinds": [
+      "lesson"
+    ]
+  },
+  "entries": [
+    {
+      "schema": 1,
+      "kind": "lesson",
+      "id": "oriclabs/data-carpentry-daily-counts",
+      "name": "data-carpentry-daily-counts",
+      "title": "Data Analysis and Visualization in R for Ecologists: Daily Counts",
+      "summary": "A one-to-one port of daily animal counts by sex using the exact Portal field-data extract and byte-for-byte published time-series figure.",
+      "publisher": "oriclabs",
+      "version": "1.0.0",
+      "status": "stable",
+      "verified": false,
+      "manifest": "https://raw.githubusercontent.com/oriclabs/biolang-lessons/main/lessons/ecology/data-carpentry-daily-counts/lesson.json",
+      "manifestSha256": "3df077302566a7a4a46dd12221113925565886bc72f77a896e92044ccad9bd9e",
+      "publishedAt": "2026-09-03",
+      "compatibility": {
+        "biolang": ">=1.5.0",
+        "studio": ">=0.1.0",
+        "runtimes": [
+          "browser",
+          "desktop",
+          "somer"
+        ]
+      },
+      "categories": [
+        "ecology",
+        "data-analysis",
+        "visualization",
+        "teaching"
+      ],
+      "tags": [
+        "ecology",
+        "time series",
+        "grouped counts",
+        "CC BY"
+      ],
+      "discoverability": {
+        "problems": [
+          "count field observations by day and sex",
+          "build an ecological time series",
+          "preserve missing sex as a grouping level"
+        ],
+        "methods": [
+          "split-apply-combine",
+          "daily grouped counts",
+          "time-series preparation"
+        ],
+        "plots": [
+          "daily animal-count time series"
+        ],
+        "terms": [
+          "Portal Project",
+          "ecological survey",
+          "daily counts",
+          "sex",
+          "time series",
+          "missing values"
+        ],
+        "aliases": [
+          "Data Carpentry daily counts",
+          "R ecology time series",
+          "Portal survey Challenge 4"
+        ],
+        "functions": [
+          "read_csv",
+          "mutate",
+          "group_by",
+          "summarize",
+          "arrange"
+        ]
+      },
+      "sourceRepository": "https://github.com/oriclabs/biolang-lessons",
+      "licence": "CC BY 4.0; code MIT",
+      "validation": "Exact 16,878-row Portal data, 927 daily-sex groups, maximum count 116, and byte-for-byte source plot",
+      "series": {
+        "id": "data-analysis-visualization-r-ecologists",
+        "title": "Data Analysis and Visualization in R for Ecologists",
+        "url": "https://datacarpentry.github.io/R-ecology-lesson/",
+        "order": 5,
+        "chapter": "Working with data - Challenge 4 daily counts"
+      }
+    },
+    {
+      "schema": 1,
+      "kind": "lesson",
+      "id": "oriclabs/data-carpentry-ecology",
+      "name": "data-carpentry-ecology",
+      "title": "Data Analysis and Visualization in R for Ecologists: Grouped Summaries",
+      "summary": "A source-faithful port of the species-by-sex mean-weight workflow using the exact cleaned Portal Project teaching CSV.",
+      "publisher": "oriclabs",
+      "version": "1.0.0",
+      "status": "stable",
+      "verified": false,
+      "manifest": "https://raw.githubusercontent.com/oriclabs/biolang-lessons/main/lessons/ecology/data-carpentry-ecology/lesson.json",
+      "manifestSha256": "6963b9e434b9534aa5e227f164f1884db67fd6ebf35a34014c11f8c7cb1c4766",
+      "publishedAt": "2026-09-03",
+      "compatibility": {
+        "biolang": ">=1.5.0",
+        "studio": ">=0.1.0",
+        "runtimes": [
+          "browser",
+          "desktop",
+          "somer"
+        ]
+      },
+      "categories": [
+        "ecology",
+        "data-analysis",
+        "teaching"
+      ],
+      "tags": [
+        "ecology",
+        "data wrangling",
+        "grouped summaries",
+        "CC BY"
+      ],
+      "discoverability": {
+        "problems": [
+          "summarize ecological observations by species and sex",
+          "remove missing weights before aggregation",
+          "rank ecological groups by mean weight"
+        ],
+        "methods": [
+          "split-apply-combine",
+          "grouped mean",
+          "missing-value filtering"
+        ],
+        "plots": [],
+        "terms": [
+          "ecological survey",
+          "species",
+          "sex",
+          "mean weight",
+          "grouped summary",
+          "Portal Project"
+        ],
+        "aliases": [
+          "Data Carpentry ecology",
+          "R ecology lesson",
+          "species weight summary"
+        ],
+        "functions": [
+          "read_csv",
+          "drop_null",
+          "mutate",
+          "group_by",
+          "summarize",
+          "arrange"
+        ]
+      },
+      "sourceRepository": "https://github.com/oriclabs/biolang-lessons",
+      "licence": "CC BY 4.0",
+      "validation": "Exact 1,223,055-byte source CSV and SHA-256; row count, group count, ordering, counts, and means checked against R 4.6.1 with dplyr",
+      "series": {
+        "id": "data-analysis-visualization-r-ecologists",
+        "title": "Data Analysis and Visualization in R for Ecologists",
+        "url": "https://datacarpentry.github.io/R-ecology-lesson/",
+        "order": 4,
+        "chapter": "Working with Data - group_by, summarize, and arrange"
+      }
+    },
+    {
+      "schema": 1,
+      "kind": "lesson",
+      "id": "oriclabs/stats4nr-fishing-dispersion",
+      "name": "stats4nr-fishing-dispersion",
+      "title": "Statistics in Natural Resources: Fishing-Count Dispersion",
+      "summary": "A one-to-one port of the fishing-count distribution check using exact package data, published summary values, and the byte-for-byte source histogram.",
+      "publisher": "oriclabs",
+      "version": "1.0.0",
+      "status": "stable",
+      "verified": false,
+      "manifest": "https://raw.githubusercontent.com/oriclabs/biolang-lessons/main/lessons/ecology/stats4nr-fishing-dispersion/lesson.json",
+      "manifestSha256": "1ede647d0980e7991679fc349ff20e9eafb8e751f43bb6728a7666f23d3599c4",
+      "publishedAt": "2026-09-03",
+      "compatibility": {
+        "biolang": ">=1.5.0",
+        "studio": ">=0.1.0",
+        "runtimes": [
+          "browser",
+          "desktop",
+          "somer"
+        ]
+      },
+      "categories": [
+        "ecology",
+        "statistics",
+        "teaching"
+      ],
+      "tags": [
+        "ecology",
+        "count data",
+        "overdispersion",
+        "CC BY-NC-SA"
+      ],
+      "discoverability": {
+        "problems": [
+          "diagnose overdispersion in wildlife count data",
+          "measure excess zeros in fishing catches",
+          "inspect a count response before regression"
+        ],
+        "methods": [
+          "mean-variance comparison",
+          "zero-frequency analysis",
+          "count-data exploratory analysis"
+        ],
+        "plots": [
+          "fish-catch histogram"
+        ],
+        "terms": [
+          "count data",
+          "overdispersion",
+          "zero inflation",
+          "Poisson assumption",
+          "fishing success",
+          "variance-to-mean ratio"
+        ],
+        "aliases": [
+          "Stats4NR fishing case study",
+          "fishing count dispersion",
+          "natural resources count data"
+        ],
+        "functions": [
+          "read_csv",
+          "mean",
+          "variance",
+          "filter",
+          "nrow"
+        ]
+      },
+      "sourceRepository": "https://github.com/oriclabs/biolang-lessons",
+      "licence": "CC BY-NC-SA 4.0; package data CC0",
+      "validation": "Exact official 250-row fishing object and byte-for-byte source histogram; mean 3.296, sample variance 135.373879518072, and 56.8% zero catches reproduced",
+      "series": {
+        "id": "statistics-in-natural-resources",
+        "title": "Statistics in Natural Resources: Applications with R",
+        "url": "https://stats4nr.com/",
+        "order": 13,
+        "chapter": "Chapter 13 - Fishing count distribution and dispersion"
+      }
+    },
+    {
+      "schema": 1,
+      "kind": "lesson",
+      "id": "oriclabs/stats4nr-redpine-ols",
+      "name": "stats4nr-redpine-ols",
+      "title": "Statistics in Natural Resources: Red-Pine OLS",
+      "summary": "A bounded one-to-one Exercise 14.1 port using 450 real tree observations and exact correlation, OLS, and AIC results.",
+      "publisher": "oriclabs",
+      "version": "1.0.0",
+      "status": "stable",
+      "verified": false,
+      "manifest": "https://raw.githubusercontent.com/oriclabs/biolang-lessons/main/lessons/ecology/stats4nr-redpine-ols/lesson.json",
+      "manifestSha256": "81a8f0f02181a92ea7a37352647b2f6eea31b721131aa13e2b6dd4d442561112",
+      "publishedAt": "2026-09-03",
+      "compatibility": {
+        "biolang": ">=1.5.0",
+        "studio": ">=0.1.0",
+        "runtimes": [
+          "browser",
+          "desktop",
+          "somer"
+        ]
+      },
+      "categories": [
+        "ecology",
+        "statistics",
+        "data-analysis",
+        "teaching"
+      ],
+      "tags": [
+        "ecology",
+        "forestry",
+        "linear regression",
+        "CC BY-NC-SA"
+      ],
+      "discoverability": {
+        "problems": [
+          "predict tree height from diameter",
+          "fit ordinary least squares to forestry data",
+          "calculate Pearson correlation for tree measurements"
+        ],
+        "methods": [
+          "Pearson correlation",
+          "simple linear regression",
+          "Akaike information criterion"
+        ],
+        "plots": [],
+        "terms": [
+          "red pine",
+          "Cloquet Forestry Center",
+          "diameter at breast height",
+          "tree height",
+          "OLS",
+          "AIC"
+        ],
+        "aliases": [
+          "Stats4NR redpine",
+          "red pine height diameter",
+          "forestry OLS exercise"
+        ],
+        "functions": [
+          "read_csv",
+          "cor",
+          "lm",
+          "map",
+          "sum",
+          "log"
+        ]
+      },
+      "sourceRepository": "https://github.com/oriclabs/biolang-lessons",
+      "licence": "CC BY-NC-SA 4.0; package data CC0",
+      "validation": "Exact 450-row field dataset, Pearson correlation, OLS coefficients, R squared, and AIC; source table intercept typo disclosed",
+      "series": {
+        "id": "statistics-in-natural-resources",
+        "title": "Statistics in Natural Resources: Applications with R",
+        "url": "https://stats4nr.com/",
+        "order": 14,
+        "chapter": "Chapter 14 - Exercise 14.1 red-pine ordinary least squares"
+      }
+    }
+  ]
+}

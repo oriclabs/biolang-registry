@@ -4,14 +4,14 @@
   "id": "oriclabs/bdsr-survival-analysis",
   "name": "bdsr-survival-analysis",
   "title": "Survival analysis with lung, colon, and TCGA data",
-  "summary": "A validated BioLang lesson covering all 13 BDSR survival exercises and their figures, including Kaplan-Meier, Cox, TCGA expression, and pan-kidney analysis.",
+  "summary": "A validated BioLang lesson covering the complete BDSR survival chapter, all 13 exercises and figures, Kaplan-Meier and Cox methods, TCGA expression, pan-kidney analysis, and the closing resource guide.",
   "publisher": "oriclabs",
   "version": "0.1.0",
   "status": "stable",
   "verified": false,
   "manifest": "https://raw.githubusercontent.com/oriclabs/biolang-lessons/main/lessons/biostatistics/bdsr-survival/lesson.json",
-  "manifestSha256": "18a98ccda8d8fef9cc69936204b1bff2362f388d2599583f153eb7336ace548a",
-  "publishedAt": "2026-08-30",
+  "manifestSha256": "2adcc7f7a077ad8d9790d535c7853a99d926d3511c43e4c326c0735673f58be1",
+  "publishedAt": "2026-09-02",
   "compatibility": {
     "biolang": ">=1.5.0",
     "studio": ">=0.1.0",
@@ -80,7 +80,12 @@
       "clinical covariate",
       "TCGA",
       "RTCGA",
-      "pan-kidney cohort"
+      "pan-kidney cohort",
+      "TCGAbiolinks",
+      "cBioPortal",
+      "OncoLnc",
+      "TANRIC",
+      "MEXPRESS"
     ],
     "aliases": [
       "time-to-event analysis",

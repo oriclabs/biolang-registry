@@ -1,0 +1,30 @@
+{
+  "schema": 1,
+  "kind": "lesson",
+  "id": "oriclabs/rmrwr-sample-size",
+  "name": "rmrwr-sample-size",
+  "title": "Reproducible Medical Research with R: Sample Size",
+  "summary": "A source-mapped BioLang port of the opening two-arm A1c sample-size and constrained-power example.",
+  "publisher": "oriclabs",
+  "version": "1.0.0",
+  "status": "stable",
+  "verified": false,
+  "manifest": "https://raw.githubusercontent.com/oriclabs/biolang-lessons/main/lessons/biostatistics/rmrwr-sample-size/lesson.json",
+  "manifestSha256": "99391c70d48e22c89cec4f1057553a94818bf318b60fcff1ac6c89734fcaada1",
+  "publishedAt": "2026-09-03",
+  "compatibility": {"biolang": ">=1.5.0", "studio": ">=0.1.0", "runtimes": ["browser", "desktop", "somer"]},
+  "categories": ["statistics", "clinical-research", "teaching"],
+  "tags": ["sample size", "power", "two-sample t test", "clinical research", "CC0"],
+  "discoverability": {
+    "problems": ["plan a two-arm clinical study", "inflate sample size for participant dropout", "calculate achieved power with a fixed budget"],
+    "methods": ["Cohen effect size", "two-sample t-test power", "attrition inflation"],
+    "plots": [],
+    "terms": ["sample size", "statistical power", "Cohen d", "alpha", "dropout", "participants per arm"],
+    "aliases": ["clinical trial planning", "pwr t test", "A1c study example"],
+    "functions": ["power_t_test", "abs"]
+  },
+  "sourceRepository": "https://github.com/oriclabs/biolang-lessons",
+  "licence": "MIT",
+  "validation": "BioLang sample size and achieved power checked against the source pwr.t.test inputs; the published 45-per-arm/90-total attrition result is reproduced exactly and its arithmetic inconsistency is disclosed",
+  "series": {"id": "reproducible-medical-research-with-r", "title": "Reproducible Medical Research with R", "url": "https://peter-higgins-rmrwr.share.connect.posit.cloud/", "order": 69, "chapter": "Sample Size Calculations - opening continuous endpoint example"}
+}

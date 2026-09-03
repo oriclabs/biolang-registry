@@ -1,0 +1,168 @@
+{
+  "schema": 1,
+  "category": {
+    "id": "clinical-research",
+    "title": "Clinical Research",
+    "count": 2,
+    "kinds": [
+      "lesson"
+    ]
+  },
+  "entries": [
+    {
+      "schema": 1,
+      "kind": "lesson",
+      "id": "oriclabs/rmrwr-blood-storage-columns",
+      "name": "rmrwr-blood-storage-columns",
+      "title": "Reproducible Medical Research with R: Blood-Storage Columns",
+      "summary": "A one-to-one non-contiguous column-selection example using the exact de-identified 316-patient blood-storage cohort.",
+      "publisher": "oriclabs",
+      "version": "1.0.0",
+      "status": "stable",
+      "verified": false,
+      "manifest": "https://raw.githubusercontent.com/oriclabs/biolang-lessons/main/lessons/biostatistics/rmrwr-blood-storage-columns/lesson.json",
+      "manifestSha256": "b42f2eb46cc5781772b89c7702c50d2dec5a7276c6db5324d0ed992cdc1352bd",
+      "publishedAt": "2026-09-03",
+      "compatibility": {
+        "biolang": ">=1.5.0",
+        "studio": ">=0.1.0",
+        "runtimes": [
+          "browser",
+          "desktop",
+          "somer"
+        ]
+      },
+      "categories": [
+        "clinical-research",
+        "biostatistics",
+        "data-analysis",
+        "teaching"
+      ],
+      "tags": [
+        "clinical research",
+        "data wrangling",
+        "cohort",
+        "CC0"
+      ],
+      "discoverability": {
+        "problems": [
+          "select non-contiguous clinical variables",
+          "reorder a clinical table",
+          "inspect a de-identified prostate-cancer cohort"
+        ],
+        "methods": [
+          "column selection",
+          "column range expansion",
+          "clinical data inspection"
+        ],
+        "plots": [],
+        "terms": [
+          "blood storage",
+          "prostate cancer",
+          "retrospective cohort",
+          "Gleason score",
+          "PSA",
+          "column selection"
+        ],
+        "aliases": [
+          "RMRWR selecting columns",
+          "medicaldata blood_storage",
+          "prostate cohort columns"
+        ],
+        "functions": [
+          "read_csv",
+          "select",
+          "head",
+          "colnames",
+          "nrow"
+        ]
+      },
+      "sourceRepository": "https://github.com/oriclabs/biolang-lessons",
+      "licence": "CC0-1.0; data package MIT",
+      "validation": "Exact 316x20 medicaldata object and exact ten-column source order with first rows reproduced",
+      "series": {
+        "id": "reproducible-medical-research-with-r",
+        "title": "Reproducible Medical Research with R",
+        "url": "https://peter-higgins-rmrwr.share.connect.posit.cloud/",
+        "order": 5,
+        "chapter": "Selecting Columns - non-contiguous blood-storage example"
+      }
+    },
+    {
+      "schema": 1,
+      "kind": "lesson",
+      "id": "oriclabs/rmrwr-sample-size",
+      "name": "rmrwr-sample-size",
+      "title": "Reproducible Medical Research with R: Sample Size",
+      "summary": "A source-mapped BioLang port of the opening two-arm A1c sample-size and constrained-power example.",
+      "publisher": "oriclabs",
+      "version": "1.0.0",
+      "status": "stable",
+      "verified": false,
+      "manifest": "https://raw.githubusercontent.com/oriclabs/biolang-lessons/main/lessons/biostatistics/rmrwr-sample-size/lesson.json",
+      "manifestSha256": "99391c70d48e22c89cec4f1057553a94818bf318b60fcff1ac6c89734fcaada1",
+      "publishedAt": "2026-09-03",
+      "compatibility": {
+        "biolang": ">=1.5.0",
+        "studio": ">=0.1.0",
+        "runtimes": [
+          "browser",
+          "desktop",
+          "somer"
+        ]
+      },
+      "categories": [
+        "statistics",
+        "clinical-research",
+        "teaching"
+      ],
+      "tags": [
+        "sample size",
+        "power",
+        "two-sample t test",
+        "clinical research",
+        "CC0"
+      ],
+      "discoverability": {
+        "problems": [
+          "plan a two-arm clinical study",
+          "inflate sample size for participant dropout",
+          "calculate achieved power with a fixed budget"
+        ],
+        "methods": [
+          "Cohen effect size",
+          "two-sample t-test power",
+          "attrition inflation"
+        ],
+        "plots": [],
+        "terms": [
+          "sample size",
+          "statistical power",
+          "Cohen d",
+          "alpha",
+          "dropout",
+          "participants per arm"
+        ],
+        "aliases": [
+          "clinical trial planning",
+          "pwr t test",
+          "A1c study example"
+        ],
+        "functions": [
+          "power_t_test",
+          "abs"
+        ]
+      },
+      "sourceRepository": "https://github.com/oriclabs/biolang-lessons",
+      "licence": "MIT",
+      "validation": "BioLang sample size and achieved power checked against the source pwr.t.test inputs; the published 45-per-arm/90-total attrition result is reproduced exactly and its arithmetic inconsistency is disclosed",
+      "series": {
+        "id": "reproducible-medical-research-with-r",
+        "title": "Reproducible Medical Research with R",
+        "url": "https://peter-higgins-rmrwr.share.connect.posit.cloud/",
+        "order": 69,
+        "chapter": "Sample Size Calculations - opening continuous endpoint example"
+      }
+    }
+  ]
+}
