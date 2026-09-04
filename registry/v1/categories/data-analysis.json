@@ -3,7 +3,7 @@
   "category": {
     "id": "data-analysis",
     "title": "Data Analysis",
-    "count": 12,
+    "count": 13,
     "kinds": [
       "lesson"
     ]
@@ -701,6 +701,139 @@
         "order": 1,
         "chapter": "Chapters 1–2 - anchovy time-varying regression"
       }
+    },
+    {
+      "schema": 1,
+      "kind": "lesson",
+      "id": "oriclabs/little-book-r-multivariate-analysis",
+      "name": "little-book-r-multivariate-analysis",
+      "title": "A Little Book of R for Multivariate Analysis",
+      "summary": "Four connected source-faithful notebooks over the exact UCI Wine observations, with summaries, PCA, LDA score replay, and all nine canonical figures.",
+      "publisher": "oriclabs",
+      "version": "1.0.0",
+      "status": "stable",
+      "verified": false,
+      "manifest": "https://raw.githubusercontent.com/oriclabs/biolang-lessons/main/lessons/biostatistics/little-book-r-multivariate/lesson.json",
+      "manifestSha256": "aa88c32a9bd04f004c54bffa57f81833bd1b503a32d5451eaeebe969f37a0df2",
+      "publishedAt": "2026-09-04",
+      "compatibility": {
+        "biolang": ">=1.5.0",
+        "studio": ">=0.1.0",
+        "runtimes": [
+          "browser",
+          "desktop",
+          "somer"
+        ]
+      },
+      "categories": [
+        "statistics",
+        "data-analysis",
+        "machine-learning",
+        "bioinformatics",
+        "teaching"
+      ],
+      "tags": [
+        "multivariate analysis",
+        "PCA",
+        "LDA",
+        "wine chemistry",
+        "classification",
+        "CC BY"
+      ],
+      "discoverability": {
+        "problems": [
+          "inspect a multivariate chemical dataset",
+          "compare measurements among biological groups",
+          "separate within-group and between-group variation",
+          "find highly correlated multivariate measurements",
+          "reduce correlated biological measurements",
+          "choose how many principal components to retain",
+          "separate biological groups using multiple measurements",
+          "classify wine cultivars from chemical measurements"
+        ],
+        "methods": [
+          "multivariate data import",
+          "grouped exploratory data analysis",
+          "within-group variance",
+          "between-group variance",
+          "within-group covariance",
+          "between-group covariance",
+          "Pearson correlation",
+          "z-score standardisation",
+          "principal component analysis",
+          "Kaiser criterion",
+          "cumulative variance threshold",
+          "linear discriminant analysis",
+          "discriminant score calculation",
+          "threshold allocation rule",
+          "training confusion matrix"
+        ],
+        "plots": [
+          "scatterplot matrix",
+          "labelled scatter plot",
+          "profile plot",
+          "scree plot",
+          "principal component score plot",
+          "stacked discriminant histogram",
+          "linear discriminant score plot"
+        ],
+        "terms": [
+          "wine cultivar",
+          "chemical constituent",
+          "multivariate observation",
+          "measurement scale",
+          "separation",
+          "covariance",
+          "correlation coefficient",
+          "sample standard deviation",
+          "cultivar",
+          "principal component",
+          "loading",
+          "score",
+          "explained variance",
+          "dimensionality reduction",
+          "discriminant function",
+          "LDA loading",
+          "group separation",
+          "misclassification rate",
+          "resubstitution error"
+        ],
+        "aliases": [
+          "UCI Wine exploration",
+          "wine chemistry data",
+          "multivariate EDA",
+          "pooled within variance",
+          "between class variance",
+          "feature standardization",
+          "PCA",
+          "component analysis",
+          "ordination",
+          "LDA",
+          "canonical discriminant analysis",
+          "discriminant classification"
+        ],
+        "functions": [
+          "read_csv",
+          "filter",
+          "head",
+          "nrow",
+          "ncol",
+          "table",
+          "mean",
+          "stdev",
+          "variance",
+          "cor",
+          "zip",
+          "map",
+          "sum",
+          "pca",
+          "select",
+          "mutate"
+        ]
+      },
+      "sourceRepository": "https://github.com/oriclabs/biolang-lessons",
+      "licence": "CC BY 3.0; data CC BY 4.0",
+      "validation": "Exact 178-row source data; source-matching summaries, PCA, discriminant scores and allocations; nine byte-for-byte canonical PNGs; four-notebook Previous/Next navigation"
     },
     {
       "schema": 1,

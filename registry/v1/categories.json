@@ -4,7 +4,7 @@
     {
       "id": "bioinformatics",
       "title": "Bioinformatics",
-      "count": 8,
+      "count": 9,
       "kinds": [
         "lesson"
       ]
@@ -36,7 +36,7 @@
     {
       "id": "data-analysis",
       "title": "Data Analysis",
-      "count": 12,
+      "count": 13,
       "kinds": [
         "lesson"
       ]
@@ -117,7 +117,7 @@
     {
       "id": "machine-learning",
       "title": "Machine Learning",
-      "count": 2,
+      "count": 3,
       "kinds": [
         "lesson"
       ]
@@ -165,7 +165,7 @@
     {
       "id": "statistics",
       "title": "Statistics",
-      "count": 9,
+      "count": 10,
       "kinds": [
         "dataset",
         "lesson",
@@ -175,7 +175,7 @@
     {
       "id": "teaching",
       "title": "Teaching",
-      "count": 27,
+      "count": 28,
       "kinds": [
         "dataset",
         "lesson",
