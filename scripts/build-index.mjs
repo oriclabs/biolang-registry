@@ -89,6 +89,7 @@ function title(slug) { return slug.split("-").map(word => word.slice(0, 1).toUpp
 
 const entries = filesBelow(entriesRoot).map(file => { const entry = JSON.parse(readFileSync(file, "utf8")); validate(entry, file); return entry; });
 entries.sort((a, b) => a.kind.localeCompare(b.kind) || a.id.localeCompare(b.id) || compareVersionsDescending(a.version, b.version));
+const activeEntries = entries.filter(entry => entry.status !== "withdrawn");
 const identities = entries.map(entry => `${entry.id}@${entry.version}`);
 if (new Set(identities).size !== identities.length) throw new Error("duplicate registry id + version");
 const providerIds = new Set(entries.filter(entry => entry.kind === "provider").map(entry => entry.id));
@@ -96,11 +97,11 @@ for (const entry of entries.filter(entry => entry.kind === "dataset")) {
   if (!providerIds.has(entry.dataset.provider)) throw new Error(`${entry.id}: provider '${entry.dataset.provider}' is not registered`);
 }
 
-const categories = [...new Set(entries.flatMap(entry => entry.categories))].sort().map(id => {
-  const matches = entries.filter(entry => entry.categories.includes(id));
+const categories = [...new Set(activeEntries.flatMap(entry => entry.categories))].sort().map(id => {
+  const matches = activeEntries.filter(entry => entry.categories.includes(id));
   return { id, title: title(id), count: matches.length, kinds: [...new Set(matches.map(entry => entry.kind))].sort() };
 });
-const searchDocuments = entries.map(entry => ({
+const searchDocuments = activeEntries.map(entry => ({
   id: entry.id,
   version: entry.version,
   kind: entry.kind,
@@ -121,8 +122,8 @@ const outputs = new Map([
   [path.join(apiRoot, "index.json"), { schema: 1, entries }],
   [path.join(apiRoot, "search-index.json"), { schema: 1, documents: searchDocuments }],
   [path.join(apiRoot, "categories.json"), { schema: 1, categories }],
-  [path.join(apiRoot, "datasets.json"), { schema: 1, entries: entries.filter(entry => entry.kind === "dataset") }],
-  [path.join(apiRoot, "providers.json"), { schema: 1, entries: entries.filter(entry => entry.kind === "provider") }],
+  [path.join(apiRoot, "datasets.json"), { schema: 1, entries: activeEntries.filter(entry => entry.kind === "dataset") }],
+  [path.join(apiRoot, "providers.json"), { schema: 1, entries: activeEntries.filter(entry => entry.kind === "provider") }],
   [path.join(apiRoot, "api.json"), {
     schema: 1,
     endpoints: {
@@ -137,7 +138,7 @@ const outputs = new Map([
   }]
 ]);
 for (const entry of entries) outputs.set(path.join(apiRoot, "entries", entry.kind, entry.publisher, entry.name, `${entry.version}.json`), entry);
-for (const category of categories) outputs.set(path.join(apiRoot, "categories", `${category.id}.json`), { schema: 1, category, entries: entries.filter(entry => entry.categories.includes(category.id)) });
+for (const category of categories) outputs.set(path.join(apiRoot, "categories", `${category.id}.json`), { schema: 1, category, entries: activeEntries.filter(entry => entry.categories.includes(category.id)) });
 
 const check = process.argv.includes("--check");
 for (const [file, value] of outputs) {

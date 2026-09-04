@@ -372,57 +372,6 @@
       "text": "oriclabs/beyondmlr-birdkeeping beyond mlr: birdkeeping and lung cancer the exact 147-person case-control data, unadjusted birdkeeping odds ratio, and source years-smoking-adjusted logistic model. oriclabs epidemiology biostatistics clinical-research data-analysis teaching epidemiology logistic regression case-control lung cancer cc by-nc-sa estimate lung-cancer odds associated with birdkeeping adjust an exposure odds ratio for smoking duration case-control study two-way table odds ratio logistic regression birdkeeping lung cancer smoking history confounding retrospective observational study beyondmlr birdkeeping pet birds lung cancer birdkeeping case-control read_csv filter glm exp table    beyond-multiple-linear-regression beyond multiple linear regression chapter 6 - birdkeeping and lung cancer"
     },
     {
-      "id": "oriclabs/computational-genomics-intervals",
-      "version": "1.0.0",
-      "kind": "lesson",
-      "title": "Computational Genomics with R: Genomic Intervals",
-      "summary": "A source-faithful BioLang port of the opening GRanges construction examples and exercises 1-2 from Chapter 6.",
-      "categories": [
-        "genomics",
-        "bioinformatics",
-        "teaching"
-      ],
-      "tags": [
-        "genomics",
-        "intervals",
-        "GRanges",
-        "CC BY-NC-SA"
-      ],
-      "discoverability": {
-        "problems": [
-          "represent genomic intervals",
-          "inspect interval coordinates",
-          "filter intervals by chromosome or strand"
-        ],
-        "methods": [
-          "genomic interval construction",
-          "closed-coordinate width calculation",
-          "interval filtering"
-        ],
-        "plots": [],
-        "terms": [
-          "genomic interval",
-          "GRanges",
-          "IRanges",
-          "chromosome",
-          "strand",
-          "coordinate system"
-        ],
-        "aliases": [
-          "genome arithmetic",
-          "genomic ranges",
-          "GRanges exercises"
-        ],
-        "functions": [
-          "table",
-          "head",
-          "map",
-          "filter"
-        ]
-      },
-      "text": "oriclabs/computational-genomics-intervals computational genomics with r: genomic intervals a source-faithful biolang port of the opening granges construction examples and exercises 1-2 from chapter 6. oriclabs genomics bioinformatics teaching genomics intervals granges cc by-nc-sa represent genomic intervals inspect interval coordinates filter intervals by chromosome or strand genomic interval construction closed-coordinate width calculation interval filtering genomic interval granges iranges chromosome strand coordinate system genome arithmetic genomic ranges granges exercises table head map filter    computational-genomics-with-r computational genomics with r chapter 6 - genomic intervals, construction and exercises 1-2"
-    },
-    {
       "id": "oriclabs/computational-genomics-refseq-tss",
       "version": "1.0.0",
       "kind": "lesson",

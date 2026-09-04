@@ -4,7 +4,7 @@
     {
       "id": "bioinformatics",
       "title": "Bioinformatics",
-      "count": 9,
+      "count": 8,
       "kinds": [
         "lesson"
       ]
@@ -109,7 +109,7 @@
     {
       "id": "genomics",
       "title": "Genomics",
-      "count": 3,
+      "count": 2,
       "kinds": [
         "lesson"
       ]
@@ -175,7 +175,7 @@
     {
       "id": "teaching",
       "title": "Teaching",
-      "count": 28,
+      "count": 27,
       "kinds": [
         "dataset",
         "lesson",
