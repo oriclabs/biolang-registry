@@ -7,7 +7,7 @@
   "summary": "One-to-one Figure 7.1 port using exact TDbook tree, tip, node, and published SVG assets.",
   "publisher": "oriclabs",
   "version": "1.0.0",
-  "status": "stable",
+  "status": "withdrawn",
   "verified": false,
   "manifest": "https://raw.githubusercontent.com/oriclabs/biolang-lessons/main/lessons/phylogenetics/treedata-metadata-attachment/lesson.json",
   "manifestSha256": "3b68b65147560dc2036ee75bafd895ac8b63c507ef38da37d6e68c023ab681f7",

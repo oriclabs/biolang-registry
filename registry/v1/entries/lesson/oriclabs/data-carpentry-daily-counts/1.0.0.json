@@ -7,7 +7,7 @@
   "summary": "A one-to-one port of daily animal counts by sex using the exact Portal field-data extract and byte-for-byte published time-series figure.",
   "publisher": "oriclabs",
   "version": "1.0.0",
-  "status": "stable",
+  "status": "withdrawn",
   "verified": false,
   "manifest": "https://raw.githubusercontent.com/oriclabs/biolang-lessons/main/lessons/ecology/data-carpentry-daily-counts/lesson.json",
   "manifestSha256": "3df077302566a7a4a46dd12221113925565886bc72f77a896e92044ccad9bd9e",

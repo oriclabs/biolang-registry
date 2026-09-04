@@ -7,7 +7,7 @@
   "summary": "Two selectable BioLang notebooks with in-notebook Previous/Next navigation, all twelve exercises, worked solutions, and all eighteen source figures copied byte-for-byte without substitute plots.",
   "publisher": "oriclabs",
   "version": "0.1.0",
-  "status": "stable",
+  "status": "withdrawn",
   "verified": false,
   "manifest": "https://raw.githubusercontent.com/oriclabs/biolang-lessons/main/lessons/sequence-analysis/little-book-r-bioinformatics/lesson.json",
   "manifestSha256": "1170d965f461cd586a0dc81c1dfaa0a4d889240c5b7cce9cbb219881870fb338",

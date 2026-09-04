@@ -7,7 +7,7 @@
   "summary": "The exact R cars data, four original validation rules, published counts and violating rows, and byte-for-byte canonical result plot.",
   "publisher": "oriclabs",
   "version": "1.0.0",
-  "status": "stable",
+  "status": "withdrawn",
   "verified": false,
   "manifest": "https://raw.githubusercontent.com/oriclabs/biolang-lessons/main/lessons/data-quality/validate-cars-rules/lesson.json",
   "manifestSha256": "04bd9d6d71d2178b39a64bc3147235ee9fa89010ab60d1df1fb15229e00ab6ff",

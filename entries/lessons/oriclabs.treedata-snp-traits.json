@@ -7,7 +7,7 @@
   "summary": "A one-to-one port of Chapter 7 Figure 7.2 using the exact official tree, metadata, allele, trait, derived SNP, and published figure assets.",
   "publisher": "oriclabs",
   "version": "1.0.0",
-  "status": "stable",
+  "status": "withdrawn",
   "verified": false,
   "manifest": "https://raw.githubusercontent.com/oriclabs/biolang-lessons/main/lessons/phylogenetics/treedata-snp-traits/lesson.json",
   "manifestSha256": "5c24b29e4d12618043c8a66dc2baf7e58932e2292f4a554cb7d6676c1ded16f7",

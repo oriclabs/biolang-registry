@@ -7,7 +7,7 @@
   "summary": "An exact port of the opening Poisson and binomial calculations with byte-for-byte copies of the published chapter figures.",
   "publisher": "oriclabs",
   "version": "1.0.0",
-  "status": "stable",
+  "status": "withdrawn",
   "verified": false,
   "manifest": "https://raw.githubusercontent.com/oriclabs/biolang-lessons/main/lessons/biostatistics/msmb-discrete-models/lesson.json",
   "manifestSha256": "321407bc1d7de523007d475862b9b674f972b49e102082f2dcf8d310598c14ac",

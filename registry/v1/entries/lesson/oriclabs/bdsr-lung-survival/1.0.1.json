@@ -1,0 +1,90 @@
+{
+  "schema": 1,
+  "kind": "lesson",
+  "id": "oriclabs/bdsr-lung-survival",
+  "name": "bdsr-lung-survival",
+  "title": "Biological Data Science with R: Lung-Cancer Survival",
+  "summary": "A strict port of the BDSR lung-cancer worked example using the exact survival::lung observations, matching Kaplan-Meier results, and three source-matched BioLang plots.",
+  "publisher": "oriclabs",
+  "version": "1.0.1",
+  "status": "stable",
+  "verified": false,
+  "manifest": "https://raw.githubusercontent.com/oriclabs/biolang-lessons/main/lessons/biostatistics/bdsr-lung-survival/lesson.json",
+  "manifestSha256": "44ca56730b99342b7d2bc01c5bbc621748180a3b163ac3a4861b817c542f0777",
+  "publishedAt": "2026-09-03",
+  "compatibility": {
+    "biolang": ">=1.5.0",
+    "studio": ">=0.1.0",
+    "runtimes": [
+      "browser",
+      "desktop",
+      "somer"
+    ]
+  },
+  "categories": [
+    "biostatistics",
+    "clinical-research",
+    "data-analysis",
+    "visualization",
+    "teaching"
+  ],
+  "tags": [
+    "survival",
+    "Kaplan-Meier",
+    "lung cancer",
+    "CC BY-NC"
+  ],
+  "discoverability": {
+    "problems": [
+      "estimate survival with censored lung-cancer follow-up",
+      "compare survival between male and female patients"
+    ],
+    "methods": [
+      "Kaplan-Meier estimator",
+      "life table",
+      "log-rank test",
+      "right-censoring transformation"
+    ],
+    "plots": [
+      "Kaplan-Meier plot",
+      "survival curve",
+      "confidence interval",
+      "risk table",
+      "censoring marks"
+    ],
+    "terms": [
+      "lung cancer",
+      "survival probability",
+      "censoring",
+      "median survival",
+      "number at risk",
+      "sex-stratified survival",
+      "survfit",
+      "survminer"
+    ],
+    "aliases": [
+      "BDSR survival",
+      "lung survival",
+      "KM curve",
+      "time-to-event analysis"
+    ],
+    "functions": [
+      "read_csv",
+      "kaplan_meier",
+      "log_rank_test",
+      "filter",
+      "map",
+      "table"
+    ]
+  },
+  "sourceRepository": "https://github.com/oriclabs/biolang-lessons",
+  "licence": "CC BY-NC 4.0; data LGPL (>= 2)",
+  "validation": "Exact 228-row source data; source medians and log-rank result; three source-matched BioLang survival figures",
+  "series": {
+    "id": "biological-data-science-with-r",
+    "title": "Biological Data Science with R",
+    "url": "https://bdsr.stephenturner.us/",
+    "order": 11,
+    "chapter": "Survival Analysis - lung-cancer worked example"
+  }
+}

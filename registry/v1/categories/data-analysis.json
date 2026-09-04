@@ -3,7 +3,7 @@
   "category": {
     "id": "data-analysis",
     "title": "Data Analysis",
-    "count": 13,
+    "count": 9,
     "kinds": [
       "lesson"
     ]
@@ -99,13 +99,13 @@
       "id": "oriclabs/bdsr-lung-survival",
       "name": "bdsr-lung-survival",
       "title": "Biological Data Science with R: Lung-Cancer Survival",
-      "summary": "A strict port of the BDSR lung-cancer worked example using the exact survival::lung observations, matching Kaplan-Meier results, and three byte-for-byte canonical plots.",
+      "summary": "A strict port of the BDSR lung-cancer worked example using the exact survival::lung observations, matching Kaplan-Meier results, and three source-matched BioLang plots.",
       "publisher": "oriclabs",
-      "version": "1.0.0",
+      "version": "1.0.1",
       "status": "stable",
       "verified": false,
       "manifest": "https://raw.githubusercontent.com/oriclabs/biolang-lessons/main/lessons/biostatistics/bdsr-lung-survival/lesson.json",
-      "manifestSha256": "c6b50fd888532fe813d9c49baaf39bc0a7c36d9ffd682afb74c2cc7d36f500ac",
+      "manifestSha256": "44ca56730b99342b7d2bc01c5bbc621748180a3b163ac3a4861b817c542f0777",
       "publishedAt": "2026-09-03",
       "compatibility": {
         "biolang": ">=1.5.0",
@@ -174,7 +174,7 @@
       },
       "sourceRepository": "https://github.com/oriclabs/biolang-lessons",
       "licence": "CC BY-NC 4.0; data LGPL (>= 2)",
-      "validation": "Exact 228-row source data; source medians and log-rank result; three byte-for-byte canonical PNGs",
+      "validation": "Exact 228-row source data; source medians and log-rank result; three source-matched BioLang survival figures",
       "series": {
         "id": "biological-data-science-with-r",
         "title": "Biological Data Science with R",
@@ -346,87 +346,6 @@
     {
       "schema": 1,
       "kind": "lesson",
-      "id": "oriclabs/data-carpentry-daily-counts",
-      "name": "data-carpentry-daily-counts",
-      "title": "Data Analysis and Visualization in R for Ecologists: Daily Counts",
-      "summary": "A one-to-one port of daily animal counts by sex using the exact Portal field-data extract and byte-for-byte published time-series figure.",
-      "publisher": "oriclabs",
-      "version": "1.0.0",
-      "status": "stable",
-      "verified": false,
-      "manifest": "https://raw.githubusercontent.com/oriclabs/biolang-lessons/main/lessons/ecology/data-carpentry-daily-counts/lesson.json",
-      "manifestSha256": "3df077302566a7a4a46dd12221113925565886bc72f77a896e92044ccad9bd9e",
-      "publishedAt": "2026-09-03",
-      "compatibility": {
-        "biolang": ">=1.5.0",
-        "studio": ">=0.1.0",
-        "runtimes": [
-          "browser",
-          "desktop",
-          "somer"
-        ]
-      },
-      "categories": [
-        "ecology",
-        "data-analysis",
-        "visualization",
-        "teaching"
-      ],
-      "tags": [
-        "ecology",
-        "time series",
-        "grouped counts",
-        "CC BY"
-      ],
-      "discoverability": {
-        "problems": [
-          "count field observations by day and sex",
-          "build an ecological time series",
-          "preserve missing sex as a grouping level"
-        ],
-        "methods": [
-          "split-apply-combine",
-          "daily grouped counts",
-          "time-series preparation"
-        ],
-        "plots": [
-          "daily animal-count time series"
-        ],
-        "terms": [
-          "Portal Project",
-          "ecological survey",
-          "daily counts",
-          "sex",
-          "time series",
-          "missing values"
-        ],
-        "aliases": [
-          "Data Carpentry daily counts",
-          "R ecology time series",
-          "Portal survey Challenge 4"
-        ],
-        "functions": [
-          "read_csv",
-          "mutate",
-          "group_by",
-          "summarize",
-          "arrange"
-        ]
-      },
-      "sourceRepository": "https://github.com/oriclabs/biolang-lessons",
-      "licence": "CC BY 4.0; code MIT",
-      "validation": "Exact 16,878-row Portal data, 927 daily-sex groups, maximum count 116, and byte-for-byte source plot",
-      "series": {
-        "id": "data-analysis-visualization-r-ecologists",
-        "title": "Data Analysis and Visualization in R for Ecologists",
-        "url": "https://datacarpentry.github.io/R-ecology-lesson/",
-        "order": 5,
-        "chapter": "Working with data - Challenge 4 daily counts"
-      }
-    },
-    {
-      "schema": 1,
-      "kind": "lesson",
       "id": "oriclabs/data-carpentry-ecology",
       "name": "data-carpentry-ecology",
       "title": "Data Analysis and Visualization in R for Ecologists: Grouped Summaries",
@@ -501,205 +420,6 @@
         "url": "https://datacarpentry.github.io/R-ecology-lesson/",
         "order": 4,
         "chapter": "Working with Data - group_by, summarize, and arrange"
-      }
-    },
-    {
-      "schema": 1,
-      "kind": "lesson",
-      "id": "oriclabs/dataviz-protocols",
-      "name": "dataviz-protocols",
-      "title": "DataViz Protocols for Wet-Lab Scientists",
-      "summary": "Three connected strict-fidelity protocols using exact experimental tables and byte-for-byte canonical figures: protein spectra, a differential-expression volcano plot, and co-expression correlations.",
-      "publisher": "oriclabs",
-      "version": "1.0.0",
-      "status": "stable",
-      "verified": false,
-      "manifest": "https://raw.githubusercontent.com/oriclabs/biolang-lessons/main/lessons/visualization/dataviz-protocols/lesson.json",
-      "manifestSha256": "c59bd413fcbfcebd8734892e5cbd4eb32827385d2b770d322e194cf12620e2e5",
-      "publishedAt": "2026-09-03",
-      "compatibility": {
-        "biolang": ">=1.5.0",
-        "studio": ">=0.1.0",
-        "runtimes": [
-          "browser",
-          "desktop",
-          "somer"
-        ]
-      },
-      "categories": [
-        "visualization",
-        "bioinformatics",
-        "data-analysis",
-        "teaching"
-      ],
-      "tags": [
-        "visualization",
-        "wet lab",
-        "differential expression",
-        "fluorescent proteins",
-        "CC BY-NC-SA"
-      ],
-      "discoverability": {
-        "problems": [
-          "compare fluorescent-protein excitation and emission spectra",
-          "inspect normalized spectral measurements",
-          "identify significant differential-expression hits",
-          "rank genes for volcano-plot annotation",
-          "compare fluorescent-protein co-expression systems",
-          "calculate panel-wise complete-pair correlations"
-        ],
-        "methods": [
-          "spectral data inspection",
-          "long-format visualization preparation",
-          "dual-threshold classification",
-          "Manhattan-distance hit ranking",
-          "complete-pair filtering",
-          "Pearson correlation",
-          "squared correlation by experimental panel"
-        ],
-        "plots": [
-          "filled spectral line plot",
-          "volcano plot",
-          "faceted scatter plot with through-origin fits"
-        ],
-        "terms": [
-          "FPbase",
-          "fluorescent protein",
-          "excitation spectrum",
-          "emission spectrum",
-          "wavelength",
-          "normalized intensity",
-          "differential expression",
-          "log2 fold change",
-          "minus log10 p-value",
-          "increased gene",
-          "decreased gene",
-          "top hit",
-          "CFP",
-          "YFP",
-          "dual promoter",
-          "IRES",
-          "2A peptide",
-          "co-expression",
-          "R-squared"
-        ],
-        "aliases": [
-          "DataViz Protocol 1",
-          "fluorescent protein spectra",
-          "FP spectra",
-          "DataViz Protocol 14",
-          "differential gene volcano",
-          "omics hit plot",
-          "DataViz Protocol 16",
-          "fluorescent protein correlation",
-          "coexpression scatterplots"
-        ],
-        "functions": [
-          "read_csv",
-          "filter",
-          "col",
-          "min",
-          "max",
-          "mutate",
-          "arrange",
-          "abs",
-          "cor",
-          "table"
-        ]
-      },
-      "sourceRepository": "https://github.com/oriclabs/biolang-lessons",
-      "licence": "CC BY-NC-SA 4.0",
-      "validation": "Three exact source CSVs, exact thresholds and panel correlations, three byte-for-byte canonical PNGs, and Previous/Next navigation",
-      "series": {
-        "id": "dataviz-protocols",
-        "title": "DataViz protocols",
-        "url": "https://joachimgoedhart.github.io/DataViz-protocols/",
-        "order": 1,
-        "chapter": "Selected Protocols 1, 14, and 16"
-      }
-    },
-    {
-      "schema": 1,
-      "kind": "lesson",
-      "id": "oriclabs/fish-forecast-anchovy",
-      "name": "fish-forecast-anchovy",
-      "title": "Fisheries Catch Forecasting: Anchovy Trend",
-      "summary": "An exact real-data port of the opening Hellenic anchovy regression and forecast, including both byte-for-byte canonical source plots.",
-      "publisher": "oriclabs",
-      "version": "1.0.0",
-      "status": "stable",
-      "verified": false,
-      "manifest": "https://raw.githubusercontent.com/oriclabs/biolang-lessons/main/lessons/ecology/fish-forecast-anchovy/lesson.json",
-      "manifestSha256": "a35ccfd3e2f21a4391a66b290a59dce9965c2783760cb8dbd0de3eb63768b5ec",
-      "publishedAt": "2026-09-03",
-      "compatibility": {
-        "biolang": ">=1.5.0",
-        "studio": ">=0.1.0",
-        "runtimes": [
-          "browser",
-          "desktop",
-          "somer"
-        ]
-      },
-      "categories": [
-        "ecology",
-        "fisheries",
-        "forecasting",
-        "data-analysis",
-        "teaching"
-      ],
-      "tags": [
-        "ecology",
-        "fisheries",
-        "forecasting",
-        "regression",
-        "public domain"
-      ],
-      "discoverability": {
-        "problems": [
-          "forecast annual anchovy landings",
-          "fit a trend to fisheries catch data"
-        ],
-        "methods": [
-          "time-varying regression",
-          "log-linear regression",
-          "one-step forecast"
-        ],
-        "plots": [
-          "fish landings time series",
-          "forecast plot"
-        ],
-        "terms": [
-          "anchovy",
-          "Hellenic waters",
-          "fisheries",
-          "annual catch",
-          "metric tons",
-          "forecast"
-        ],
-        "aliases": [
-          "Fish Forecast Bookdown",
-          "anchovy forecast",
-          "Hellenic landings"
-        ],
-        "functions": [
-          "read_csv",
-          "filter",
-          "map",
-          "log",
-          "lm",
-          "exp"
-        ]
-      },
-      "sourceRepository": "https://github.com/oriclabs/biolang-lessons",
-      "licence": "Public domain / Unlicense",
-      "validation": "Exact 44-row source table, source regression and forecast, and two byte-for-byte canonical PNGs",
-      "series": {
-        "id": "fisheries-catch-forecasting",
-        "title": "Fisheries Catch Forecasting",
-        "url": "https://fish-forecast.github.io/Fish-Forecast-Bookdown/",
-        "order": 1,
-        "chapter": "Chapters 1–2 - anchovy time-varying regression"
       }
     },
     {
@@ -1081,89 +801,6 @@
         "url": "https://stats4nr.com/",
         "order": 14,
         "chapter": "Chapter 14 - Exercise 14.1 red-pine ordinary least squares"
-      }
-    },
-    {
-      "schema": 1,
-      "kind": "lesson",
-      "id": "oriclabs/validate-cars-rules",
-      "name": "validate-cars-rules",
-      "title": "Data Validation Cookbook: Cars Rules",
-      "summary": "The exact R cars data, four original validation rules, published counts and violating rows, and byte-for-byte canonical result plot.",
-      "publisher": "oriclabs",
-      "version": "1.0.0",
-      "status": "stable",
-      "verified": false,
-      "manifest": "https://raw.githubusercontent.com/oriclabs/biolang-lessons/main/lessons/data-quality/validate-cars-rules/lesson.json",
-      "manifestSha256": "04bd9d6d71d2178b39a64bc3147235ee9fa89010ab60d1df1fb15229e00ab6ff",
-      "publishedAt": "2026-09-03",
-      "compatibility": {
-        "biolang": ">=1.5.0",
-        "studio": ">=0.1.0",
-        "runtimes": [
-          "browser",
-          "desktop",
-          "somer"
-        ]
-      },
-      "categories": [
-        "data-quality",
-        "statistics",
-        "data-analysis",
-        "reproducibility",
-        "teaching"
-      ],
-      "tags": [
-        "data quality",
-        "validation",
-        "correlation",
-        "cars",
-        "CC BY-NC"
-      ],
-      "discoverability": {
-        "problems": [
-          "validate record-level data constraints",
-          "find rows violating data-quality rules"
-        ],
-        "methods": [
-          "data validation",
-          "record-wise rule",
-          "aggregate rule",
-          "correlation check"
-        ],
-        "plots": [
-          "validation result summary"
-        ],
-        "terms": [
-          "cars",
-          "speed",
-          "stopping distance",
-          "passes",
-          "fails",
-          "validation rule"
-        ],
-        "aliases": [
-          "validate cookbook",
-          "cars validation",
-          "data quality rules"
-        ],
-        "functions": [
-          "read_csv",
-          "filter",
-          "cor",
-          "table",
-          "nrow"
-        ]
-      },
-      "sourceRepository": "https://github.com/oriclabs/biolang-lessons",
-      "licence": "CC BY-NC 4.0",
-      "validation": "Exact 50-row cars data, four published rule results, violating rows, and byte-for-byte canonical PNG",
-      "series": {
-        "id": "data-validation-cookbook",
-        "title": "The Data Validation Cookbook",
-        "url": "https://data-cleaning.github.io/validate/",
-        "order": 1,
-        "chapter": "Introduction - a quick example"
       }
     }
   ]

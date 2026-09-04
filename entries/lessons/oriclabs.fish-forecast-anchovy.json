@@ -7,7 +7,7 @@
   "summary": "An exact real-data port of the opening Hellenic anchovy regression and forecast, including both byte-for-byte canonical source plots.",
   "publisher": "oriclabs",
   "version": "1.0.0",
-  "status": "stable",
+  "status": "withdrawn",
   "verified": false,
   "manifest": "https://raw.githubusercontent.com/oriclabs/biolang-lessons/main/lessons/ecology/fish-forecast-anchovy/lesson.json",
   "manifestSha256": "a35ccfd3e2f21a4391a66b290a59dce9965c2783760cb8dbd0de3eb63768b5ec",

@@ -7,7 +7,7 @@
   "summary": "Three connected strict-fidelity protocols using exact experimental tables and byte-for-byte canonical figures: protein spectra, a differential-expression volcano plot, and co-expression correlations.",
   "publisher": "oriclabs",
   "version": "1.0.0",
-  "status": "stable",
+  "status": "withdrawn",
   "verified": false,
   "manifest": "https://raw.githubusercontent.com/oriclabs/biolang-lessons/main/lessons/visualization/dataviz-protocols/lesson.json",
   "manifestSha256": "c59bd413fcbfcebd8734892e5cbd4eb32827385d2b770d322e194cf12620e2e5",

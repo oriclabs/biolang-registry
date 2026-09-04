@@ -7,7 +7,7 @@
   "summary": "A BioLang notebook porting the Computational Gene-finding chapter with all nine worked answers and four byte-for-byte source figures; the unpublished random draw is not replaced with invented data.",
   "publisher": "oriclabs",
   "version": "0.1.0",
-  "status": "stable",
+  "status": "withdrawn",
   "verified": false,
   "manifest": "https://raw.githubusercontent.com/oriclabs/biolang-lessons/main/lessons/sequence-analysis/little-book-r-gene-finding/lesson.json",
   "manifestSha256": "a0135b3426106ff9fa58bda41f62cebb97d56f54b625aacdf9cd730343e5ccad",

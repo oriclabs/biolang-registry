@@ -7,7 +7,7 @@
   "summary": "A one-to-one port of the fishing-count distribution check using exact package data, published summary values, and the byte-for-byte source histogram.",
   "publisher": "oriclabs",
   "version": "1.0.0",
-  "status": "stable",
+  "status": "withdrawn",
   "verified": false,
   "manifest": "https://raw.githubusercontent.com/oriclabs/biolang-lessons/main/lessons/ecology/stats4nr-fishing-dispersion/lesson.json",
   "manifestSha256": "1ede647d0980e7991679fc349ff20e9eafb8e751f43bb6728a7666f23d3599c4",
