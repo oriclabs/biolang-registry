@@ -12,7 +12,7 @@
     {
       "id": "biostatistics",
       "title": "Biostatistics",
-      "count": 7,
+      "count": 8,
       "kinds": [
         "lesson"
       ]
@@ -60,7 +60,7 @@
     {
       "id": "epidemiology",
       "title": "Epidemiology",
-      "count": 6,
+      "count": 7,
       "kinds": [
         "dataset",
         "lesson"
@@ -127,7 +127,7 @@
     {
       "id": "teaching",
       "title": "Teaching",
-      "count": 17,
+      "count": 18,
       "kinds": [
         "dataset",
         "lesson",
@@ -153,7 +153,7 @@
     {
       "id": "visualization",
       "title": "Visualization",
-      "count": 4,
+      "count": 5,
       "kinds": [
         "lesson"
       ]
