@@ -1095,7 +1095,7 @@
     },
     {
       "id": "oriclabs/little-book-r-multivariate-analysis",
-      "version": "1.0.1",
+      "version": "1.0.2",
       "kind": "lesson",
       "title": "A Little Book of R for Multivariate Analysis",
       "summary": "Four connected source-faithful notebooks over the exact UCI Wine observations, with summaries, PCA, LDA score replay, and all nine canonical figures.",

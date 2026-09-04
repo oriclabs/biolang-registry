@@ -1529,11 +1529,11 @@
       "title": "A Little Book of R for Multivariate Analysis",
       "summary": "Four connected source-faithful notebooks over the exact UCI Wine observations, with summaries, PCA, LDA score replay, and all nine canonical figures.",
       "publisher": "oriclabs",
-      "version": "1.0.1",
+      "version": "1.0.2",
       "status": "stable",
       "verified": false,
       "manifest": "https://raw.githubusercontent.com/oriclabs/biolang-lessons/main/lessons/biostatistics/little-book-r-multivariate/lesson.json",
-      "manifestSha256": "c5699bac6c5cc183f2ff79632f9160d92979f80fbb1ec25ec07e8d24dde3bf52",
+      "manifestSha256": "0f5fa0d730a3250d341199d0c8680276b5337c4cdb0d2ee97f492e9d3ea5e59b",
       "publishedAt": "2026-09-04",
       "compatibility": {
         "biolang": ">=1.5.0",
@@ -1654,7 +1654,7 @@
       },
       "sourceRepository": "https://github.com/oriclabs/biolang-lessons",
       "licence": "CC BY 3.0; data CC BY 4.0",
-      "validation": "Exact 178-row source data; source-matching summaries, PCA, discriminant scores and allocations; nine byte-for-byte canonical PNGs; all four sections pass native BioLang and Studio Browser WASM"
+      "validation": "Exact 178-row source data; source-matching summaries, PCA, discriminant scores and allocations; nine byte-for-byte canonical PNGs rendered from immutable URLs; all four sections pass native BioLang and Studio Browser WASM"
     },
     {
       "schema": 1,
