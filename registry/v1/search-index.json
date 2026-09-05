@@ -304,7 +304,7 @@
     },
     {
       "id": "oriclabs/bdsr-nhanes-eda",
-      "version": "2.0.0",
+      "version": "2.0.1",
       "kind": "lesson",
       "title": "Biological Data Science with R: Essential Statistics with NHANES",
       "summary": "A source-faithful, single-notebook BioLang port of every Chapter 8 section from NHANES description and EDA through continuous and discrete tests, regression, power, model tidying, and study design, with Understanding guidance and all analytical figures generated from the exact source data.",

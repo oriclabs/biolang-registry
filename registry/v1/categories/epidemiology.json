@@ -222,11 +222,11 @@
       "title": "Biological Data Science with R: Essential Statistics with NHANES",
       "summary": "A source-faithful, single-notebook BioLang port of every Chapter 8 section from NHANES description and EDA through continuous and discrete tests, regression, power, model tidying, and study design, with Understanding guidance and all analytical figures generated from the exact source data.",
       "publisher": "oriclabs",
-      "version": "2.0.0",
+      "version": "2.0.1",
       "status": "stable",
       "verified": false,
       "manifest": "https://raw.githubusercontent.com/oriclabs/biolang-lessons/main/lessons/biostatistics/bdsr-nhanes-eda/lesson.json",
-      "manifestSha256": "1c2d6ef89918a7753dc141108e7406acaae0ee033eb9a15fa73d825386b6623f",
+      "manifestSha256": "d4a38e0fca0d611a8c1849b145ed2eabd7e8699585ed6eece4760a53d9b36a63",
       "publishedAt": "2026-09-05",
       "compatibility": {
         "biolang": ">=1.5.0",
@@ -351,7 +351,7 @@
       },
       "sourceRepository": "https://github.com/oriclabs/biolang-lessons",
       "licence": "CC BY-NC 4.0",
-      "validation": "Complete source-ordered coverage of BDSR Chapter 8 sections 8.1-8.7.3 using the exact checksum-pinned 5,000-row NHANES table; all calculations and analytical figures execute in BioLang; no source images or synthetic replacement data",
+      "validation": "Complete source-ordered coverage of BDSR Chapter 8 sections 8.1-8.7.3 using the exact checksum-pinned 5,000-row NHANES table; all calculations and analytical figures execute in BioLang; power checks accept source-display precision across browser and native numerical backends",
       "series": {
         "id": "biological-data-science-with-r",
         "title": "Biological Data Science with R",
