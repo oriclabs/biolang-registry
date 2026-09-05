@@ -117,7 +117,7 @@
     {
       "id": "statistics",
       "title": "Statistics",
-      "count": 7,
+      "count": 8,
       "kinds": [
         "dataset",
         "lesson",
@@ -127,7 +127,7 @@
     {
       "id": "teaching",
       "title": "Teaching",
-      "count": 18,
+      "count": 19,
       "kinds": [
         "dataset",
         "lesson",
@@ -137,16 +137,18 @@
     {
       "id": "transcriptomics",
       "title": "Transcriptomics",
-      "count": 1,
+      "count": 2,
       "kinds": [
+        "lesson",
         "workflow"
       ]
     },
     {
       "id": "validation",
       "title": "Validation",
-      "count": 1,
+      "count": 2,
       "kinds": [
+        "lesson",
         "workflow"
       ]
     },
