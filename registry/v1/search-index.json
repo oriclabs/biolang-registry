@@ -81,7 +81,7 @@
     },
     {
       "id": "oriclabs/bdsr-essential-statistics-extended",
-      "version": "1.1.0",
+      "version": "1.1.1",
       "kind": "lesson",
       "title": "Biological Data Science with R: Essential Statistics 8.3.2-8.7",
       "summary": "Five connected source-faithful notebooks restore the Wilcoxon, regression, categorical-data, power, model-tidying, and closing study-design sequence, including Understanding panels and BioLang-generated figures.",
@@ -304,7 +304,7 @@
     },
     {
       "id": "oriclabs/bdsr-nhanes-eda",
-      "version": "2.0.1",
+      "version": "2.0.2",
       "kind": "lesson",
       "title": "Biological Data Science with R: Essential Statistics with NHANES",
       "summary": "A source-faithful, single-notebook BioLang port of every Chapter 8 section from NHANES description and EDA through continuous and discrete tests, regression, power, model tidying, and study design, with Understanding guidance and all analytical figures generated from the exact source data.",
