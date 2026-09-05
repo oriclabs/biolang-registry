@@ -3,7 +3,7 @@
   "category": {
     "id": "statistics",
     "title": "Statistics",
-    "count": 8,
+    "count": 9,
     "kinds": [
       "dataset",
       "lesson",
@@ -64,6 +64,152 @@
         ],
         "fileCount": 2,
         "totalBytes": 735046
+      }
+    },
+    {
+      "schema": 1,
+      "kind": "lesson",
+      "id": "oriclabs/bdsr-nhanes-eda",
+      "name": "bdsr-nhanes-eda",
+      "title": "Biological Data Science with R: Essential Statistics with NHANES",
+      "summary": "A source-faithful, single-notebook BioLang port of every Chapter 8 section from NHANES description and EDA through continuous and discrete tests, regression, power, model tidying, and study design, with Understanding guidance and all analytical figures generated from the exact source data.",
+      "publisher": "oriclabs",
+      "version": "2.0.0",
+      "status": "stable",
+      "verified": false,
+      "manifest": "https://raw.githubusercontent.com/oriclabs/biolang-lessons/main/lessons/biostatistics/bdsr-nhanes-eda/lesson.json",
+      "manifestSha256": "1c2d6ef89918a7753dc141108e7406acaae0ee033eb9a15fa73d825386b6623f",
+      "publishedAt": "2026-09-05",
+      "compatibility": {
+        "biolang": ">=1.5.0",
+        "studio": ">=0.1.0",
+        "runtimes": [
+          "browser",
+          "desktop",
+          "somer"
+        ]
+      },
+      "categories": [
+        "biostatistics",
+        "epidemiology",
+        "statistics",
+        "regression",
+        "teaching",
+        "visualization"
+      ],
+      "tags": [
+        "biostatistics",
+        "NHANES",
+        "EDA",
+        "inference",
+        "regression",
+        "power",
+        "study design",
+        "CC BY-NC"
+      ],
+      "discoverability": {
+        "problems": [
+          "summarize a biomedical dataset",
+          "find missing values and unusual observations",
+          "compare two independent groups",
+          "compare more than two groups",
+          "measure relationships between continuous variables",
+          "test association between categorical variables",
+          "adjust an outcome for several predictors",
+          "estimate sample size and statistical power",
+          "diagnose a fitted statistical model"
+        ],
+        "methods": [
+          "descriptive statistics",
+          "exploratory data analysis",
+          "Welch t-test",
+          "Wilcoxon rank-sum test",
+          "analysis of variance",
+          "Tukey HSD",
+          "linear regression",
+          "multiple regression",
+          "chi-square test",
+          "Fisher exact test",
+          "logistic regression",
+          "power analysis"
+        ],
+        "plots": [
+          "histogram",
+          "scatter plot",
+          "regression plot",
+          "confidence band",
+          "box plot",
+          "mosaic plot",
+          "residual plot"
+        ],
+        "terms": [
+          "mean",
+          "median",
+          "quartile",
+          "variance",
+          "standard deviation",
+          "missing data",
+          "outlier",
+          "distribution",
+          "continuous variable",
+          "categorical variable",
+          "contingency table",
+          "p-value",
+          "effect size",
+          "confidence interval",
+          "batch effect",
+          "biological replicate",
+          "technical replicate",
+          "independent observations"
+        ],
+        "aliases": [
+          "EDA",
+          "t test",
+          "Student t test",
+          "Mann-Whitney U test",
+          "rank sum test",
+          "ANOVA",
+          "OLS",
+          "generalized linear model",
+          "GLM",
+          "chi squared test",
+          "sample size calculation"
+        ],
+        "functions": [
+          "read_csv",
+          "summary",
+          "mean",
+          "median",
+          "quantile",
+          "variance",
+          "stdev",
+          "histogram",
+          "stats_relationship_plot",
+          "ttest",
+          "wilcoxon",
+          "anova",
+          "tukey_hsd",
+          "lm",
+          "stats_group_plot",
+          "cross_tab",
+          "chi_square_contingency",
+          "fisher_exact",
+          "mosaic_plot",
+          "stats_glm_diagnostics",
+          "stats_multiple_linear_diagnostics",
+          "power_t_test",
+          "power_prop_test"
+        ]
+      },
+      "sourceRepository": "https://github.com/oriclabs/biolang-lessons",
+      "licence": "CC BY-NC 4.0",
+      "validation": "Complete source-ordered coverage of BDSR Chapter 8 sections 8.1-8.7.3 using the exact checksum-pinned 5,000-row NHANES table; all calculations and analytical figures execute in BioLang; no source images or synthetic replacement data",
+      "series": {
+        "id": "biological-data-science-with-r",
+        "title": "Biological Data Science with R",
+        "url": "https://bdsr.stephenturner.us/",
+        "order": 8,
+        "chapter": "Chapter 8 - Essential statistics"
       }
     },
     {

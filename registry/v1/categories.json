@@ -107,6 +107,14 @@
       ]
     },
     {
+      "id": "regression",
+      "title": "Regression",
+      "count": 1,
+      "kinds": [
+        "lesson"
+      ]
+    },
+    {
       "id": "single-cell",
       "title": "Single Cell",
       "count": 1,
@@ -117,7 +125,7 @@
     {
       "id": "statistics",
       "title": "Statistics",
-      "count": 8,
+      "count": 9,
       "kinds": [
         "dataset",
         "lesson",
